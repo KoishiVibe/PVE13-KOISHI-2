@@ -102,8 +102,7 @@
 
 	var/far_sight = FALSE
 	var/obj/item/weapon/gun/smartgun/linked_smartgun = null
-
-	suit_restricted = list(/obj/item/clothing/obj/item/clothing/head/helmet)
+	suit_restricted = /obj/item/clothing/obj/item/clothing/head/helmet
 
 /obj/item/clothing/glasses/night/m56_goggles/Destroy()
 	linked_smartgun = null
