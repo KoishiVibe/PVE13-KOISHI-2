@@ -9,7 +9,7 @@
 	headshot_state = HEADSHOT_OVERLAY_MEDIUM
 
 	damage = 40
-	penetration = ARMOR_PENETRATION_TIER_1
+	penetration = ARMOR_PENETRATION_TIER_4
 	accurate_range = 16
 	accuracy = HIT_ACCURACY_TIER_4
 	scatter = SCATTER_AMOUNT_TIER_10
@@ -55,7 +55,7 @@
 	name = "armor-piercing rifle bullet"
 
 	damage = 30
-	penetration = ARMOR_PENETRATION_TIER_8
+	penetration = ARMOR_PENETRATION_TIER_7
 
 // Basically AP but better. Focused at taking out armour temporarily
 /datum/ammo/bullet/rifle/ap/toxin
@@ -83,7 +83,7 @@
 	shrapnel_chance = 0
 
 	damage = 35
-	penetration = ARMOR_PENETRATION_TIER_10
+	penetration = ARMOR_PENETRATION_TIER_7
 
 /datum/ammo/bullet/rifle/ap/penetrating/set_bullet_traits()
 	. = ..()
@@ -103,7 +103,7 @@
 
 	headshot_state = HEADSHOT_OVERLAY_HEAVY
 	damage = 55//big damage, doesn't actually blow up because thats stupid.
-	penetration = ARMOR_PENETRATION_TIER_8
+	penetration = ARMOR_PENETRATION_TIER_7
 
 /datum/ammo/bullet/rifle/rubber
 	name = "rubber rifle bullet"
@@ -213,17 +213,17 @@
 	name = "heavy rifle bullet"
 
 	damage = 55
-	penetration = ARMOR_PENETRATION_TIER_3
+	penetration = ARMOR_PENETRATION_TIER_5
 
 /datum/ammo/bullet/rifle/type71/ap
 	name = "heavy armor-piercing rifle bullet"
 
 	damage = 40
-	penetration = ARMOR_PENETRATION_TIER_10
+	penetration = ARMOR_PENETRATION_TIER_8
 
 /datum/ammo/bullet/rifle/type71/heap
 	name = "heavy high-explosive armor-piercing rifle bullet"
 
 	headshot_state = HEADSHOT_OVERLAY_HEAVY
 	damage = 65
-	penetration = ARMOR_PENETRATION_TIER_10
+	penetration = ARMOR_PENETRATION_TIER_8

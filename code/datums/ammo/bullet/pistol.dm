@@ -39,7 +39,7 @@
 
 	damage = 25
 	accuracy = HIT_ACCURACY_TIER_2
-	penetration= ARMOR_PENETRATION_TIER_8
+	penetration= ARMOR_PENETRATION_TIER_4
 	shrapnel_chance = SHRAPNEL_CHANCE_TIER_2
 
 /datum/ammo/bullet/pistol/ap/penetrating
@@ -101,7 +101,7 @@
 	accuracy = -HIT_ACCURACY_TIER_3
 	accuracy_var_low = PROJECTILE_VARIANCE_TIER_6
 	damage = 55
-	penetration = ARMOR_PENETRATION_TIER_3
+	penetration = ARMOR_PENETRATION_TIER_1
 	shrapnel_chance = SHRAPNEL_CHANCE_TIER_2
 
 /datum/ammo/bullet/pistol/heavy/super //Commander's variant
@@ -109,7 +109,7 @@
 	damage = 60
 	damage_var_low = PROJECTILE_VARIANCE_TIER_8
 	damage_var_high = PROJECTILE_VARIANCE_TIER_6
-	penetration = ARMOR_PENETRATION_TIER_4
+	penetration = ARMOR_PENETRATION_TIER_2
 
 /datum/ammo/bullet/pistol/heavy/super/highimpact
 	name = ".50 high-impact pistol bullet"
@@ -142,7 +142,7 @@
 	headshot_state = HEADSHOT_OVERLAY_HEAVY
 	accuracy = -HIT_ACCURACY_TIER_3
 	accuracy_var_low = PROJECTILE_VARIANCE_TIER_6
-	penetration = ARMOR_PENETRATION_TIER_6
+	penetration = ARMOR_PENETRATION_TIER_1
 	shrapnel_chance = SHRAPNEL_CHANCE_TIER_5
 
 /datum/ammo/bullet/pistol/incendiary
@@ -171,7 +171,7 @@
 
 	accuracy = HIT_ACCURACY_TIER_3
 	damage = 36
-	penetration = ARMOR_PENETRATION_TIER_5
+	penetration = ARMOR_PENETRATION_TIER_3
 	damage_falloff = DAMAGE_FALLOFF_TIER_7
 
 // Used by VP78 and Auto 9
