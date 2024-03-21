@@ -186,6 +186,15 @@
 			return 0
 	return 1
 
+		if(ishuman(M))
+		var/mob/living/carbon/human/H = M
+		var/obj/item/clothing/under/U = H.head
+		//hopefully this works if not i explode
+		if(U && U.head_restricted && !is_type_in_list(src, U.head_restricted))
+			to_chat(H, SPAN_WARNING("[src] can't be worn with [U]."))
+			return 0
+	return 1
+
 /obj/item/clothing/suit/proc/get_collar()
 	var/icon/C = new('icons/mob/humans/onmob/collar.dmi')
 	if(icon_state in C.IconStates())
