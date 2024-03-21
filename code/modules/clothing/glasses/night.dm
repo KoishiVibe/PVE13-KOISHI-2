@@ -103,12 +103,7 @@
 	var/far_sight = FALSE
 	var/obj/item/weapon/gun/smartgun/linked_smartgun = null
 
-/obj/item/clothing/suit/storage/marine/smartgunner/mob_can_equip(mob/equipping_mob, slot, disable_warning = FALSE)
-	. = ..()
-
-		if(equipping_mob.back)
-		to_chat(equipping_mob, SPAN_WARNING("You can't equip [src] while wearing a backpack."))
-		return FALSE
+	suit_restricted = list(/obj/item/clothing/obj/item/clothing/head/helmet)
 
 /obj/item/clothing/glasses/night/m56_goggles/Destroy()
 	linked_smartgun = null
