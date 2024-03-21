@@ -180,15 +180,11 @@
 	if(ishuman(M))
 		var/mob/living/carbon/human/H = M
 		var/obj/item/clothing/under/U = H.w_uniform
+		var/obj/item/clothing/glasses/U = H.head
 		//some uniforms prevent you from wearing any suits but certain types
 		if(U && U.suit_restricted && !is_type_in_list(src, U.suit_restricted))
 			to_chat(H, SPAN_WARNING("[src] can't be worn with [U]."))
 			return 0
-	return 1
-
-		if(ishuman(M))
-		var/mob/living/carbon/human/H = M
-		var/obj/item/clothing/under/U = H.head
 		//hopefully this works if not i explode
 		if(U && U.head_restricted && !is_type_in_list(src, U.head_restricted))
 			to_chat(H, SPAN_WARNING("[src] can't be worn with [U]."))
