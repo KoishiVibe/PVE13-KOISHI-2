@@ -179,15 +179,15 @@
 
 	if(ishuman(M))
 		var/mob/living/carbon/human/H = M
-		var/obj/item/clothing/under/U = H.w_uniform
-		var/obj/item/clothing/glasses/U = H.head
+		var/obj/item/clothing/under/suit_restrict = H.w_uniform
+		var/obj/item/clothing/glasses/helm_restrict = H.head
 		//some uniforms prevent you from wearing any suits but certain types
-		if(U && U.suit_restricted && !is_type_in_list(src, U.suit_restricted))
-			to_chat(H, SPAN_WARNING("[src] can't be worn with [U]."))
+		if(suit_restrict && suit_restrict.suit_restricted && !is_type_in_list(src, suit_restrict.suit_restricted))
+			to_chat(H, SPAN_WARNING("[src] can't be worn with [suit_restrict]."))
 			return 0
 		//hopefully this works if not i explode
-		if(U && U.head_restricted && !is_type_in_list(src, U.head_restricted))
-			to_chat(H, SPAN_WARNING("[src] can't be worn with [U]."))
+		if(helm_restrict && helm_restrict.head_restricted && !is_type_in_list(src, helm_restrict.head_restricted))
+			to_chat(H, SPAN_WARNING("[src] can't be worn with [helm_restrict]."))
 			return 0
 	return 1
 
