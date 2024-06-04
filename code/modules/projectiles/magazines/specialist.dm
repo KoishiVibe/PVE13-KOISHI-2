@@ -2,6 +2,14 @@
 //SNIPER RIFLES
 //Keyword rifles. They are subtype of rifles, but still contained here as a specialist weapon.
 
+/obj/item/ammo_magazine/scope_rifle
+	name = "\improper M42A scope rifle magazine (10x28mm caseless)"
+	desc = "15rnd clip for the M42A scope rifle. It holds standard ball."
+	caliber = "10x28mm"
+	icon = 'icons/obj/items/weapons/guns/ammo_by_faction/uscm.dmi'
+	icon_state = "m42c"
+	w_class
+
 /obj/item/ammo_magazine/sniper
 	name = "\improper M42A marksman magazine (10x28mm Caseless)"
 	desc = "A magazine of sniper rifle ammo. An aimed shot with it will deal significant damage."

@@ -457,6 +457,25 @@
 
 //Type 88 //Based on the actual Dragunov DMR rifle.
 
+/obj/item/weapon/gun/rifle/sniper/m42b
+	name = "\improper M42A scoped rifle"
+	desc = "The M42A is a semi-automatic 10x28mm rifle. It is often issued to the Scout Sniper teams of the USCMC, but may also be operated by rifle teams that require longer reach than the M4RA."
+	icon = 'icons/obj/items/weapons/guns/guns_by_faction/uscm.dmi'
+	icon_state = "m42a"
+	item_state = "m42a"
+
+	fire_sound = 'sound/weapons/gun_sniper.ogg'
+	current_mag = /obj/item/ammo_magazine/sniper
+	force = 12
+	wield_delay = WIELD_DELAY_HORRIBLE //Ends up being 1.6 seconds due to scope
+	zoomdevicename = "scope"
+	attachable_allowed = list(/obj/item/attachable/bipod)
+	starting_attachment_types = list(/obj/item/attachable/sniperbarrel)
+	flags_gun_features = GUN_AUTO_EJECTOR|GUN_SPECIALIST|GUN_WIELDED_FIRING_ONLY|GUN_AMMO_COUNTER
+	map_specific_decoration = TRUE
+
+	flags_item = TWOHANDED|NO_CRYO_STORE
+
 /obj/item/weapon/gun/rifle/sniper/svd
 	name = "\improper Type 88 designated marksman rifle"
 	desc = "The standard issue DMR of the UPP, the Type 88 is sought after by competitive shooters and terrorists alike for its high degree of accuracy. Typically loaded with armor-piercing 7.62x54mmR rounds in a 12 round magazine."
