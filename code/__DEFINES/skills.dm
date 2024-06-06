@@ -58,6 +58,8 @@
 #define SKILL_SPEC_UPP 8
 /// Can use ALL specialist weapons
 #define SKILL_SPEC_ALL 9
+///All specialist weapons but not the smartgun.
+#define SKILL_SPEC_MARINE 10
 
 //construction skill
 #define SKILL_CONSTRUCTION_DEFAULT 2
