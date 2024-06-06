@@ -68,7 +68,7 @@
 		return
 	var/mob/living/carbon/human/user = usr //this is us
 
-	if(!HAS_TRAIT(user, TRAIT_VULTURE_USER) && !skillless)
+	if(!HAS_TRAIT(user, TRAIT_VULTURE_USER) && !skillcheck(user, SKILL_SPEC_WEAPONS, SKILL_SPEC_ALL) && H.skills.get_skill_level(SKILL_SPEC_WEAPONS) != SKILL_SPEC_MARINE && H.skills.get_skill_level(SKILL_SPEC_WEAPONS) != SKILL_SPEC_SNIPER)
 		to_chat(user, SPAN_WARNING("You don't know how to use this!"))
 		return
 
@@ -206,7 +206,7 @@
 		return
 
 	if(get_dist(get_turf(scope), get_turf(src)) > max_sniper_distance)
-		to_chat(user, SPAN_WARNING("[src] needs to be closer to the M707 to be used!"))
+		to_chat(user, SPAN_WARNING("[src] needs to be closer to the M707 to use it!"))
 		return
 
 	if(!scope.scoping)

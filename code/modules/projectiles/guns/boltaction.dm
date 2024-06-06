@@ -196,7 +196,7 @@
 	if(!.)
 		return
 
-	if(!bypass_trait && !HAS_TRAIT(user, TRAIT_VULTURE_USER))
+	if(!bypass_trait && !HAS_TRAIT(user, TRAIT_VULTURE_USER) && !skillcheck(user, SKILL_SPEC_WEAPONS, SKILL_SPEC_ALL) && H.skills.get_skill_level(SKILL_SPEC_WEAPONS) != SKILL_SPEC_MARINE && H.skills.get_skill_level(SKILL_SPEC_WEAPONS) != SKILL_SPEC_SNIPER))
 		to_chat(user, SPAN_WARNING("You don't know how to use this!"))
 		return
 
