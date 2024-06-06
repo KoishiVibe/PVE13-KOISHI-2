@@ -7,6 +7,7 @@ United States Colonial Marines
 /datum/skills/pfc
 	name = "Private"
 	//same as default
+		SKILL_SPEC_WEAPONS = SKILL_SPEC_MARINE
 
 /datum/skills/combat_medic
 	name = "Combat Medic"

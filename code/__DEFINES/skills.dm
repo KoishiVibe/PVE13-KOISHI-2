@@ -56,10 +56,10 @@
 #define SKILL_SPEC_SMARTGUN 7
 /// UPP special training
 #define SKILL_SPEC_UPP 8
-/// Can use ALL specialist weapons
-#define SKILL_SPEC_ALL 9
-///All specialist weapons but not the smartgun.
-#define SKILL_SPEC_MARINE 10
+/// Can use all specialist weapons but not the smartgun.
+#define SKILL_SPEC_MARINE 9
+///All specialist weapons including smartgun.
+#define SKILL_SPEC_ALL 10
 
 //construction skill
 #define SKILL_CONSTRUCTION_DEFAULT 2
