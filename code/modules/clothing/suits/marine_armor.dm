@@ -1533,7 +1533,14 @@
 	desc = "Some nondescript old bulletproof vest."
 	icon = 'icons/obj/items/clothing/cm_suits.dmi'
 	icon_state = "insurgent_vest"
-	item_icons =
+	item_state = "insurgent_vest"
+
+/obj/item/clothing/suit/storage/insurgent_officer
+	name = "insurgent leader rig"
+	desc = "A modern bodyvest for combat, equipped with a hand-sewn bandolier."
+	icon = 'icons/obj/items/clothing/suits.dmi'
+	icon_state = "bulletproofammo"
+	item_state = "bulletproofammo"
 
 /obj/item/clothing/suit/storage/CMB
 	name = "\improper CMB Deputy jacket"
