@@ -427,7 +427,7 @@
 
 	if(is_type_in_list(equipping_item, smartgun_back))
 		return
-		
+
 	. = COMPONENT_HUMAN_CANCEL_ATTEMPT_EQUIP
 
 	if(equipping_item.flags_equip_slot == SLOT_BACK)
@@ -1527,6 +1527,13 @@
 	name = "colonial militia harness"
 	desc = "The hauberk of a colonist militia member, created from boiled leather and some modern armored plates. While not the most powerful form of armor, and primitive compared to most modern suits of armor, it gives the wearer almost perfect mobility, which suits the needs of the local colonists. It is also quick to don, easy to hide, and cheap to produce in large workshops. This one has straps interweaved with the plates, that allow the user to fire a captured smartgun, if a bit uncomfortably."
 	flags_inventory = BLOCKSHARPOBJ|SMARTGUN_HARNESS
+
+/obj/item/clothing/suit/storage/insurgent_mook
+	name = "insurgent armor rig"
+	desc = "Some nondescript old bulletproof vest."
+	icon = 'icons/obj/items/clothing/cm_suits.dmi'
+	icon_state = "insurgent_vest"
+	item_icons =
 
 /obj/item/clothing/suit/storage/CMB
 	name = "\improper CMB Deputy jacket"
