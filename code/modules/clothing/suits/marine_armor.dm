@@ -1529,18 +1529,66 @@
 	flags_inventory = BLOCKSHARPOBJ|SMARTGUN_HARNESS
 
 /obj/item/clothing/suit/storage/insurgent_mook
-	name = "insurgent armor rig"
-	desc = "Some nondescript old bulletproof vest."
+	name = "generic armor rig"
+	desc = "Some nondescript old bulletproof vest. An H-type harness and two pouches on the side provides some inherent storage."
 	icon = 'icons/obj/items/clothing/cm_suits.dmi'
 	icon_state = "insurgent_vest"
 	item_state = "insurgent_vest"
+	slowdown = SLOWDOWN_ARMOR_LIGHT
+	flags_armor_protection = BODY_FLAG_CHEST|BODY_FLAG_GROIN
+	armor_melee = CLOTHING_ARMOR_NONE //mooks get no armor protection
+	armor_bullet = CLOTHING_ARMOR_NONE
+	armor_energy = CLOTHING_ARMOR_NONE
+	armor_bomb = CLOTHING_ARMOR_LOW
+	armor_bio = CLOTHING_ARMOR_NONE
+	armor_rad = CLOTHING_ARMOR_NONE
+	armor_internaldamage = CLOTHING_ARMOR_NONE
+	storage_slots = 2
+	valid_accessory_slots = list(ACCESSORY_SLOT_ARMBAND)
+
+/obj/item/clothing/suit/storage/insurgent_superior
+	name = "generic armor rig"
+	desc = "Some nondescript old bulletproof vest. An H-type harness and two pouches on the side provides some inherent storage."
+	icon = 'icons/obj/items/clothing/cm_suits.dmi'
+	icon_state = "insurgent_vest"
+	item_state = "insurgent_vest"
+	slowdown = SLOWDOWN_ARMOR_LIGHT
+	flags_armor_protection = BODY_FLAG_CHEST|BODY_FLAG_GROIN
+	armor_melee = CLOTHING_ARMOR_LOW
+	armor_bullet = CLOTHING_ARMOR_MEDIUMLOW
+	armor_energy = CLOTHING_ARMOR_HIGH
+	armor_bomb = CLOTHING_ARMOR_MEDIUM
+	armor_bio = CLOTHING_ARMOR_LOW
+	armor_rad = CLOTHING_ARMOR_NONE
+	armor_internaldamage = CLOTHING_ARMOR_MEDIUM
+	storage_slots = 2
+	valid_accessory_slots = list(ACCESSORY_SLOT_ARMBAND)
+
+	/obj/item/clothing/suit/storage/insurgent_baseline
+	name = "generic armor rig"
+	desc = "Some nondescript old bulletproof vest. An H-type harness and two pouches on the side provides some inherent storage."
+	icon = 'icons/obj/items/clothing/cm_suits.dmi'
+	icon_state = "insurgent_vest"
+	item_state = "insurgent_vest"
+	slowdown = SLOWDOWN_ARMOR_LIGHT
+	flags_armor_protection = BODY_FLAG_CHEST|BODY_FLAG_GROIN
+	armor_melee = CLOTHING_ARMOR_MEDIUMLOW
+	armor_bullet = CLOTHING_ARMOR_HIGH
+	armor_energy = CLOTHING_ARMOR_HIGH
+	armor_bomb = CLOTHING_ARMOR_MEDIUM
+	armor_bio = CLOTHING_ARMOR_LOW
+	armor_rad = CLOTHING_ARMOR_NONE
+	armor_internaldamage = CLOTHING_ARMOR_MEDIUM
+	storage_slots = 2
+	valid_accessory_slots = list(ACCESSORY_SLOT_ARMBAND)
 
 /obj/item/clothing/suit/storage/insurgent_officer
-	name = "insurgent leader rig"
+	name = "custom armor rig"
 	desc = "A modern bodyvest for combat, equipped with a hand-sewn bandolier."
 	icon = 'icons/obj/items/clothing/suits.dmi'
 	icon_state = "bulletproofammo"
 	item_state = "bulletproofammo"
+	slowdown = SLOWDOWN_ARMOR_LIGHT
 
 /obj/item/clothing/suit/storage/CMB
 	name = "\improper CMB Deputy jacket"
