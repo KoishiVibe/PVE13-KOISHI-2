@@ -1552,7 +1552,7 @@
 	icon = 'icons/obj/items/clothing/cm_suits.dmi'
 	icon_state = "insurgent_vest"
 	item_state = "insurgent_vest"
-	slowdown = SLOWDOWN_ARMOR_LIGHT
+	slowdown = SLOWDOWN_ARMOR_MEDIUM
 	flags_armor_protection = BODY_FLAG_CHEST|BODY_FLAG_GROIN
 	armor_melee = CLOTHING_ARMOR_LOW
 	armor_bullet = CLOTHING_ARMOR_MEDIUMLOW
@@ -1564,13 +1564,13 @@
 	storage_slots = 2
 	valid_accessory_slots = list(ACCESSORY_SLOT_ARMBAND)
 
-	/obj/item/clothing/suit/storage/insurgent_baseline
+/obj/item/clothing/suit/storage/insurgent_baseline
 	name = "generic armor rig"
 	desc = "Some nondescript old bulletproof vest. An H-type harness and two pouches on the side provides some inherent storage."
 	icon = 'icons/obj/items/clothing/cm_suits.dmi'
 	icon_state = "insurgent_vest"
 	item_state = "insurgent_vest"
-	slowdown = SLOWDOWN_ARMOR_LIGHT
+	slowdown = SLOWDOWN_ARMOR_MEDIUM
 	flags_armor_protection = BODY_FLAG_CHEST|BODY_FLAG_GROIN
 	armor_melee = CLOTHING_ARMOR_MEDIUMLOW
 	armor_bullet = CLOTHING_ARMOR_HIGH
@@ -1588,7 +1588,7 @@
 	icon = 'icons/obj/items/clothing/suits.dmi'
 	icon_state = "bulletproofammo"
 	item_state = "bulletproofammo"
-	slowdown = SLOWDOWN_ARMOR_LIGHT
+	slowdown = SLOWDOWN_ARMOR_L
 
 /obj/item/clothing/suit/storage/CMB
 	name = "\improper CMB Deputy jacket"

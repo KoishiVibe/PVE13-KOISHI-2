@@ -310,6 +310,12 @@ var/global/list/job_command_roles = JOB_COMMAND_ROLES_LIST
 
 #define CLF_JOB_LIST list(JOB_CLF, JOB_CLF_ENGI, JOB_CLF_MEDIC, JOB_CLF_SPECIALIST, JOB_CLF_LEADER, JOB_CLF_COMMANDER, JOB_CLF_SYNTH)
 
+//----- Insurgency -----//
+#define JOB_INSURGENT "Insurgent Fighter"
+#define JOB_INSURGENT_MG "Insurgent Gunner"
+#define JOB_INSURGENT_
+
+
 //-------- TWE --------//
 #define JOB_TWE_REPRESENTATIVE "TWE Representative"
 
