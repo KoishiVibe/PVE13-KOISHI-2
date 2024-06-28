@@ -166,7 +166,7 @@
 /datum/ammo/bullet/shotgun/buckshot/special/on_hit_mob(mob/hit_mob, obj/projectile/hit_projectile)
 	if(isxeno(hit_mob))
 		var/mob/living/carbon/xenomorph/xeno = hit_mob
-		xeno.apply_armoured_damage(damage * 1.55, ARMOR_BULLET, BRUTE, null, 0)
+		xeno.apply_armoured_damage(damage * 1.55, ARMOR_BULLET * 1.55, BRUTE, null, 0)
 
 //buckshot variant only used by the masterkey shotgun attachment.
 /datum/ammo/bullet/shotgun/buckshot/masterkey
@@ -205,7 +205,7 @@
 /datum/ammo/bullet/shotgun/spread/special/on_hit_mob(mob/hit_mob, obj/projectile/hit_projectile)
 	if(isxeno(hit_mob))
 		var/mob/living/carbon/xenomorph/xeno = hit_mob
-		xeno.apply_armoured_damage(damage * 1.55, BRUTE)
+		xeno.apply_armoured_damage(damage * 1.55, ARMOR_BULLET * 1.55, BRUTE, null, 0)
 
 /*
 					8 GAUGE SHOTGUN AMMO
