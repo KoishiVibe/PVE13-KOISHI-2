@@ -162,7 +162,7 @@
 	damage = 25
 	bonus_projectiles_amount = EXTRA_PROJECTILES_TIER_18
 	firing_freq_offset = SOUND_FREQ_LOW
-	xeno_mult = 1.55
+	var/xeno_mult = 1.55
 //special B/S type is super buffed vs xenomorphs but not as much against anything else
 /datum/ammo/bullet/shotgun/buckshot/special/on_hit_mob(mob/hit_mob, obj/projectile/hit_projectile)
 	if(isxeno(hit_mob))
@@ -202,7 +202,7 @@
 	max_range = 8
 	damage = 25
 	firing_freq_offset = SOUND_FREQ_LOW
-	xeno_mult = 1.55
+	var/xeno_mult = 1.55
 
 /datum/ammo/bullet/shotgun/spread/special/on_hit_mob(mob/hit_mob, obj/projectile/hit_projectile)
 	if(isxeno(hit_mob))
