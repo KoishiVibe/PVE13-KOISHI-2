@@ -58,7 +58,7 @@
 /obj/item/device/m56d_gun/get_examine_text(mob/user) //Let us see how much ammo we got in this thing.
 	. = ..()
 	if(rounds)
-		. += "It has [rounds] out of 700 rounds."
+		. += "It has [rounds] out of [max_rounds] rounds."
 	else
 		. += "It seems to be lacking a ammo drum."
 
@@ -1110,7 +1110,13 @@
 	return (mover_flags_pass & pass_flags.flags_can_pass_behind && target_dir != REVERSE_DIR(dir)) ? NO_BLOCKED_MOVEMENT : ..()
 
 /obj/structure/machinery/m56d_hmg/mg_turret/whiskey_pve
-	rounds = 700 //I don't want them to have stupid amounts of ammo.
+desc = "An M56 Smartgun retooled to serve as a static machinegun system. The drums are unfortunately inherently different due to the requirements of the program, preventing cross compatibility."
+	fire_delay = FIRE_DELAY_TIER_SG
+	rounds = 500//fuck you
+	rounds_max = 500
+	var/static/list/gun_firemodes = list(
+		GUN_FIREMODE_AUTOMATIC,
+	)// ditto, strongly worded letter to follow
 
 /obj/structure/machinery/m56d_hmg/mg_turret/whiskey_pve/folding //folding barricade version.
 	desc = "A scoped M56D heavy machine gun mounted behind a metal shield. Drag its sprite onto yourself to man it. Ctrl-click it to toggle burst fire."

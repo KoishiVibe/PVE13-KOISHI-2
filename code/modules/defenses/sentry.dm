@@ -546,14 +546,15 @@
 	handheld_type = /obj/item/defenses/handheld/sentry/custom
 
 /obj/structure/machinery/defenses/sentry/premade
-	name = "\improper UA-577 gauss turret"
+	name = "\improper UA-574-C sentry gun"
+	desc = "The 574 is a modification of the 571 series in the UA-500 family of common robotic weapons. It features enhanced longterm weather resistance and improved ammunition stores."
 	immobile = TRUE
 	turned_on = TRUE
 	icon_state = "premade" //for the map editor only
 	faction_group = FACTION_LIST_MARINE
 	static = TRUE
-	fire_delay = 5
-	burst = 1
+	fire_delay = 1
+	burst = 2
 
 /obj/structure/machinery/defenses/sentry/premade/Initialize()
 	. = ..()
@@ -578,7 +579,7 @@
 	power_off() //We don't want to have this thing keep beeping with no ammo, since it cannot be reloaded.
 
 /obj/structure/machinery/defenses/sentry/premade/strong //Same as the regular turret in terms of strength.
-	name = "\improper UA 571-B sentry gun"
+	name = "\improper UA 574-C emplaced sentry gun"
 	fire_delay = 1
 	burst = 2
 
@@ -591,15 +592,15 @@
 	faction_group = list(FACTION_UPP)
 
 /obj/structure/machinery/defenses/sentry/premade/dumb
-	name = "modified UA-577 gauss turret"
+	name = "modified UA-574-C sentry gun"
 	desc = "A deployable, semi-automated turret with AI targeting capabilities. Armed with an M30 autocannon and a high-capacity drum magazine. This one's IFF system has been disabled, and it will open fire on any targets within range."
 	faction_group = null
 	ammo = new /obj/item/ammo_magazine/sentry/premade/dumb
 
 //the turret inside a static sentry deployment system
 /obj/structure/machinery/defenses/sentry/premade/deployable
-	name = "\improper UA-633 Static gauss turret"
-	desc = "A fully-automated defence turret with mid-range targeting capabilities. Armed with a modified M32-S autocannon and an internal belt feed."
+	name = "\improper UA-574-C sentry gun"
+	desc = "A fully-automated defence turret with mid-range targeting capabilities. Firegroup is modified for lower intensity, more sustainable and precise fire."
 	density = TRUE
 	faction_group = FACTION_LIST_MARINE
 	fire_delay = 1

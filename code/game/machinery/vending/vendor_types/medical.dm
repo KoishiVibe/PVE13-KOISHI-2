@@ -391,6 +391,40 @@
 		/obj/item/stack/medical/ointment,
 	)
 
+/obj/structure/machinery/cm_vending/sorted/medical/wall_med/memelism
+	name = "\improper Medical Cabinet"
+	desc = "A small ruggedized box that holds first aid supplies and includes an integral bio-assessment system. A limited load of medicines is carried inside internal bottles."
+	icon_state = "wallmed"
+	vend_delay = 0.7 SECONDS
+
+	req_access = list()
+
+	density = FALSE
+	wrenchable = FALSE
+	listed_products = list(
+		list("SUPPLIES", -1, null, null),
+		list("First-Aid Autoinjector", 1, /obj/item/reagent_container/hypospray/autoinjector/skillless, VENDOR_ITEM_REGULAR),
+		list("Pain-Stop Autoinjector", 1, /obj/item/reagent_container/hypospray/autoinjector/skillless/tramadol, VENDOR_ITEM_REGULAR),
+		list("Roll Of Gauze", 3, /obj/item/stack/medical/bruise_pack, VENDOR_ITEM_REGULAR),
+		list("Ointment", 3, /obj/item/stack/medical/ointment, VENDOR_ITEM_REGULAR),
+		list("Medical Splints", 1, /obj/item/stack/medical/splint, VENDOR_ITEM_REGULAR),
+
+	)
+
+	appearance_flags = TILE_BOUND
+
+	chem_refill = list(
+		/obj/item/reagent_container/hypospray/autoinjector/skillless,
+		/obj/item/reagent_container/hypospray/autoinjector/skillless/tramadol,
+		/obj/item/reagent_container/hypospray/autoinjector/tricord/skillless,
+		/obj/item/reagent_container/hypospray/autoinjector/bicaridine/skillless,
+		/obj/item/reagent_container/hypospray/autoinjector/kelotane/skillless,
+		/obj/item/reagent_container/hypospray/autoinjector/tramadol/skillless,
+	)
+	stack_refill = list(
+		/obj/item/stack/medical/bruise_pack,
+	)
+
 /obj/structure/machinery/cm_vending/sorted/medical/wall_med/limited
 	desc = "Wall-mounted Medical Equipment Dispenser. This version is more limited than standard USCM NanoMeds."
 

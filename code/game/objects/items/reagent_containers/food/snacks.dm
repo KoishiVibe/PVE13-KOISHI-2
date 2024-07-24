@@ -3303,7 +3303,7 @@
 	desc= "A bag of Crunchos potato chips. Made with prystha, a potato-analogue. It tastes savory, moreso than regular chips. Lightly salted, low fat and cooked mostly to perfection."
 	icon_state = "chips"
 	bitesize = 3
-	trash = obj/item/trash/crunchos
+	trash = /obj/item/trash/crunchos
 
 /obj/item/reagent_container/food/snacks/crunchos/Initialize()
 	. = ..()
@@ -3315,7 +3315,7 @@
 	desc= "A bag of barbecue flavor Crunchos potato chips. They're not that barbecue-y but they're okay enough. Few people even know what real barbecue tastes like now anyways."
 	icon_state = "chips"
 	bitesize = 3
-	trash = obj/item/trash/crunchos
+	trash = /obj/item/trash/crunchos
 
 /obj/item/reagent_container/food/snacks/crunchos/barbecue/Initialize()
 	. = ..()
@@ -3329,7 +3329,7 @@
 	desc= "A bag of... wait, weren't these pulled for being so spicy they literally killed someone due to stress? And why do you kinda wanna try one?"
 	icon_state = "chips"
 	bitesize = 3
-	trash = obj/item/trash/crunchos
+	trash = /obj/item/trash/crunchos
 
 /obj/item/reagent_container/food/snacks/crunchos/ultra_spicy/Initialize()
 	. = ..()
@@ -3342,7 +3342,7 @@
 	desc= "Sour cream flavored Crunchos. They taste alright."
 	icon_state = "chips"
 	bitesize = 3
-	trash = obj/item/trash/crunchos
+	trash = /obj/item/trash/crunchos
 
 /obj/item/reagent_container/food/snacks/crunchos/ultra_spicy/Initialize()
 	. = ..()
