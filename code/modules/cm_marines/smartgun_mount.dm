@@ -1110,7 +1110,7 @@
 	return (mover_flags_pass & pass_flags.flags_can_pass_behind && target_dir != REVERSE_DIR(dir)) ? NO_BLOCKED_MOVEMENT : ..()
 
 /obj/structure/machinery/m56d_hmg/mg_turret/whiskey_pve
-desc = "An M56 Smartgun retooled to serve as a static machinegun system. The drums are unfortunately inherently different due to the requirements of the program, preventing cross compatibility."
+	desc = "An M56 Smartgun retooled to serve as a static machinegun system. The drums are unfortunately inherently different due to the requirements of the program, preventing cross compatibility."
 	fire_delay = FIRE_DELAY_TIER_SG
 	rounds = 500//fuck you
 	rounds_max = 500
