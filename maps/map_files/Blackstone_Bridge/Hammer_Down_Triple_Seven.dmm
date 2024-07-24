@@ -322,6 +322,20 @@
 /obj/structure/flora/bush/ausbushes/palebush,
 /turf/open/auto_turf/strata_grass/layer1,
 /area/whiskey_outpost/blackstone/underground/western_caves/north)
+"apl" = (
+/obj/structure/sink{
+	dir = 8;
+	pixel_x = -11
+	},
+/obj/structure/mirror{
+	pixel_y = 26;
+	pixel_x = -1
+	},
+/turf/open/floor/prison{
+	dir = 1;
+	icon_state = "floor_plate"
+	},
+/area/whiskey_outpost/blackstone/underground/mountain)
 "apq" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "4-8"
@@ -652,7 +666,7 @@
 /area/whiskey_outpost/blackstone/inside/armory/weapons)
 "aBL" = (
 /turf/closed/wall,
-/area/whiskey_outpost/blackstone/underground/mountain)
+/area/whiskey_outpost/blackstone/outside/outpost_beach/west)
 "aBP" = (
 /obj/structure/barricade/sandbags,
 /turf/open/asphalt{
@@ -832,12 +846,9 @@
 	},
 /area/whiskey_outpost/blackstone/inside/pillbox/four)
 "aKY" = (
-/obj/structure/window/framed/colony/reinforced,
-/turf/open/floor/prison{
-	dir = 1;
-	icon_state = "floor_plate"
-	},
-/area/whiskey_outpost/blackstone/outside/river/east)
+/mob/living/simple_animal/hostile/giant_spider/hunter,
+/turf/open/gm/dirt2,
+/area/whiskey_outpost/blackstone/underground/mountain)
 "aLL" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "4-8"
@@ -1016,7 +1027,10 @@
 /turf/open/floor/plating,
 /area/whiskey_outpost/blackstone/underground/maintenance/north_east)
 "aPX" = (
-/obj/structure/surface/table,
+/obj/structure/machinery/vending/snack/generic{
+	pixel_x = -6;
+	pixel_y = 10
+	},
 /turf/open/floor/prison{
 	dir = 1;
 	icon_state = "floor_plate"
@@ -1148,6 +1162,18 @@
 "aXr" = (
 /turf/open/jungle/shrubs,
 /area/whiskey_outpost/blackstone/outside/jungle/north)
+"aXB" = (
+/obj/effect/decal/sand_overlay/sand5{
+	dir = 5
+	},
+/obj/structure/machinery/door/airlock/almayer/engineering/reinforced{
+	dir = 2;
+	name = "\improper Reinforced Telecoms Door"
+	},
+/turf/open/asphalt{
+	icon_state = "tile"
+	},
+/area/whiskey_outpost/blackstone/outside/outpost_beach/west)
 "aXN" = (
 /obj/item/lightstick/red/planted,
 /turf/open/gm/dirtgrassborder/west,
@@ -1236,6 +1262,16 @@
 	icon_state = "floor_plate"
 	},
 /area/whiskey_outpost/blackstone/inside/pillbox/three)
+"bcI" = (
+/obj/structure/machinery/door/airlock/uscm_ground/general/bathroom{
+	dir = 1
+	},
+/obj/structure/machinery/light/small/blue{
+	dir = 1;
+	name = "bathroom occupancy light"
+	},
+/turf/closed/wall/r_wall,
+/area/whiskey_outpost/blackstone/underground/mountain)
 "bcT" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable/heavyduty{
@@ -1245,6 +1281,17 @@
 	icon_state = "tile"
 	},
 /area/whiskey_outpost/blackstone/outside/mortar_pit)
+"bcX" = (
+/obj/effect/decal/sand_overlay/sand5{
+	dir = 4
+	},
+/obj/structure/fence{
+	pixel_y = 2
+	},
+/turf/open/asphalt/cement_sunbleached{
+	icon_state = "cement_sunbleached13"
+	},
+/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "bcY" = (
 /obj/structure/machinery/landinglight/ds2/delayone{
 	dir = 8
@@ -1460,6 +1507,15 @@
 	icon_state = "darkredcorners2"
 	},
 /area/whiskey_outpost/blackstone/inside/armory)
+"bkD" = (
+/obj/structure/machinery/door/airlock/almayer/medical/glass{
+	dir = 2
+	},
+/turf/open/floor{
+	dir = 1;
+	icon_state = "asteroidfloor"
+	},
+/area/whiskey_outpost/blackstone/outside/outpost/east)
 "bkS" = (
 /turf/open/gm/dirt{
 	icon_state = "desert2"
@@ -1669,17 +1725,6 @@
 	icon_state = "darkred2"
 	},
 /area/whiskey_outpost/blackstone/inside/armory/weapons)
-"but" = (
-/obj/structure/desertdam/decals/road_edge,
-/obj/structure/barricade/handrail/strata{
-	dir = 8
-	},
-/obj/structure/desertdam/decals/road_stop{
-	dir = 1;
-	icon_state = "stop_decal5"
-	},
-/turf/open/asphalt,
-/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "buI" = (
 /turf/open/jungle/clear,
 /area/whiskey_outpost/blackstone/outside/outpost_beach/mine)
@@ -1850,6 +1895,17 @@
 	icon_state = "cement_sunbleached11"
 	},
 /area/whiskey_outpost/blackstone/outside/landing_zone)
+"bEp" = (
+/obj/structure/barricade/sandbags/wired{
+	dir = 1;
+	icon_state = "sandbag_0"
+	},
+/obj/structure/barricade/sandbags/wired{
+	dir = 4;
+	icon_state = "sandbag_0"
+	},
+/turf/open/gm/dirt,
+/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "bEt" = (
 /obj/structure/machinery/light{
 	dir = 4
@@ -2551,18 +2607,14 @@
 	},
 /area/whiskey_outpost/blackstone/outside/outpost/north)
 "cmM" = (
-/obj/effect/decal/sand_overlay/sand5{
+/obj/structure/bed/chair/bolted{
 	dir = 8
 	},
-/obj/structure/barricade/sandbags/wired{
-	dir = 8;
-	icon_state = "sandbag_0"
+/turf/open/floor/prison{
+	dir = 1;
+	icon_state = "floor_plate"
 	},
-/obj/structure/barricade/sandbags/wired,
-/turf/open/asphalt/cement_sunbleached{
-	icon_state = "cement_sunbleached13"
-	},
-/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
+/area/whiskey_outpost/blackstone/outside/outpost/east)
 "cmO" = (
 /turf/open/floor/prison,
 /area/whiskey_outpost/blackstone/outside/outpost/south)
@@ -2663,15 +2715,6 @@
 	dir = 1
 	},
 /area/whiskey_outpost/blackstone/inside/visitor_dormitory)
-"cuz" = (
-/obj/structure/machinery/photocopier{
-	pixel_y = 4
-	},
-/turf/open/floor/prison{
-	dir = 1;
-	icon_state = "floor_plate"
-	},
-/area/whiskey_outpost/blackstone/inside/outpost_north)
 "cvj" = (
 /obj/structure/machinery/colony_floodlight{
 	name = "outpost floodlight"
@@ -2682,6 +2725,13 @@
 /obj/structure/machinery/door/airlock/uscm_ground/command/cic,
 /turf/closed/wall/r_wall,
 /area/whiskey_outpost/blackstone/inside/outpost_north)
+"cxi" = (
+/obj/structure/flora/jungle/alienplant1,
+/obj/structure/platform_decoration{
+	dir = 4
+	},
+/turf/open/gm/river,
+/area/whiskey_outpost/blackstone/outside/river/east)
 "cxv" = (
 /obj/structure/machinery/colony_floodlight{
 	name = "outpost floodlight"
@@ -3440,15 +3490,9 @@
 	},
 /area/whiskey_outpost/blackstone/inside/bunks)
 "cYk" = (
-/obj/structure/surface/table,
-/obj/structure/machinery/computer/cameras/uscm_ground/checkpoint/east{
-	dir = 1
-	},
-/turf/open/floor/prison{
-	dir = 1;
-	icon_state = "floor_plate"
-	},
-/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
+/obj/effect/spider/cocoon,
+/turf/open/gm/dirt2,
+/area/whiskey_outpost/blackstone/underground/mountain)
 "cYp" = (
 /obj/structure/platform{
 	dir = 1
@@ -3682,6 +3726,12 @@
 /obj/structure/cargo_container/watatsumi/rightmid,
 /turf/open/jungle/clear,
 /area/whiskey_outpost/blackstone/outside/jungle/north/east)
+"dfo" = (
+/obj/structure/machinery/light/small{
+	dir = 8
+	},
+/turf/open/gm/river/deep,
+/area/whiskey_outpost/blackstone/outside/river/west)
 "dfw" = (
 /turf/open/floor,
 /area/whiskey_outpost/blackstone/inside/lieutenant_office)
@@ -4089,14 +4139,13 @@
 	icon_state = "floor_plate"
 	},
 /area/whiskey_outpost/blackstone/inside/warehouse)
-"dxE" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/door/poddoor/shutters/almayer/open{
-	name = "north vehicle checkpoint";
-	id = "highwaycheckpoint1"
+"dxq" = (
+/obj/structure/barricade/sandbags/wired{
+	dir = 4;
+	icon_state = "sandbag_0"
 	},
-/turf/open/asphalt,
-/area/whiskey_outpost/blackstone/underground/mountain/tunnel)
+/turf/open/gm/dirt,
+/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "dxG" = (
 /obj/structure/prop/invuln/lattice_prop{
 	icon_state = "lattice8";
@@ -4369,6 +4418,16 @@
 /obj/item/tool/shovel/etool,
 /turf/open/gm/dirt,
 /area/whiskey_outpost/blackstone/outside/perimeter_defense)
+"dGD" = (
+/obj/structure/surface/table,
+/obj/structure/machinery/computer/cameras/uscm_ground/checkpoint/east{
+	dir = 1
+	},
+/turf/open/floor/prison{
+	dir = 1;
+	icon_state = "floor_plate"
+	},
+/area/whiskey_outpost/blackstone/outside/river/east)
 "dGQ" = (
 /obj/structure/flora/bush/ausbushes/var3/leafybush,
 /turf/open/jungle,
@@ -4609,6 +4668,12 @@
 	icon_state = "warnplate"
 	},
 /area/whiskey_outpost/blackstone/inside/maintenance_closet)
+"dXT" = (
+/obj/structure/barricade/plasteel/metal{
+	dir = 4
+	},
+/turf/open/gm/dirt,
+/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "dYC" = (
 /obj/structure/flora/bush/ausbushes/var3/leafybush,
 /turf/open/gm/dirt,
@@ -5004,6 +5069,21 @@
 	},
 /turf/open/gm/dirt,
 /area/whiskey_outpost/blackstone/outside/outpost_beach/east)
+"elr" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/structure/machinery/computer/squad_changer/uscm_ground{
+	pixel_y = 5;
+	dir = 8
+	},
+/obj/structure/machinery/computer/card/uscm_ground{
+	dir = 8;
+	pixel_y = -10
+	},
+/turf/open/floor/prison{
+	dir = 1;
+	icon_state = "floor_plate"
+	},
+/area/whiskey_outpost/blackstone/inside/outpost_north)
 "elv" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/tool/wrench,
@@ -5068,13 +5148,6 @@
 "ent" = (
 /turf/open/gm/grass/grassbeach/east,
 /area/whiskey_outpost/blackstone/outside/jungle/perimeter_entrance/east)
-"enV" = (
-/obj/structure/flora/bush/ausbushes/var3/stalkybush,
-/obj/structure/platform{
-	dir = 8
-	},
-/turf/open/gm/river,
-/area/whiskey_outpost/blackstone/outside/river/east)
 "eol" = (
 /obj/structure/platform,
 /turf/closed/wall/rock/brown,
@@ -5229,14 +5302,8 @@
 /turf/closed/wall/r_wall,
 /area/whiskey_outpost/blackstone/inside/medbay)
 "ewf" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "W"
-	},
-/obj/structure/desertdam/decals/road_stop{
-	icon_state = "stop_decal2"
-	},
-/turf/open/asphalt,
-/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
+/turf/open/gm/dirt2,
+/area/whiskey_outpost/blackstone/underground/mountain)
 "ewh" = (
 /obj/structure/platform{
 	dir = 4
@@ -5348,13 +5415,15 @@
 /turf/open/gm/coast/south,
 /area/whiskey_outpost/blackstone/outside/river/east)
 "eAN" = (
-/obj/structure/desertdam/decals/road_edge,
-/obj/structure/machinery/door/poddoor/shutters/almayer/open{
-	name = "north vehicle checkpoint";
-	id = "highwaycheckpoint1"
+/obj/structure/machinery/light_switch{
+	pixel_x = 21;
+	name = "bathroom light switch"
 	},
-/turf/open/asphalt,
-/area/whiskey_outpost/blackstone/underground/mountain/tunnel)
+/turf/open/floor/prison{
+	dir = 1;
+	icon_state = "floor_plate"
+	},
+/area/whiskey_outpost/blackstone/underground/mountain)
 "eBe" = (
 /obj/item/trash/burger,
 /turf/open/asphalt,
@@ -5370,9 +5439,24 @@
 /turf/open/floor/prison,
 /area/whiskey_outpost/blackstone/inside/outpost_central)
 "eCK" = (
-/obj/structure/fence,
+/obj/structure/flora/bush/ausbushes/var3/sparsegrass,
+/obj/structure/platform{
+	dir = 1
+	},
 /turf/open/gm/dirt,
 /area/whiskey_outpost/blackstone/outside/outpost_beach/east)
+"eCU" = (
+/obj/structure/machinery/light/built{
+	dir = 4
+	},
+/obj/structure/toilet{
+	pixel_y = 16
+	},
+/turf/open/floor/prison{
+	dir = 1;
+	icon_state = "floor_plate"
+	},
+/area/whiskey_outpost/blackstone/underground/mountain)
 "eDC" = (
 /obj/structure/sink{
 	dir = 8;
@@ -5563,11 +5647,9 @@
 	},
 /area/whiskey_outpost/blackstone/inside/medbay)
 "eJi" = (
-/turf/open/floor{
-	dir = 4;
-	icon_state = "asteroidwarning"
-	},
-/area/whiskey_outpost/blackstone/outside/outpost/east)
+/obj/effect/spider/spiderling,
+/turf/open/gm/dirt2,
+/area/whiskey_outpost/blackstone/underground/mountain)
 "eJl" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/camera/autoname/uscm_ground{
@@ -6110,15 +6192,12 @@
 	},
 /area/whiskey_outpost/blackstone/inside/bunks)
 "fet" = (
-/obj/structure/machinery/light_switch{
-	pixel_x = 21;
-	name = "bathroom light switch"
-	},
-/turf/open/floor/prison{
+/obj/structure/barricade/sandbags/wired{
 	dir = 1;
-	icon_state = "floor_plate"
+	icon_state = "sandbag_0"
 	},
-/area/whiskey_outpost/blackstone/underground/mountain)
+/turf/open/gm/dirt,
+/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "ffk" = (
 /obj/structure/largecrate/supply/supplies/sandbags,
 /turf/open/floor/prison{
@@ -6304,6 +6383,15 @@
 /obj/structure/prop/rock,
 /turf/open/jungle,
 /area/whiskey_outpost/blackstone/outside/jungle/southern/east)
+"fqj" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer/open{
+	name = "north vehicle checkpoint";
+	id = "highwaycheckpoint1"
+	},
+/turf/open/asphalt/cement{
+	icon_state = "cement13"
+	},
+/area/whiskey_outpost/blackstone/underground/mountain/tunnel)
 "fqr" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/storage/firstaid/fire{
@@ -6372,6 +6460,16 @@
 	icon_state = "tile"
 	},
 /area/whiskey_outpost/blackstone/outside/perimeter_defense)
+"fsF" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal2"
+	},
+/obj/structure/desertdam/decals/road_stop{
+	dir = 1;
+	icon_state = "stop_decal5"
+	},
+/turf/open/asphalt,
+/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "fsO" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal11"
@@ -6581,6 +6679,7 @@
 "fBO" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/storage/toolbox/mechanical,
+/obj/structure/machinery/light/small,
 /turf/open/floor/plating{
 	icon_state = "warnplate"
 	},
@@ -6681,15 +6780,12 @@
 /turf/open/gm/river/deep,
 /area/whiskey_outpost/blackstone/outside/river/south_east)
 "fFt" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "E"
+/obj/structure/window/framed/colony/reinforced,
+/turf/open/floor{
+	dir = 6;
+	icon_state = "asteroidwarning"
 	},
-/obj/structure/desertdam/decals/road_stop{
-	dir = 1;
-	icon_state = "stop_decal5"
-	},
-/turf/open/asphalt,
-/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
+/area/whiskey_outpost/blackstone/outside/outpost/east)
 "fGg" = (
 /obj/structure/barricade/sandbags,
 /turf/open/gm/dirtgrassborder/grassdirt_corner2/north_east,
@@ -7287,15 +7383,10 @@
 /area/whiskey_outpost/blackstone/inside/warehouse)
 "ggO" = (
 /obj/effect/decal/sand_overlay/sand5{
-	dir = 4
+	dir = 9
 	},
-/obj/structure/platform{
-	dir = 8
-	},
-/turf/open/asphalt/cement_sunbleached{
-	icon_state = "cement_sunbleached13"
-	},
-/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
+/turf/closed/wall,
+/area/whiskey_outpost/blackstone/outside/outpost_beach/west)
 "ghQ" = (
 /obj/structure/surface/table/woodentable,
 /obj/item/prop/flower_vase/redwhiteflowers{
@@ -7399,6 +7490,9 @@
 	icon_state = "asteroidfloor"
 	},
 /area/whiskey_outpost/blackstone/inside/bunks)
+"gmF" = (
+/turf/closed/wall,
+/area/whiskey_outpost/blackstone/underground/mountain)
 "gmM" = (
 /obj/structure/barricade/handrail/strata{
 	dir = 4
@@ -7407,11 +7501,11 @@
 /turf/open/floor/plating,
 /area/whiskey_outpost/blackstone/outside/bridge/pitstop)
 "gmS" = (
-/turf/open/floor{
-	dir = 1;
-	icon_state = "asteroidfloor"
+/obj/structure/machinery/colony_floodlight{
+	name = "outpost floodlight"
 	},
-/area/whiskey_outpost/blackstone/underground/mountain/tunnel)
+/turf/open/gm/coast/west,
+/area/whiskey_outpost/blackstone/outside/river/east)
 "gnG" = (
 /obj/effect/decal/cleanable/cobweb,
 /obj/item/clothing/accessory/limb/skeleton/r_arm,
@@ -7599,12 +7693,9 @@
 	},
 /area/whiskey_outpost/blackstone/outside/dorms_island)
 "gzm" = (
-/obj/structure/barricade/sandbags/wired{
-	dir = 8;
-	icon_state = "sandbag_0"
-	},
-/turf/open/gm/coast/west,
-/area/whiskey_outpost/blackstone/outside/river/east)
+/obj/structure/fence,
+/turf/open/gm/dirt,
+/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "gzo" = (
 /mob/living/simple_animal/bat,
 /turf/open/gm/dirt,
@@ -7653,6 +7744,12 @@
 	},
 /turf/closed/wall,
 /area/whiskey_outpost/blackstone/underground/maintenance/north_east)
+"gBK" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8"
+	},
+/turf/closed/wall,
+/area/whiskey_outpost/blackstone/outside/outpost_beach/west)
 "gBN" = (
 /obj/structure/pipes/standard/simple/visible,
 /obj/structure/prop/invuln/overhead_pipe{
@@ -7824,16 +7921,6 @@
 	icon_state = "cement_sunbleached15"
 	},
 /area/whiskey_outpost/blackstone/outside/landing_zone)
-"gHy" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/cm_vending/sorted/medical/wall_med{
-	pixel_y = 25
-	},
-/turf/open/floor{
-	dir = 1;
-	icon_state = "asteroidfloor"
-	},
-/area/whiskey_outpost/blackstone/outside/outpost/east)
 "gJu" = (
 /obj/structure/bedsheetbin{
 	pixel_x = -1;
@@ -8503,6 +8590,16 @@
 /obj/structure/sign/safety/storage,
 /turf/closed/wall/r_wall,
 /area/whiskey_outpost/blackstone/inside/warehouse)
+"hlg" = (
+/obj/structure/desertdam/decals/road_edge,
+/obj/structure/barricade/handrail/strata{
+	dir = 8
+	},
+/obj/structure/machinery/camera/autoname/uscm_ground{
+	dir = 4
+	},
+/turf/open/asphalt,
+/area/whiskey_outpost/blackstone/outside/bridge/north)
 "hmg" = (
 /obj/effect/decal/sand_overlay/sand5,
 /obj/effect/decal/cleanable/dirt,
@@ -8638,6 +8735,14 @@
 	icon_state = "desert3"
 	},
 /area/whiskey_outpost/blackstone/outside/perimeter_defense)
+"hrp" = (
+/obj/structure/barricade/sandbags/wired,
+/obj/structure/barricade/sandbags/wired{
+	dir = 4;
+	icon_state = "sandbag_0"
+	},
+/turf/open/gm/dirt,
+/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "hrG" = (
 /mob/living/simple_animal/lizard,
 /turf/open/jungle/vines,
@@ -8663,13 +8768,17 @@
 /turf/closed/wall/r_wall,
 /area/whiskey_outpost/blackstone/outside/river/east)
 "htA" = (
-/obj/structure/platform{
-	dir = 8
+/obj/structure/barricade/sandbags/wired{
+	dir = 1;
+	icon_state = "sandbag_0"
 	},
-/obj/effect/decal/sand_overlay/sand5,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/asphalt{
-	icon_state = "tile"
+/obj/structure/barricade/sandbags/wired{
+	dir = 4;
+	icon_state = "sandbag_0"
+	},
+/turf/open/floor{
+	dir = 5;
+	icon_state = "asteroidwarning"
 	},
 /area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "htI" = (
@@ -8789,19 +8898,9 @@
 /turf/open/floor/plating,
 /area/whiskey_outpost/blackstone/underground/maintenance/south_west)
 "hAy" = (
-/obj/structure/barricade/sandbags/wired{
-	dir = 1;
-	icon_state = "sandbag_0"
-	},
-/obj/structure/barricade/sandbags/wired{
-	dir = 4;
-	icon_state = "sandbag_0"
-	},
-/turf/open/floor/plating{
-	dir = 5;
-	icon_state = "asteroidwarning"
-	},
-/area/whiskey_outpost/blackstone/outside/outpost/east)
+/mob/living/simple_animal/hostile/giant_spider,
+/turf/open/gm/dirt2,
+/area/whiskey_outpost/blackstone/underground/mountain)
 "hAB" = (
 /turf/closed/wall/rock/brown,
 /area/whiskey_outpost/blackstone/outside/impassable)
@@ -8948,10 +9047,6 @@
 	icon_state = "tile"
 	},
 /area/whiskey_outpost/blackstone/outside/outpost_beach/west)
-"hHd" = (
-/obj/structure/window/framed/colony/reinforced,
-/turf/closed/wall/r_wall,
-/area/whiskey_outpost/blackstone/outside/river/east)
 "hHT" = (
 /obj/structure/sign/poster{
 	pixel_y = 31
@@ -9168,11 +9263,11 @@
 /turf/open/gm/river,
 /area/whiskey_outpost/blackstone/outside/jungle/perimeter_entrance/east)
 "hQO" = (
-/turf/open/floor{
-	dir = 1;
-	icon_state = "asteroidfloor"
+/obj/structure/desertdam/decals/road_stop{
+	icon_state = "stop_decal2"
 	},
-/area/whiskey_outpost/blackstone/underground/mountain)
+/turf/open/asphalt,
+/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "hRi" = (
 /obj/structure/prop/invuln/overhead_pipe{
 	pixel_y = -15
@@ -9534,14 +9629,11 @@
 /turf/open/jungle/vines,
 /area/whiskey_outpost/blackstone/outside/jungle/south_east)
 "ijx" = (
-/obj/structure/bed/chair/bolted{
-	dir = 8
-	},
-/turf/open/floor/prison{
+/turf/open/floor{
 	dir = 1;
-	icon_state = "floor_plate"
+	icon_state = "asteroidfloor"
 	},
-/area/whiskey_outpost/blackstone/outside/outpost/east)
+/area/whiskey_outpost/blackstone/underground/mountain/tunnel)
 "iko" = (
 /obj/structure/pipes/standard/simple/visible,
 /obj/effect/decal/cleanable/dirt,
@@ -9578,6 +9670,12 @@
 	icon_state = "asteroidfloor"
 	},
 /area/whiskey_outpost/blackstone/outside/outpost/south)
+"imE" = (
+/turf/open/floor{
+	dir = 1;
+	icon_state = "asteroidfloor"
+	},
+/area/whiskey_outpost/blackstone/underground/mountain)
 "imF" = (
 /turf/closed/wall/r_wall/unmeltable,
 /area/whiskey_outpost/blackstone/underground/mountain/tunnel)
@@ -9839,6 +9937,16 @@
 	icon_state = "cement1"
 	},
 /area/whiskey_outpost/blackstone/underground/mountain/tunnel)
+"iCh" = (
+/obj/structure/surface/table,
+/obj/structure/machinery/door_control{
+	name = "checkpoint shutters control"
+	},
+/turf/open/floor/prison{
+	dir = 1;
+	icon_state = "floor_plate"
+	},
+/area/whiskey_outpost/blackstone/outside/river/east)
 "iCA" = (
 /obj/structure/bed/chair{
 	dir = 1
@@ -10142,8 +10250,14 @@
 /turf/open/gm/river,
 /area/whiskey_outpost/blackstone/outside/river/south_east)
 "iOn" = (
-/turf/closed/wall/rock/brown/destructible,
-/area/whiskey_outpost/blackstone/underground/mountain/tunnel)
+/obj/structure/machinery/photocopier{
+	pixel_y = 4
+	},
+/turf/open/floor/prison{
+	dir = 1;
+	icon_state = "floor_plate"
+	},
+/area/whiskey_outpost/blackstone/inside/outpost_north)
 "iOt" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "E"
@@ -10156,6 +10270,14 @@
 	},
 /turf/open/gm/dirt,
 /area/whiskey_outpost/blackstone/outside/outpost/north)
+"iOz" = (
+/obj/structure/desertdam/decals/road_edge,
+/obj/structure/machinery/door/poddoor/shutters/almayer/open{
+	name = "north vehicle checkpoint";
+	id = "highwaycheckpoint1"
+	},
+/turf/open/asphalt,
+/area/whiskey_outpost/blackstone/underground/mountain/tunnel)
 "iOC" = (
 /obj/item/device/flashlight/lamp/tripod/grey,
 /turf/open/asphalt{
@@ -10173,6 +10295,10 @@
 /obj/structure/barricade/metal/wired,
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/whiskey_outpost/blackstone/outside/outpost/south)
+"iOY" = (
+/obj/structure/machinery/m56d_hmg/mg_turret/whiskey_pve,
+/turf/open/gm/dirt,
+/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "iPQ" = (
 /obj/structure/prop/ice_colony/ground_wire{
 	dir = 1
@@ -10812,7 +10938,6 @@
 /obj/effect/decal/sand_overlay/sand5{
 	dir = 4
 	},
-/obj/structure/fence,
 /turf/open/asphalt/cement_sunbleached{
 	icon_state = "cement_sunbleached13"
 	},
@@ -10973,11 +11098,19 @@
 /turf/open/auto_turf/strata_grass/layer1,
 /area/whiskey_outpost/blackstone/underground/western_caves/south)
 "jAi" = (
-/obj/structure/platform_decoration{
+/obj/structure/platform{
 	dir = 4
 	},
-/turf/open/gm/river,
-/area/whiskey_outpost/blackstone/outside/river/east)
+/obj/structure/fence,
+/turf/open/gm/dirt,
+/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
+"jAn" = (
+/obj/structure/surface/table,
+/turf/open/floor/prison{
+	dir = 1;
+	icon_state = "floor_plate"
+	},
+/area/whiskey_outpost/blackstone/inside/outpost_north)
 "jAv" = (
 /obj/item/tool/extinguisher{
 	pixel_x = 14
@@ -11345,13 +11478,6 @@
 	icon_state = "tile"
 	},
 /area/whiskey_outpost/blackstone/outside/bball_court)
-"jUR" = (
-/obj/structure/flora/bush/ausbushes/var3/sparsegrass,
-/obj/structure/platform{
-	dir = 1
-	},
-/turf/open/gm/dirt,
-/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "jUX" = (
 /turf/open/jungle/shrubs,
 /area/whiskey_outpost/blackstone/outside/jungle/north/east)
@@ -11446,15 +11572,13 @@
 /turf/open/floor/prison,
 /area/whiskey_outpost/blackstone/inside/combat_information_center)
 "jYm" = (
-/obj/structure/machinery/door/airlock/uscm_ground/general/bathroom{
-	dir = 1
+/obj/structure/barricade/sandbags/wired{
+	dir = 4;
+	icon_state = "sandbag_0"
 	},
-/obj/structure/machinery/light/small/blue{
-	dir = 1;
-	name = "bathroom occupancy light"
-	},
-/turf/closed/wall/r_wall,
-/area/whiskey_outpost/blackstone/underground/mountain)
+/obj/structure/barricade/sandbags/wired,
+/turf/open/gm/dirt,
+/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "jYu" = (
 /obj/structure/machinery/colony_floodlight{
 	name = "outpost floodlight"
@@ -11478,8 +11602,12 @@
 /turf/closed/wall,
 /area/whiskey_outpost/blackstone/underground/mountain/maintenance)
 "jYR" = (
-/obj/structure/machinery/door/airlock/uscm_ground/checkpoint,
-/turf/open/floor/plating,
+/obj/structure/machinery/door/poddoor/shutters/almayer/open{
+	dir = 4;
+	id = "highwaycheckpoint_inner";
+	name = "checkpoint booth shutters"
+	},
+/turf/closed/wall/r_wall,
 /area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "jYU" = (
 /obj/effect/decal/cleanable/dirt,
@@ -12184,16 +12312,6 @@
 	icon_state = "tile"
 	},
 /area/whiskey_outpost/blackstone/outside/outpost_beach)
-"kyk" = (
-/obj/structure/desertdam/decals/road_edge{
-	icon_state = "road_edge_decal2"
-	},
-/obj/structure/desertdam/decals/road_stop{
-	dir = 1;
-	icon_state = "stop_decal5"
-	},
-/turf/open/asphalt,
-/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "kyF" = (
 /obj/structure/platform{
 	dir = 1
@@ -13370,7 +13488,7 @@
 /obj/structure/cable/heavyduty{
 	icon_state = "2-4"
 	},
-/turf/open/gm/dirt,
+/turf/closed/wall,
 /area/whiskey_outpost/blackstone/outside/outpost_beach/west)
 "lwu" = (
 /obj/effect/decal/cleanable/dirt,
@@ -13402,6 +13520,20 @@
 	icon_state = "warnplate"
 	},
 /area/whiskey_outpost/blackstone/outside/outpost_beach)
+"lxF" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal2"
+	},
+/obj/structure/desertdam/decals/road_stop{
+	dir = 1;
+	icon_state = "stop_decal5"
+	},
+/obj/structure/desertdam/decals/road_stop{
+	dir = 1;
+	icon_state = "stop_decal5"
+	},
+/turf/open/asphalt,
+/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "lxP" = (
 /turf/open/gm/grass/grassbeach/south,
 /area/whiskey_outpost/blackstone/outside/jungle/southern/west)
@@ -14129,6 +14261,18 @@
 	},
 /turf/open/gm/dirt,
 /area/whiskey_outpost/blackstone/outside/outpost_beach/west)
+"meC" = (
+/obj/structure/window/framed/colony/reinforced,
+/obj/structure/machinery/door/poddoor/shutters/almayer/open{
+	dir = 4;
+	id = "highwaycheckpoint_inner";
+	name = "checkpoint booth shutters"
+	},
+/turf/open/floor/prison{
+	dir = 1;
+	icon_state = "floor_plate"
+	},
+/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "meD" = (
 /obj/structure/pipes/standard/simple/visible,
 /obj/effect/decal/cleanable/dirt,
@@ -14335,6 +14479,12 @@
 "mpk" = (
 /turf/closed/wall/strata_ice/jungle/destructible,
 /area/whiskey_outpost/blackstone/outside/jungle/southern)
+"mpQ" = (
+/turf/open/floor/prison{
+	dir = 1;
+	icon_state = "floor_plate"
+	},
+/area/whiskey_outpost/blackstone/outside/river/east)
 "mqc" = (
 /obj/structure/machinery/colony_floodlight{
 	name = "outpost floodlight"
@@ -14362,9 +14512,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/asphalt{
-	icon_state = "tile"
-	},
+/turf/closed/wall,
 /area/whiskey_outpost/blackstone/outside/outpost_beach/west)
 "mrS" = (
 /obj/item/trash/eat,
@@ -14678,6 +14826,14 @@
 	},
 /turf/open/asphalt,
 /area/whiskey_outpost/blackstone/outside/central_road)
+"mDB" = (
+/obj/structure/platform{
+	dir = 1;
+	pixel_x = 0;
+	pixel_y = 0
+	},
+/turf/open/gm/coast/west,
+/area/whiskey_outpost/blackstone/outside/river/east)
 "mEp" = (
 /turf/open/floor/prison{
 	dir = 1;
@@ -14773,13 +14929,6 @@
 	},
 /turf/open/gm/dirt,
 /area/whiskey_outpost/blackstone/outside/dorms_island)
-"mKK" = (
-/obj/structure/machinery/door/poddoor/shutters/almayer/open{
-	name = "north vehicle checkpoint";
-	id = "highwaycheckpoint1"
-	},
-/turf/open/asphalt,
-/area/whiskey_outpost/blackstone/underground/mountain/tunnel)
 "mLH" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "1-2"
@@ -14789,6 +14938,12 @@
 	dir = 1
 	},
 /area/whiskey_outpost/blackstone/inside/visitor_dormitory)
+"mMm" = (
+/obj/effect/decal/sand_overlay/sand5{
+	dir = 4
+	},
+/turf/closed/wall,
+/area/whiskey_outpost/blackstone/outside/outpost_beach/west)
 "mMP" = (
 /obj/structure/machinery/cm_vending/sorted/medical/wall_med{
 	pixel_y = 25
@@ -14900,17 +15055,14 @@
 /turf/open/floor/prison,
 /area/whiskey_outpost/blackstone/inside/pillbox/three)
 "mQw" = (
-/obj/structure/machinery/light/built{
-	dir = 4
+/obj/structure/platform{
+	dir = 1
 	},
-/obj/structure/toilet{
-	pixel_y = 16
+/obj/structure/machinery/colony_floodlight{
+	name = "outpost floodlight"
 	},
-/turf/open/floor/prison{
-	dir = 1;
-	icon_state = "floor_plate"
-	},
-/area/whiskey_outpost/blackstone/underground/mountain)
+/turf/open/gm/dirt,
+/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "mQz" = (
 /obj/effect/decal/sand_overlay/sand5,
 /obj/structure/disposalpipe/segment{
@@ -15350,18 +15502,6 @@
 	},
 /turf/open/floor/wood,
 /area/whiskey_outpost/blackstone/outside/outpost_beach/mine)
-"nkK" = (
-/obj/effect/decal/sand_overlay/sand5{
-	dir = 4
-	},
-/obj/structure/fence,
-/obj/structure/platform_decoration{
-	dir = 4
-	},
-/turf/open/asphalt/cement_sunbleached{
-	icon_state = "cement_sunbleached13"
-	},
-/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "nkS" = (
 /obj/effect/decal/sand_overlay/sand5{
 	dir = 8
@@ -16036,10 +16176,6 @@
 "nOX" = (
 /turf/open/gm/coast/east,
 /area/whiskey_outpost/blackstone/outside/landing_zone)
-"nPI" = (
-/obj/structure/machinery/m56d_hmg/mg_turret/whiskey_pve,
-/turf/open/gm/dirt,
-/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "nQb" = (
 /obj/structure/machinery/prop/almayer/CICmap/uscm_ground,
 /turf/open/floor/prison{
@@ -16203,6 +16339,10 @@
 	icon_state = "tile"
 	},
 /area/whiskey_outpost/blackstone/outside/bball_court)
+"nWP" = (
+/obj/structure/window/framed/colony/reinforced,
+/turf/closed/wall/r_wall,
+/area/whiskey_outpost/blackstone/outside/river/east)
 "nXl" = (
 /turf/open/gm/river/deep,
 /area/whiskey_outpost/blackstone/outside/river/south_east)
@@ -16244,6 +16384,16 @@
 	icon_state = "whitegreenfull"
 	},
 /area/whiskey_outpost/blackstone/inside/medbay)
+"nYT" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/structure/barricade/sandbags/wired{
+	dir = 4;
+	icon_state = "sandbag_0"
+	},
+/turf/open/gm/dirt,
+/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "nZd" = (
 /obj/structure/surface/rack,
 /obj/item/weapon/gun/rifle/m41aMK1{
@@ -16296,15 +16446,11 @@
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/whiskey_outpost/blackstone/inside/pillbox/three)
 "oeK" = (
-/obj/structure/machinery/colony_floodlight{
-	name = "outpost floodlight"
+/obj/structure/desertdam/decals/road_stop{
+	dir = 1;
+	icon_state = "stop_decal5"
 	},
-/obj/effect/decal/sand_overlay/sand5{
-	dir = 8
-	},
-/turf/open/asphalt/cement_sunbleached{
-	icon_state = "cement_sunbleached13"
-	},
+/turf/open/asphalt,
 /area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "oeW" = (
 /obj/item/lightstick/red/planted,
@@ -16573,6 +16719,9 @@
 	},
 /turf/open/asphalt,
 /area/whiskey_outpost/blackstone/outside/bridge/north)
+"osz" = (
+/turf/closed/wall,
+/area/whiskey_outpost/blackstone/outside/impassable)
 "osT" = (
 /obj/structure/pipes/standard/simple/visible{
 	dir = 9
@@ -16650,6 +16799,16 @@
 	icon_state = "cement_sunbleached4"
 	},
 /area/whiskey_outpost/blackstone/outside/dorms_island)
+"ovR" = (
+/obj/structure/barricade/sandbags/wired{
+	dir = 4;
+	icon_state = "sandbag_0"
+	},
+/turf/open/floor{
+	dir = 4;
+	icon_state = "asteroidwarning"
+	},
+/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "ovS" = (
 /turf/open/gm/dirtgrassborder/west,
 /area/whiskey_outpost/blackstone/outside/jungle/north)
@@ -16764,16 +16923,6 @@
 	icon_state = "tile"
 	},
 /area/whiskey_outpost/blackstone/outside/dorms_island)
-"oBG" = (
-/obj/structure/desertdam/decals/road_edge{
-	icon_state = "road_edge_decal2"
-	},
-/obj/structure/machinery/door/poddoor/shutters/almayer/open{
-	name = "north vehicle checkpoint";
-	id = "highwaycheckpoint1"
-	},
-/turf/open/asphalt,
-/area/whiskey_outpost/blackstone/underground/mountain/tunnel)
 "oCg" = (
 /obj/effect/decal/sand_overlay/sand5{
 	dir = 8
@@ -16841,6 +16990,13 @@
 	},
 /turf/closed/wall/r_wall,
 /area/whiskey_outpost/blackstone/inside/pillbox/four)
+"oFD" = (
+/obj/structure/window/framed/colony/reinforced,
+/turf/open/floor/prison{
+	dir = 1;
+	icon_state = "floor_plate"
+	},
+/area/whiskey_outpost/blackstone/underground/mountain)
 "oGo" = (
 /turf/open/gm/coast/south,
 /area/whiskey_outpost/blackstone/outside/river/south_east)
@@ -17146,6 +17302,19 @@
 "oSV" = (
 /turf/open/gm/dirtgrassborder/grassdirt_corner2/north_west,
 /area/whiskey_outpost/blackstone/outside/landing_zone)
+"oTS" = (
+/obj/effect/decal/sand_overlay/sand5{
+	dir = 8
+	},
+/obj/structure/barricade/sandbags/wired,
+/obj/structure/barricade/sandbags/wired{
+	dir = 8;
+	icon_state = "sandbag_0"
+	},
+/turf/open/asphalt/cement_sunbleached{
+	icon_state = "cement_sunbleached13"
+	},
+/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "oUw" = (
 /obj/structure/platform,
 /turf/open/gm/river,
@@ -17603,13 +17772,6 @@
 	dir = 1
 	},
 /area/whiskey_outpost/blackstone/inside/visitor_dormitory)
-"pnx" = (
-/obj/structure/surface/table,
-/turf/open/floor/prison{
-	dir = 1;
-	icon_state = "floor_plate"
-	},
-/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "pnA" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "1-2"
@@ -17830,6 +17992,15 @@
 	icon_state = "wood-broken4"
 	},
 /area/whiskey_outpost/blackstone/outside/outpost_beach/mine)
+"pwF" = (
+/obj/structure/bed/chair/comfy{
+	dir = 8
+	},
+/turf/open/floor/prison{
+	dir = 1;
+	icon_state = "floor_plate"
+	},
+/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "pxe" = (
 /turf/open/gm/river,
 /area/whiskey_outpost/blackstone/outside/river/west)
@@ -17860,7 +18031,7 @@
 /obj/structure/sign/safety/rewire{
 	pixel_x = 13
 	},
-/turf/closed/wall/r_wall,
+/turf/closed/wall,
 /area/whiskey_outpost/blackstone/outside/comm_tower)
 "pzj" = (
 /obj/structure/platform{
@@ -18026,8 +18197,11 @@
 /obj/effect/decal/sand_overlay/sand5{
 	dir = 5
 	},
-/obj/structure/platform{
-	dir = 1
+/obj/structure/platform/stair_cut,
+/obj/structure/stairs/perspective{
+	dir = 8;
+	icon_state = "p_stair_ew_full_cap";
+	layer = 3.5
 	},
 /turf/open/asphalt{
 	icon_state = "tile"
@@ -18189,7 +18363,7 @@
 	},
 /area/whiskey_outpost/blackstone/inside/bunks)
 "pLz" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall,
 /area/whiskey_outpost/blackstone/outside/comm_tower)
 "pLA" = (
 /turf/open/gm/dirtgrassborder/south,
@@ -18341,6 +18515,14 @@
 	icon_state = "tile"
 	},
 /area/whiskey_outpost/blackstone/outside/outpost_beach/mine)
+"pSR" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/desertdam/decals/road_stop{
+	dir = 1;
+	icon_state = "stop_decal5"
+	},
+/turf/open/asphalt,
+/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "pSZ" = (
 /obj/effect/decal/sand_overlay/sand5{
 	dir = 5
@@ -18407,12 +18589,14 @@
 /turf/closed/wall,
 /area/whiskey_outpost/blackstone/underground/maintenance/south_west)
 "pXl" = (
-/obj/structure/platform_decoration{
-	dir = 1
-	},
 /obj/effect/decal/sand_overlay/sand5/corner5{
 	dir = 4
 	},
+/obj/structure/stairs/perspective{
+	dir = 4;
+	icon_state = "p_stair_full"
+	},
+/obj/structure/platform,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/asphalt{
 	icon_state = "tile"
@@ -18572,17 +18756,6 @@
 	icon_state = "tile"
 	},
 /area/whiskey_outpost/blackstone/outside/boxing_ring)
-"qfS" = (
-/obj/effect/decal/sand_overlay/sand5{
-	dir = 4
-	},
-/obj/structure/fence{
-	pixel_y = 2
-	},
-/turf/open/asphalt/cement_sunbleached{
-	icon_state = "cement_sunbleached13"
-	},
-/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "qfT" = (
 /obj/effect/decal/sand_overlay/sand5{
 	dir = 8
@@ -19007,6 +19180,16 @@
 "qyQ" = (
 /turf/open/gm/dirtgrassborder/grassdirt_corner2/north_west,
 /area/whiskey_outpost/blackstone/outside/perimeter_defense)
+"qzr" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/cm_vending/sorted/medical/wall_med{
+	pixel_y = 25
+	},
+/turf/open/floor{
+	dir = 1;
+	icon_state = "asteroidfloor"
+	},
+/area/whiskey_outpost/blackstone/outside/outpost/east)
 "qzI" = (
 /obj/structure/machinery/landinglight/ds2,
 /obj/effect/decal/cleanable/dirt,
@@ -19629,15 +19812,9 @@
 /turf/open/floor/wood,
 /area/whiskey_outpost/blackstone/inside/commander_office)
 "rno" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/barricade/plasteel/wired{
-	dir = 4
-	},
-/turf/open/floor{
-	dir = 4;
-	icon_state = "asteroidwarning"
-	},
-/area/whiskey_outpost/blackstone/outside/outpost/east)
+/obj/item/device/radio/intercom/uscm_ground,
+/turf/closed/wall/r_wall,
+/area/whiskey_outpost/blackstone/underground/mountain)
 "rnt" = (
 /obj/item/trash/tray,
 /turf/open/jungle/clear,
@@ -19976,6 +20153,12 @@
 /obj/structure/platform,
 /turf/open/gm/coast/east,
 /area/whiskey_outpost/blackstone/outside/river/west)
+"rFR" = (
+/obj/structure/machinery/door/airlock/uscm_ground/checkpoint{
+	name = "checkpoint doors"
+	},
+/turf/open/space/basic,
+/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "rGj" = (
 /obj/structure/platform{
 	dir = 4
@@ -20118,15 +20301,15 @@
 	},
 /area/whiskey_outpost/blackstone/outside/outpost/north)
 "rNl" = (
-/obj/structure/machinery/vending/snack/generic{
-	pixel_x = -6;
-	pixel_y = 10
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/colony_floodlight{
+	name = "outpost floodlight"
 	},
-/turf/open/floor/prison{
+/turf/open/floor{
 	dir = 1;
-	icon_state = "floor_plate"
+	icon_state = "asteroidfloor"
 	},
-/area/whiskey_outpost/blackstone/inside/outpost_north)
+/area/whiskey_outpost/blackstone/outside/outpost/east)
 "rNC" = (
 /obj/structure/mineral_door/wood,
 /obj/effect/decal/sand_overlay/sand5{
@@ -20394,6 +20577,13 @@
 	icon_state = "tile"
 	},
 /area/whiskey_outpost/blackstone/outside/outpost_beach/west)
+"sdb" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer/open{
+	name = "north vehicle checkpoint";
+	id = "highwaycheckpoint1"
+	},
+/turf/open/asphalt,
+/area/whiskey_outpost/blackstone/underground/mountain/tunnel)
 "sdZ" = (
 /obj/structure/curtain,
 /turf/open/floor{
@@ -20652,20 +20842,6 @@
 /mob/living/simple_animal/lizard,
 /turf/open/jungle/shrubs,
 /area/whiskey_outpost/blackstone/outside/jungle/southern)
-"snZ" = (
-/obj/structure/sink{
-	dir = 8;
-	pixel_x = -11
-	},
-/obj/structure/mirror{
-	pixel_y = 26;
-	pixel_x = -1
-	},
-/turf/open/floor/prison{
-	dir = 1;
-	icon_state = "floor_plate"
-	},
-/area/whiskey_outpost/blackstone/underground/mountain)
 "soz" = (
 /obj/structure/barricade/plasteel/wired,
 /obj/structure/cable/heavyduty{
@@ -20795,6 +20971,9 @@
 /obj/effect/decal/sand_overlay/sand5{
 	dir = 6
 	},
+/obj/structure/platform{
+	dir = 8
+	},
 /turf/open/asphalt{
 	icon_state = "tile"
 	},
@@ -20835,6 +21014,15 @@
 	},
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/whiskey_outpost/blackstone/inside/outpost_south)
+"swq" = (
+/obj/structure/machinery/door/airlock/almayer/medical/glass{
+	dir = 1
+	},
+/turf/open/floor{
+	dir = 1;
+	icon_state = "asteroidfloor"
+	},
+/area/whiskey_outpost/blackstone/outside/outpost/east)
 "swv" = (
 /turf/closed/wall/r_wall,
 /area/whiskey_outpost/blackstone/inside/armory)
@@ -20868,16 +21056,16 @@
 	icon_state = "carpet13-0"
 	},
 /area/whiskey_outpost/blackstone/inside/lieutenant_office)
-"sxm" = (
-/obj/structure/platform{
-	dir = 1
-	},
-/obj/structure/barricade/sandbags/wired{
-	dir = 8;
-	icon_state = "sandbag_0"
-	},
-/turf/open/gm/coast/west,
+"swI" = (
+/obj/structure/window/framed/colony/reinforced,
+/turf/open/gm/river/deep,
 /area/whiskey_outpost/blackstone/outside/river/east)
+"sxm" = (
+/turf/open/floor{
+	dir = 1;
+	icon_state = "asteroidfloor"
+	},
+/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "sxG" = (
 /obj/structure/pipes/standard/manifold/visible{
 	dir = 4
@@ -21440,15 +21628,6 @@
 	},
 /turf/open/floor/wood,
 /area/whiskey_outpost/blackstone/inside/commander_office)
-"sZh" = (
-/obj/structure/machinery/door/poddoor/shutters/almayer/open{
-	name = "north vehicle checkpoint";
-	id = "highwaycheckpoint1"
-	},
-/turf/open/asphalt/cement{
-	icon_state = "cement13"
-	},
-/area/whiskey_outpost/blackstone/underground/mountain/tunnel)
 "sZj" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4;
@@ -21511,6 +21690,17 @@
 	},
 /turf/open/floor,
 /area/whiskey_outpost/blackstone/inside/visitor_dormitory/room_two)
+"taL" = (
+/obj/structure/desertdam/decals/road_edge,
+/obj/structure/barricade/handrail/strata{
+	dir = 8
+	},
+/obj/structure/desertdam/decals/road_stop{
+	dir = 1;
+	icon_state = "stop_decal5"
+	},
+/turf/open/asphalt,
+/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "taN" = (
 /obj/structure/surface/table/almayer,
 /obj/item/ammo_box/magazine/mk1,
@@ -21598,6 +21788,10 @@
 	icon_state = "tile"
 	},
 /area/whiskey_outpost/blackstone/outside/outpost_beach)
+"teT" = (
+/mob/living/simple_animal/hostile/giant_spider,
+/turf/open/gm/dirt,
+/area/whiskey_outpost/blackstone/underground/western_caves/north)
 "tfl" = (
 /turf/open/floor/prison,
 /area/whiskey_outpost/blackstone/inside/outpost_south)
@@ -21619,10 +21813,6 @@
 	},
 /turf/open/asphalt,
 /area/whiskey_outpost/blackstone/outside/perimeter_defense)
-"tge" = (
-/obj/structure/window/framed/colony/reinforced,
-/turf/closed/wall/r_wall,
-/area/whiskey_outpost/blackstone/underground)
 "tgr" = (
 /obj/effect/decal/sand_overlay/sand5{
 	dir = 1
@@ -21706,11 +21896,13 @@
 /turf/open/asphalt,
 /area/whiskey_outpost/blackstone/outside/jungle/north)
 "tjE" = (
-/obj/structure/platform_decoration{
-	dir = 8
+/obj/effect/decal/sand_overlay/sand5{
+	dir = 4
 	},
 /obj/structure/fence,
-/turf/open/gm/dirt,
+/turf/open/asphalt/cement_sunbleached{
+	icon_state = "cement_sunbleached13"
+	},
 /area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "tjY" = (
 /obj/structure/platform{
@@ -21725,6 +21917,10 @@
 	icon_state = "asteroidfloor"
 	},
 /area/whiskey_outpost/blackstone/outside/outpost/north)
+"tkb" = (
+/mob/living/simple_animal/hostile/giant_spider,
+/turf/open/jungle,
+/area/whiskey_outpost/blackstone/outside/jungle/southern/west)
 "tkz" = (
 /obj/structure/prop/invuln/overhead_pipe{
 	pixel_y = -15
@@ -22117,12 +22313,9 @@
 	},
 /area/whiskey_outpost/blackstone/outside/outpost_beach)
 "tCe" = (
-/obj/structure/platform{
-	dir = 4
-	},
-/obj/structure/fence,
-/turf/open/gm/dirt,
-/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
+/obj/effect/landmark/tunnel_ambush,
+/turf/open/gm/dirt2,
+/area/whiskey_outpost/blackstone/underground/mountain)
 "tCK" = (
 /turf/open/floor/prison{
 	dir = 9;
@@ -22315,9 +22508,7 @@
 	},
 /area/whiskey_outpost/blackstone/inside/maintenance_closet)
 "tLx" = (
-/obj/structure/platform{
-	dir = 1
-	},
+/obj/structure/window/framed/colony/reinforced,
 /turf/open/gm/river,
 /area/whiskey_outpost/blackstone/outside/river/east)
 "tLJ" = (
@@ -22396,13 +22587,9 @@
 	dir = 1;
 	icon_state = "sandbag_0"
 	},
-/obj/structure/barricade/sandbags/wired{
-	dir = 4;
-	icon_state = "sandbag_0"
-	},
 /turf/open/floor{
-	dir = 5;
-	icon_state = "asteroidwarning"
+	dir = 1;
+	icon_state = "asteroidfloor"
 	},
 /area/whiskey_outpost/blackstone/outside/outpost/east)
 "tOJ" = (
@@ -22759,6 +22946,23 @@
 	},
 /turf/open/asphalt,
 /area/whiskey_outpost/blackstone/outside/jungle/north)
+"ujB" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/door/airlock/almayer/medical/glass,
+/turf/open/floor{
+	dir = 4;
+	icon_state = "asteroidwarning"
+	},
+/area/whiskey_outpost/blackstone/outside/outpost/east)
+"uke" = (
+/obj/structure/flora/bush/ausbushes/var3/stalkybush,
+/obj/structure/platform{
+	dir = 1;
+	pixel_x = 0;
+	pixel_y = 0
+	},
+/turf/open/gm/river,
+/area/whiskey_outpost/blackstone/outside/river/east)
 "ukV" = (
 /obj/structure/pipes/standard/simple/visible{
 	dir = 8
@@ -23123,6 +23327,7 @@
 /obj/structure/platform_decoration{
 	dir = 8
 	},
+/obj/structure/fence,
 /turf/open/gm/dirt,
 /area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "uDp" = (
@@ -23454,6 +23659,17 @@
 	},
 /turf/open/floor/wood,
 /area/whiskey_outpost/blackstone/underground/western_caves/north)
+"uRT" = (
+/obj/effect/decal/sand_overlay/sand5{
+	dir = 5
+	},
+/obj/structure/platform_decoration{
+	dir = 1
+	},
+/turf/open/asphalt{
+	icon_state = "tile"
+	},
+/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "uRW" = (
 /obj/structure/flora/jungle/alienplant1,
 /turf/open/gm/river/deep,
@@ -24131,10 +24347,23 @@
 /obj/effect/decal/sand_overlay/sand5{
 	dir = 4
 	},
+/obj/structure/machinery/light/small{
+	dir = 8
+	},
 /turf/open/asphalt{
 	icon_state = "tile"
 	},
 /area/whiskey_outpost/blackstone/outside/outpost_beach/west)
+"vqO" = (
+/obj/structure/barricade/sandbags/wired{
+	dir = 4;
+	icon_state = "sandbag_0"
+	},
+/obj/structure/platform_decoration{
+	dir = 8
+	},
+/turf/open/gm/dirt,
+/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "vrn" = (
 /turf/open/gm/dirtgrassborder/south,
 /area/whiskey_outpost/blackstone/outside/outpost_beach)
@@ -24209,11 +24438,8 @@
 /turf/closed/wall,
 /area/whiskey_outpost/blackstone/underground/maintenance/south_west)
 "vux" = (
-/obj/structure/window/framed/colony/reinforced,
-/turf/open/floor/prison{
-	dir = 1;
-	icon_state = "floor_plate"
-	},
+/mob/living/simple_animal/hostile/giant_spider/nurse,
+/turf/open/gm/dirt2,
 /area/whiskey_outpost/blackstone/underground/mountain)
 "vuJ" = (
 /obj/structure/pipes/vents/pump,
@@ -24245,6 +24471,10 @@
 	},
 /turf/open/floor/plating,
 /area/whiskey_outpost/blackstone/underground/maintenance/engineering)
+"vvE" = (
+/obj/structure/window/framed/colony/reinforced,
+/turf/closed/wall/r_wall,
+/area/whiskey_outpost/blackstone/underground)
 "vvH" = (
 /obj/structure/flora/bush/ausbushes/reedbush,
 /turf/open/gm/river,
@@ -24634,6 +24864,14 @@
 	},
 /turf/open/gm/dirt,
 /area/whiskey_outpost/blackstone/outside/perimeter_defense)
+"vOV" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/door/poddoor/shutters/almayer/open{
+	name = "north vehicle checkpoint";
+	id = "highwaycheckpoint1"
+	},
+/turf/open/asphalt,
+/area/whiskey_outpost/blackstone/underground/mountain/tunnel)
 "vPm" = (
 /obj/structure/flora/bush/ausbushes/reedbush,
 /turf/open/gm/river/deep,
@@ -24681,20 +24919,24 @@
 	icon_state = "tile"
 	},
 /area/whiskey_outpost/blackstone/outside/mortar_pit)
+"vRj" = (
+/obj/effect/decal/sand_overlay/sand5{
+	dir = 4
+	},
+/obj/structure/fence,
+/obj/structure/platform_decoration{
+	dir = 4
+	},
+/turf/open/asphalt/cement_sunbleached{
+	icon_state = "cement_sunbleached13"
+	},
+/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "vRn" = (
 /obj/structure/cargo_container/watatsumi/leftmid,
 /turf/open/jungle/clear,
 /area/whiskey_outpost/blackstone/outside/jungle/north/east)
 "vRv" = (
 /obj/item/clothing/glasses/hud/health,
-/obj/item/storage/box/handcuffs{
-	pixel_x = -8;
-	pixel_y = 13
-	},
-/obj/item/storage/box/ids{
-	pixel_x = 6;
-	pixel_y = 13
-	},
 /obj/structure/machinery/light,
 /obj/structure/surface/table/reinforced/black,
 /turf/open/floor/prison,
@@ -24739,6 +24981,17 @@
 "vTw" = (
 /turf/open/gm/dirtgrassborder/south,
 /area/whiskey_outpost/blackstone/outside/jungle/perimeter_entrance)
+"vUO" = (
+/obj/effect/decal/sand_overlay/sand5{
+	dir = 4
+	},
+/obj/structure/platform{
+	dir = 8
+	},
+/turf/open/asphalt/cement_sunbleached{
+	icon_state = "cement_sunbleached13"
+	},
+/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "vWd" = (
 /obj/structure/platform{
 	dir = 8
@@ -25038,6 +25291,10 @@
 	},
 /turf/open/floor/plating,
 /area/whiskey_outpost/blackstone/underground/maintenance/south_east)
+"whh" = (
+/obj/structure/sign/safety/radio_rad,
+/turf/closed/wall,
+/area/whiskey_outpost/blackstone/outside/outpost_beach/west)
 "whR" = (
 /turf/open/asphalt,
 /area/whiskey_outpost/blackstone/inside/eastern_checkpoint)
@@ -25704,6 +25961,13 @@
 	icon_state = "tile"
 	},
 /area/whiskey_outpost/blackstone/outside/outpost_beach)
+"wEu" = (
+/obj/structure/surface/table/reinforced/black,
+/turf/open/floor/prison{
+	dir = 1;
+	icon_state = "floor_plate"
+	},
+/area/whiskey_outpost/blackstone/inside/outpost_north)
 "wFe" = (
 /turf/open/floor/plating{
 	dir = 4;
@@ -26099,6 +26363,17 @@
 /obj/item/tool/warning_cone,
 /turf/open/gm/dirt,
 /area/whiskey_outpost/blackstone/outside/outpost_beach/mine)
+"wVb" = (
+/obj/structure/machinery/door/window/westright,
+/obj/structure/machinery/door/window/eastleft,
+/obj/structure/surface/table/reinforced/prison,
+/obj/structure/machinery/door/poddoor/shutters/almayer/open{
+	dir = 4;
+	id = "highwaycheckpoint_inner";
+	name = "checkpoint booth shutters"
+	},
+/turf/open/floor/plating,
+/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "wVc" = (
 /obj/structure/machinery/door/airlock/almayer/maint/sealed,
 /obj/structure/cable/heavyduty{
@@ -26215,6 +26490,16 @@
 	icon_state = "asteroidfloor"
 	},
 /area/whiskey_outpost/blackstone/inside/bunks)
+"xbF" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal2"
+	},
+/obj/structure/machinery/door/poddoor/shutters/almayer/open{
+	name = "north vehicle checkpoint";
+	id = "highwaycheckpoint1"
+	},
+/turf/open/asphalt,
+/area/whiskey_outpost/blackstone/underground/mountain/tunnel)
 "xbZ" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "1-4"
@@ -26660,6 +26945,13 @@
 	icon_state = "tile"
 	},
 /area/whiskey_outpost/blackstone/outside/central_road)
+"xuA" = (
+/obj/effect/decal/sand_overlay/sand5{
+	dir = 9
+	},
+/obj/structure/sign/safety/radio_rad,
+/turf/closed/wall,
+/area/whiskey_outpost/blackstone/outside/outpost_beach/west)
 "xuC" = (
 /obj/structure/pipes/standard/simple/visible{
 	dir = 9
@@ -26827,6 +27119,13 @@
 "xAQ" = (
 /turf/closed/wall/rock/brown/destructible,
 /area/whiskey_outpost/blackstone/outside/central_road)
+"xBf" = (
+/obj/structure/flora/bush/ausbushes/var3/stalkybush,
+/obj/structure/platform{
+	dir = 8
+	},
+/turf/open/gm/river,
+/area/whiskey_outpost/blackstone/outside/river/east)
 "xBX" = (
 /obj/item/lightstick/red/planted,
 /turf/open/gm/dirtgrassborder/west,
@@ -26936,12 +27235,9 @@
 /turf/open/gm/coast/beachcorner/north_west,
 /area/whiskey_outpost/blackstone/outside/river/east)
 "xGd" = (
-/obj/structure/barricade/sandbags/wired,
-/turf/open/floor{
-	dir = 6;
-	icon_state = "asteroidwarning"
-	},
-/area/whiskey_outpost/blackstone/outside/outpost/east)
+/obj/structure/machinery/door_control/brbutton,
+/turf/closed/wall/r_wall,
+/area/whiskey_outpost/blackstone/underground/mountain)
 "xGe" = (
 /obj/structure/platform{
 	dir = 8
@@ -27020,6 +27316,10 @@
 	icon_state = "floor_plate"
 	},
 /area/whiskey_outpost/blackstone/inside/outpost_north)
+"xKy" = (
+/obj/effect/spider/eggcluster,
+/turf/open/gm/dirt2,
+/area/whiskey_outpost/blackstone/underground/mountain)
 "xKL" = (
 /obj/item/stack/tile/plasteel{
 	turf_type = /turf/open/asphalt;
@@ -27135,6 +27435,21 @@
 	icon_state = "tile"
 	},
 /area/whiskey_outpost/blackstone/outside/outpost_beach/west)
+"xPw" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/structure/machinery/door_control{
+	pixel_x = -9;
+	name = "checkpoint shutters control"
+	},
+/obj/structure/machinery/door_control{
+	pixel_x = 1;
+	name = "tunnel shutters control"
+	},
+/turf/open/floor/prison{
+	dir = 1;
+	icon_state = "floor_plate"
+	},
+/area/whiskey_outpost/blackstone/outside/outpost_beach/east)
 "xPz" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/decal/sand_overlay/sand5{
@@ -30276,9 +30591,9 @@ fSn
 fSn
 fSn
 fSn
-fSn
-fSn
-fSn
+xKy
+xKy
+xKy
 fSn
 fSn
 fSn
@@ -30478,13 +30793,13 @@ fSn
 fSn
 fSn
 fSn
+cYk
+fSn
+eJi
 fSn
 fSn
-fSn
-fSn
-fSn
-fSn
-fSn
+ewf
+ewf
 fSn
 fSn
 fSn
@@ -30679,18 +30994,18 @@ fSn
 fSn
 fSn
 fSn
+cYk
+fSn
+eJi
+eJi
 fSn
 fSn
 fSn
+eJi
 fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
+xKy
+xKy
+xKy
 fSn
 fSn
 fSn
@@ -30880,20 +31195,20 @@ fSn
 fSn
 fSn
 fSn
+ewf
+ewf
+ewf
+eJi
+ewf
 fSn
+eJi
+eJi
+eJi
+ewf
 fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
+vux
+vux
+ewf
 fSn
 fSn
 fSn
@@ -31082,20 +31397,20 @@ fSn
 fSn
 fSn
 fSn
+ewf
 fSn
 fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
+ewf
+ewf
+ewf
+ewf
+ewf
+ewf
+aKY
+aKY
+aKY
+aKY
+ewf
 fSn
 fSn
 fSn
@@ -31286,18 +31601,18 @@ fSn
 fSn
 fSn
 fSn
+xKy
+xKy
+cYk
+cYk
 fSn
+ewf
 fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
+aKY
+aKY
+aKY
+ewf
+ewf
 fSn
 fSn
 fSn
@@ -31486,19 +31801,19 @@ fSn
 fSn
 fSn
 fSn
+ewf
+cYk
+cYk
+cYk
+ewf
 fSn
 fSn
 fSn
+ewf
+ewf
 fSn
 fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
+ewf
 fSn
 fSn
 fSn
@@ -31688,20 +32003,20 @@ fSn
 fSn
 fSn
 fSn
+ewf
+fSn
+fSn
+hAy
+hAy
+ewf
+ewf
 fSn
 fSn
 fSn
 fSn
 fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
+ewf
+ewf
 fSn
 fSn
 fSn
@@ -31889,21 +32204,21 @@ fSn
 fSn
 fSn
 fSn
+ewf
+ewf
+ewf
+ewf
+ewf
+hAy
+hAy
+ewf
 fSn
 fSn
 fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
+ewf
+ewf
+ewf
+tCe
 fSn
 fSn
 fSn
@@ -32091,18 +32406,18 @@ fSn
 fSn
 fSn
 fSn
+ewf
 fSn
 fSn
+ewf
+ewf
+ewf
+hAy
 fSn
+ewf
 fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
+ewf
+ewf
 fSn
 fSn
 fSn
@@ -32293,17 +32608,17 @@ fSn
 fSn
 fSn
 fSn
+ewf
 fSn
 fSn
+ewf
 fSn
+ewf
 fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
+ewf
+ewf
+ewf
+ewf
 fSn
 fSn
 fSn
@@ -32495,16 +32810,16 @@ fSn
 fSn
 fSn
 fSn
+ewf
 fSn
+ewf
 fSn
+hAy
+ewf
 fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
+ewf
+ewf
+ewf
 fSn
 fSn
 fSn
@@ -32697,16 +33012,16 @@ fSn
 fSn
 fSn
 fSn
+ewf
+aKY
+aKY
+ewf
+ewf
+fSn
+ewf
 fSn
 fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
+ewf
 fSn
 fSn
 fSn
@@ -32899,17 +33214,17 @@ fSn
 fSn
 fSn
 fSn
+hAy
+ewf
+aKY
+aKY
 fSn
 fSn
+ewf
 fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
+ewf
+ewf
+ewf
 fSn
 fSn
 fSn
@@ -33101,15 +33416,15 @@ fSn
 fSn
 fSn
 fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
-fSn
+ewf
+ewf
+hAy
+aKY
+aKY
+aKY
+ewf
+ewf
+ewf
 fSn
 fSn
 fSn
@@ -33304,12 +33619,12 @@ fSn
 fSn
 fSn
 fSn
+ewf
+ewf
 fSn
-fSn
-fSn
-fSn
-fSn
-fSn
+aKY
+aKY
+ewf
 fSn
 fSn
 fSn
@@ -33506,8 +33821,8 @@ fSn
 fSn
 fSn
 fSn
-fSn
-fSn
+ewf
+ewf
 fSn
 fSn
 fSn
@@ -36510,7 +36825,7 @@ bGk
 ojx
 iDb
 iDb
-iDb
+teT
 ojx
 bGk
 bGk
@@ -38135,7 +38450,7 @@ cHr
 lpi
 iDb
 iDb
-iDb
+teT
 iDb
 lUY
 iDb
@@ -40339,7 +40654,7 @@ iaX
 qos
 fdn
 fdn
-fdn
+dfo
 pxe
 pxe
 pxe
@@ -41951,11 +42266,11 @@ rIW
 euO
 rIW
 rIW
-rIW
-rIW
-rIW
-gGG
-vAv
+aBL
+aBL
+aBL
+ggO
+mMm
 mrP
 hAB
 hAB
@@ -42153,7 +42468,7 @@ bNV
 rIW
 csf
 rIW
-rIW
+aBL
 sbI
 vqt
 hTI
@@ -42355,7 +42670,7 @@ pCQ
 rIW
 rIW
 rIW
-gGG
+xuA
 sEv
 bHO
 xiq
@@ -42557,7 +42872,7 @@ rIW
 rIW
 rIW
 rIW
-xTE
+aXB
 rSx
 ljZ
 qSq
@@ -42759,7 +43074,7 @@ rIW
 rIW
 rIW
 rIW
-rIW
+whh
 shq
 nDt
 yiM
@@ -43163,10 +43478,10 @@ rIW
 jFv
 rIW
 rIW
-uNo
-ani
-ani
-hAB
+gBK
+aBL
+aBL
+osz
 hAB
 hAB
 hAB
@@ -44671,7 +44986,7 @@ gfR
 seU
 eSZ
 eSZ
-gfR
+tkb
 qsi
 gZs
 gZs
@@ -45681,7 +45996,7 @@ gZs
 lxP
 gfR
 gfR
-gfR
+tkb
 tNV
 gud
 gfR
@@ -46686,7 +47001,7 @@ eSZ
 eSZ
 gfR
 gfR
-gfR
+tkb
 ajs
 mpk
 mpk
@@ -48584,7 +48899,7 @@ kks
 kOb
 lnw
 kks
-kks
+nQb
 kks
 pbi
 kks
@@ -48780,13 +49095,13 @@ jSw
 vbO
 cUg
 dkd
-rNl
+aPX
 kks
 kks
 kOb
 uWy
 kks
-nQb
+kks
 kks
 xDu
 kks
@@ -48982,7 +49297,7 @@ jSw
 vbO
 eNF
 kYk
-aPX
+jAn
 kks
 kks
 kOb
@@ -48990,7 +49305,7 @@ dDi
 kks
 mzs
 kks
-cuz
+iOn
 kOb
 bPz
 giA
@@ -49184,13 +49499,13 @@ jSw
 vbO
 wyq
 kYk
-aPX
+jAn
 kks
 kks
 kOb
 aUR
-kks
-kks
+elr
+wEu
 kks
 lbt
 kOb
@@ -52028,15 +52343,15 @@ sij
 sij
 sij
 sij
-sij
-lnc
-sij
+bkD
 sij
 sij
 sij
-yet
 sij
-vnV
+sij
+rNl
+sij
+sij
 eSf
 yaJ
 dJw
@@ -52225,15 +52540,15 @@ snM
 vay
 vay
 vay
-gHy
+qzr
 vnV
 yet
 yet
 sij
+swq
 sij
 sij
-rno
-rno
+sij
 sij
 yet
 sij
@@ -52432,16 +52747,16 @@ xLV
 sij
 sij
 sij
-eJi
-xGd
-xzx
-ccF
+vay
+fFt
+ujB
+ujB
 tOo
-pkF
-pkF
-eJi
-eJi
-xGd
+sij
+sij
+sij
+sij
+eSf
 yaJ
 dJw
 dJw
@@ -52625,8 +52940,8 @@ geH
 geH
 geH
 vay
-ijx
-vux
+cmM
+oFD
 kei
 xaG
 yet
@@ -52635,13 +52950,13 @@ sij
 yet
 sij
 mNe
-mNe
+sxm
 pFB
 pXl
 htA
-elb
-dcZ
-hAy
+ovR
+ovR
+pkF
 pkF
 mBE
 yaJ
@@ -52839,10 +53154,10 @@ sij
 mNe
 uxA
 miR
-uFU
+uRT
 stv
-dJw
-rIp
+elb
+elb
 elb
 elb
 elb
@@ -53034,18 +53349,18 @@ fSn
 fSn
 fSn
 jal
-hQO
-hQO
-hQO
-hQO
+imE
+imE
+imE
+imE
 mNe
-jUR
-dJw
+eCK
+nzI
 dJw
 dcX
+fet
 dJw
-dJw
-dJw
+nzI
 dJw
 dJw
 dJw
@@ -53236,18 +53551,18 @@ wCy
 wCy
 wCy
 wCy
-gmS
-gmS
+ijx
+ijx
 wCy
 wCy
 mNe
-yaJ
-dJw
-dJw
-dJw
-dJw
-dJw
-dJw
+nYT
+jYm
+dXT
+dXT
+bEp
+dxq
+jYm
 dJw
 dJw
 dJw
@@ -53442,29 +53757,29 @@ mFn
 kNB
 ifp
 geJ
-ggO
-nkK
-jsw
-jsw
-jsw
-jsw
-jsw
-jsw
-qfS
-jsw
-jsw
-jsw
-jsw
-jsw
-cNU
-tCe
-tCe
-tCe
-tCe
-tCe
-tCe
+vUO
+vRj
 tjE
-eCK
+jsw
+jsw
+tjE
+tjE
+tjE
+bcX
+tjE
+tjE
+tjE
+tjE
+tjE
+cNU
+jAi
+jAi
+jAi
+jAi
+jAi
+jAi
+uDb
+gzm
 dJw
 dJw
 xFU
@@ -53643,7 +53958,7 @@ uPP
 uPP
 uPP
 uPP
-eAN
+iOz
 god
 god
 god
@@ -53654,19 +53969,19 @@ god
 god
 god
 god
-but
 god
+taL
 god
 god
 god
 mHh
 mHh
 mHh
-mHh
+hlg
 mHh
 qmG
 yaJ
-eCK
+gzm
 dJw
 dJw
 sek
@@ -53845,7 +54160,7 @@ oPs
 gbO
 gbO
 tMA
-mKK
+sdb
 arL
 udt
 arL
@@ -53856,9 +54171,9 @@ arL
 udt
 arL
 arL
-fFt
-arL
-arL
+udt
+oeK
+oeK
 udt
 arL
 vgl
@@ -53868,7 +54183,7 @@ xOi
 vgl
 lNP
 yaJ
-eCK
+gzm
 bff
 onY
 sek
@@ -54047,7 +54362,7 @@ hgU
 gbO
 gbO
 omb
-dxE
+vOV
 arL
 tHs
 ato
@@ -54058,9 +54373,9 @@ uBZ
 hUJ
 arL
 arL
-ewf
-arL
-uBZ
+tHs
+hQO
+pSR
 hUJ
 uBZ
 xOi
@@ -54069,8 +54384,8 @@ vgl
 vgl
 vgl
 lNP
-yaJ
-eCK
+mQw
+gzm
 jmd
 kUc
 sek
@@ -54249,7 +54564,7 @@ hjZ
 hjZ
 hjZ
 hjZ
-oBG
+xbF
 mAk
 mAk
 lBn
@@ -54260,10 +54575,10 @@ mAk
 mAk
 mAk
 mAk
-kyk
 mAk
-mAk
-mAk
+fsF
+lxF
+fsF
 mAk
 usa
 usa
@@ -54451,19 +54766,19 @@ eJl
 vQA
 vQA
 noE
-sZh
+fqj
 hIk
 miN
 hoK
 hoK
 nzk
 hfg
-cmM
+nzk
+oTS
 hoK
 hoK
 hoK
 hoK
-oeK
 hoK
 hoK
 rYW
@@ -54653,19 +54968,19 @@ wCy
 wCy
 wCy
 wCy
-iOn
+wCy
 mNe
-mNe
+meC
+wVb
 jYR
-jYR
+rFR
 mNe
 dJw
-nPI
-dJw
+iOY
 xFU
 qnk
 qnk
-qnk
+gmS
 qnk
 qnk
 qnk
@@ -54852,18 +55167,18 @@ fSn
 fSn
 fSn
 fSn
-aBL
-aBL
-aBL
-jal
+gmF
+gmF
+gmF
+xGd
 tSV
-iGH
+xPw
+pwF
 iGH
 iGH
 mNe
-uDb
-nzI
-dJw
+vqO
+hrp
 sek
 luc
 luc
@@ -55054,17 +55369,17 @@ fSn
 fSn
 fSn
 fSn
-aBL
-snZ
+gmF
+apl
 tSV
-jYm
+bcI
 tSV
 tSV
 iGH
 iGH
+mpQ
 hte
-sxm
-gzm
+mDB
 qnk
 kgp
 luc
@@ -55256,17 +55571,17 @@ fSn
 fSn
 fSn
 fSn
-aBL
-mQw
-fet
-aBL
+gmF
+eCU
+eAN
+gmF
 jal
 wyk
 iGH
-cYk
-aKY
+iGH
+mpQ
 tLx
-qxC
+lSQ
 qxC
 luc
 qxC
@@ -55458,17 +55773,17 @@ fSn
 fSn
 fSn
 fSn
-aBL
-aBL
-aBL
+gmF
+gmF
+gmF
 efO
-jal
+rno
 tSV
 iGH
-pnx
-aKY
-lSQ
-dzs
+iGH
+iCh
+swI
+uke
 qxC
 kRg
 qxC
@@ -55668,9 +55983,9 @@ jal
 cTO
 cTO
 cTO
+dGD
 hte
 lSQ
-qxC
 qxC
 qxC
 qxC
@@ -55867,12 +56182,12 @@ fSn
 fSn
 fSn
 lHH
-tge
-hHd
+vvE
+nWP
+hte
 hte
 hte
 lSQ
-qxC
 qxC
 qxC
 qxC
@@ -56071,10 +56386,10 @@ fSn
 lHH
 duO
 aeW
-enV
+xBf
 duO
-jAi
-poC
+aeW
+cxi
 qxC
 luc
 qxC
