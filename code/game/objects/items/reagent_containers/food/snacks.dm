@@ -3165,6 +3165,30 @@
 		package = 0
 		icon_state = "open-burrito"
 
+/obj/item/reagent_container/food/snacks/packaged_ribs
+	name = "Packaged... Barbecue Ribs?"
+	desc = "The company behind this was either insane or brilliant. You're kind of afraid to open it. Who knows what could be inside?"
+	icon_state = "syndi_cakes"
+	item_state = "boneless pork ribs"
+	bitesize = 6
+
+/obj/item/reagent_container/food/snacks/packaged_ribs/Initialize()
+	. = ..()
+	reagents.add_reagent("meatprotein", 10)
+	reagents.add_reagent("sodiumchloride", 2)
+	reagents.add_reagent("sugar", 2)
+
+
+/obj/item/reagent_container/food/snacks/packaged_ribs/attack_self(mob/user)
+	..()
+
+	if(package)
+		playsound(src.loc,'sound/effects/pageturn2.ogg', 15, 1)
+		to_chat(user, SPAN_NOTICE("You pull apart the plastic wrapper of the ribs! It smells surprisingly okay!"))
+		package = 0
+		icon_state = "hburger"
+		item_state = "burger"
+
 /obj/item/reagent_container/food/snacks/packaged_burger
 	name = "Packaged Cheeseburger"
 	desc = "A soggy microwavable burger. There's no time given for how long to cook it. Packaged by the Weyland-Yutani Corporation."
@@ -3286,6 +3310,46 @@
 	reagents.add_reagent("potato", 10)
 	reagents.add_reagent("sodiumchloride", 6)
 
+/obj/item/reagent_container/food/snacks/crunchos/barbecue
+	name = "Barbecue Crunchos chips bag"
+	desc= "A bag of barbecue flavor Crunchos potato chips. They're not that barbecue-y but they're okay enough. Few people even know what real barbecue tastes like now anyways."
+	icon_state = "chips"
+	bitesize = 3
+	trash = obj/item/trash/crunchos
+
+/obj/item/reagent_container/food/snacks/crunchos/barbecue/Initialize()
+	. = ..()
+	reagents.add_reagent("potato", 10)
+	reagents.add_reagent("sodiumchloride", 3)
+	reagents.add_reagent("blackpepper", 6)
+	reagents.add_reagent("sugar", 2)
+
+/obj/item/reagent_container/food/snacks/crunchos/ultra_spicy
+	name = "Ultra Spicy Crunchos chips bag"
+	desc= "A bag of... wait, weren't these pulled for being so spicy they literally killed someone due to stress? And why do you kinda wanna try one?"
+	icon_state = "chips"
+	bitesize = 3
+	trash = obj/item/trash/crunchos
+
+/obj/item/reagent_container/food/snacks/crunchos/ultra_spicy/Initialize()
+	. = ..()
+	reagents.add_reagent("potato", 10)
+	reagents.add_reagent("sodiumchloride", 2)
+	reagents.add_reagent("hotsauce", 20)
+
+/obj/item/reagent_container/food/snacks/crunchos/cream
+	name = "Sour Cream Crunchos chips bag"
+	desc= "Sour cream flavored Crunchos. They taste alright."
+	icon_state = "chips"
+	bitesize = 3
+	trash = obj/item/trash/crunchos
+
+/obj/item/reagent_container/food/snacks/crunchos/ultra_spicy/Initialize()
+	. = ..()
+	reagents.add_reagent("potato", 10)
+	reagents.add_reagent("sodiumchloride", 2)
+	reagents.add_reagent("hotsauce", 20)
+
 /obj/item/reagent_container/food/snacks/kepler_crisps
 	name = "Kepler Crisps"
 	desc = "'They're disturbingly good!' Now with 0% trans fat and added genuine sea salts."
@@ -3331,6 +3395,27 @@
 		package = 0
 
 //CM SNACKS
+/obj/item/reagent_container/food/snacks/wrapped/milk_chocoloco
+	name = "ChocoLoco Milk"
+	desc = "A segmented bar of milk chocolate. Rich, but somewhat unevenly smooth. Tastes great though. Goes directly to your waist or hips or whatever, so careful."
+	icon_state = "candy"
+	wrapper = /obj/item/trash/chocoloco
+
+/obj/item/reagent_container/food/snacks/wrapped/milk_chocoloco/Initialize()
+	. = ..()
+	reagents.add_reagent("coco", 6)
+	reagents.add_reagent("sugar", 10)
+
+/obj/item/reagent_container/food/snacks/wrapped/white_chocoloco
+	name = "ChocoLoco White"
+	desc = "A segmented bar of milk chocolate. Like milk chocolate but worse for you in every conceivable way except for causing cancer."
+	icon_state = "candy"
+	wrapper = /obj/item/trash/chocoloco
+
+/obj/item/reagent_container/food/snacks/wrapped/white_chocoloco/Initialize()
+	. = ..()
+	reagents.add_reagent("sugar", 12)
+
 /obj/item/reagent_container/food/snacks/wrapped/booniebars
 	name = "Boonie Bars"
 	desc = "Two delicious bars of minty chocolate. <i>\"Sometimes things are just... out of reach.\"</i>"

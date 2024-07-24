@@ -49,29 +49,29 @@
 	desc = "This thing's been around longer than your squad. It's built like a brick, with armored glass and reinforced casing. It also has actually good snacks."
 	product_slogans = "Crunchos. Good for you, good for the environment. Thisstatementisnotfederallyapprovednorcertifiedbyanyauthority;ChocoLoco! Go Loco in the Coco for Cocoa!;New Select Hamburgers. Now with 90% real beef!;You're hungry. Yeah, you want it don't you?;All sales final.;AmSo Lite. Tastes great, feels great!;"
 	product_ads = "Crunchos! You can't even taste the difference!;ChocoLoco's finest, just for you."
-	icon_state = "snack"
+	icon_state = "snack-generic"
 	products = list(
 		/obj/item/reagent_container/food/snacks/packaged_burger/new_select = 8,
-		/obj/item/reagent_container/food/snacks/kepler_crisps = 10,
-		/obj/item/reagent_container/food/snacks/kepler_crisps/flamehot = 12,
-		/obj/item/reagent_container/food/snacks/wy_chips/pepper = 12,
-		/obj/item/reagent_container/food/snacks/eat_bar = 12,
-		/obj/item/reagent_container/food/snacks/wrapped/booniebars = 6,
-		/obj/item/reagent_container/food/snacks/wrapped/chunk = 6,
-		/obj/item/reagent_container/food/snacks/wrapped/barcardine = 6,
+		/obj/item/reagent_container/food/snacks/packaged_ribs = 6,
+		/obj/item/reagent_container/food/snacks/crunchos = 10,
+		/obj/item/reagent_container/food/snacks/crunchos/barbecue = 10,
+		/obj/item/reagent_container/food/snacks/crunchos/cream = 10,
+		/obj/item/reagent_container/food/snacks/crunchos/ultra_spicy = 10,
+		/obj/item/reagent_container/food/snacks/wrapped/milk_chocoloco = 6,
+		/obj/item/reagent_container/food/snacks/wrapped/white_chocoloco = 6,
+		/obj/item/reagent_container/food/snacks/wy_chips/pepper = 10,
 	)
 
 	prices = list(
-		/obj/item/reagent_container/food/snacks/packaged_burger = 5,
-		/obj/item/reagent_container/food/snacks/packaged_burrito = 5,
-		/obj/item/reagent_container/food/snacks/packaged_hdogs = 5,
-		/obj/item/reagent_container/food/snacks/kepler_crisps = 3,
-		/obj/item/reagent_container/food/snacks/kepler_crisps/flamehot = 5,
-		/obj/item/reagent_container/food/snacks/wy_chips/pepper = 3,
-		/obj/item/reagent_container/food/snacks/eat_bar = 4,
-		/obj/item/reagent_container/food/snacks/wrapped/booniebars = 4,
-		/obj/item/reagent_container/food/snacks/wrapped/chunk = 4,
-		/obj/item/reagent_container/food/snacks/wrapped/barcardine = 4,
+		/obj/item/reagent_container/food/snacks/packaged_burger/new_select = 4,
+		/obj/item/reagent_container/food/snacks/packaged_ribs = 10,
+		/obj/item/reagent_container/food/snacks/crunchos = 2,
+		/obj/item/reagent_container/food/snacks/crunchos/barbecue = 2,
+		/obj/item/reagent_container/food/snacks/crunchos/cream = 2,
+		/obj/item/reagent_container/food/snacks/crunchos/ultra_spicy = 5,
+		/obj/item/reagent_container/food/snacks/wrapped/milk_chocoloco = 3,
+		/obj/item/reagent_container/food/snacks/wrapped/white_chocoloco = 2,
+		/obj/item/reagent_container/food/snacks/wy_chips/pepper = 4,
 	)
 	product_type = VENDOR_PRODUCT_TYPE_FOOD
 
