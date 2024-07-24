@@ -3189,6 +3189,28 @@
 		icon_state = "hburger"
 		item_state = "burger"
 
+/obj/item/reagent_container/food/snacks/packaged_burger/new_select
+	name = "New Select Hamburger"
+	desc = "An aggressively okay prepackaged hamburger made by the New Select Food Group. Frontier processed foods can be skeevy, but NSF's are alright. It still isn't like a real burger but it's close."
+	bitesize = 4
+
+/obj/item/reagent_container/food/snacks/packaged_burger/new_select/Initialize()
+	. = ..()
+	reagents.add_reagent("bread", 5)
+	reagents.add_reagent("meatprotein", 5)
+	reagents.add_reagent("sodiumchloride", 2)
+
+
+/obj/item/reagent_container/food/snacks/packaged_burger/new_select/attack_self(mob/user)
+	..()
+
+	if(package)
+		playsound(src.loc,'sound/effects/pageturn2.ogg', 15, 1)
+		to_chat(user, SPAN_NOTICE("You pull apart the plastic wrapper of the hamburger!"))
+		package = 0
+		icon_state = "hburger"
+		item_state = "burger"
+
 /obj/item/reagent_container/food/snacks/packaged_hdogs
 	name = "Packaged Hotdog"
 	desc = "A singular squishy, room temperature, hot dog. There's no time given for how long to cook it, so you assume its probably good to go. Packaged by the Weyland-Yutani Corporation."
@@ -3252,6 +3274,17 @@
 	reagents.add_reagent("nutriment", 4)
 	reagents.add_reagent("meatprotein", 4)
 
+/obj/item/reagent_container/food/snacks/crunchos
+	name = "Crunchos chips bag"
+	desc= "A bag of Crunchos potato chips. Made with prystha, a potato-analogue. It tastes savory, moreso than regular chips. Lightly salted, low fat and cooked mostly to perfection."
+	icon_state = "chips"
+	bitesize = 3
+	trash = obj/item/trash/crunchos
+
+/obj/item/reagent_container/food/snacks/crunchos/Initialize()
+	. = ..()
+	reagents.add_reagent("potato", 10)
+	reagents.add_reagent("sodiumchloride", 6)
 
 /obj/item/reagent_container/food/snacks/kepler_crisps
 	name = "Kepler Crisps"

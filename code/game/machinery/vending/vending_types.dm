@@ -44,6 +44,37 @@
 	products = list(/obj/item/reagent_container/food/drinks/coffee = 40)
 	contraband = list(/obj/item/reagent_container/food/drinks/h_chocolate = 25)
 
+/obj/structure/machinery/vending/snack/generic
+	name = "\improper Shitty Vending Machine"
+	desc = "This thing's been around longer than your squad. It's built like a brick, with armored glass and reinforced casing. It also has actually good snacks."
+	product_slogans = "Crunchos. Good for you, good for the environment. Thisstatementisnotfederallyapprovednorcertifiedbyanyauthority;ChocoLoco! Go Loco in the Coco for Cocoa!;New Select Hamburgers. Now with 90% real beef!;You're hungry. Yeah, you want it don't you?;All sales final.;AmSo Lite. Tastes great, feels great!;"
+	product_ads = "Crunchos! You can't even taste the difference!;ChocoLoco's finest, just for you."
+	icon_state = "snack"
+	products = list(
+		/obj/item/reagent_container/food/snacks/packaged_burger/new_select = 8,
+		/obj/item/reagent_container/food/snacks/kepler_crisps = 10,
+		/obj/item/reagent_container/food/snacks/kepler_crisps/flamehot = 12,
+		/obj/item/reagent_container/food/snacks/wy_chips/pepper = 12,
+		/obj/item/reagent_container/food/snacks/eat_bar = 12,
+		/obj/item/reagent_container/food/snacks/wrapped/booniebars = 6,
+		/obj/item/reagent_container/food/snacks/wrapped/chunk = 6,
+		/obj/item/reagent_container/food/snacks/wrapped/barcardine = 6,
+	)
+
+	prices = list(
+		/obj/item/reagent_container/food/snacks/packaged_burger = 5,
+		/obj/item/reagent_container/food/snacks/packaged_burrito = 5,
+		/obj/item/reagent_container/food/snacks/packaged_hdogs = 5,
+		/obj/item/reagent_container/food/snacks/kepler_crisps = 3,
+		/obj/item/reagent_container/food/snacks/kepler_crisps/flamehot = 5,
+		/obj/item/reagent_container/food/snacks/wy_chips/pepper = 3,
+		/obj/item/reagent_container/food/snacks/eat_bar = 4,
+		/obj/item/reagent_container/food/snacks/wrapped/booniebars = 4,
+		/obj/item/reagent_container/food/snacks/wrapped/chunk = 4,
+		/obj/item/reagent_container/food/snacks/wrapped/barcardine = 4,
+	)
+	product_type = VENDOR_PRODUCT_TYPE_FOOD
+
 /obj/structure/machinery/vending/snack
 	name = "\improper Hot Foods Machine"
 	desc = "A vending machine full of ready to cook meals, mhmmmm taste the nutritional goodness!"

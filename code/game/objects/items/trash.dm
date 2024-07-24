@@ -64,6 +64,11 @@
 	icon_state = "hotdog"
 	desc = "A musty plastic film that once held a hotdog. Packaged by the Weyland-Yutani Corporation."
 
+/obj/item/trash/crunchos
+	name = "Crunchos bag"
+	icon_state = "chips"
+	desc = "An empty foil and plastic bag that's slightly greasy. The mascot reminds you to recycle."
+
 /obj/item/trash/kepler
 	name = "Kepler wrapper"
 	icon_state = "kepler"
