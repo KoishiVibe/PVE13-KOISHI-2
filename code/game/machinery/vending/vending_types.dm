@@ -46,7 +46,7 @@
 
 /obj/structure/machinery/vending/snack/generic
 	name = "\improper Shitty Vending Machine"
-	desc = "This thing's been around longer than your squad. It's built like a brick, with armored glass and reinforced casing. It also has actually good snacks."
+	desc = "This thing's been around longer than your squad. It's built like a brick, with armored glass and reinforced casing. It also has actually good snacks (debatably)."
 	product_slogans = "Crunchos. Good for you, good for the environment. Thisstatementisnotfederallyapprovednorcertifiedbyanyauthority;ChocoLoco! Go Loco in the Coco for Cocoa!;New Select Hamburgers. Now with 90% real beef!;You're hungry. Yeah, you want it don't you?;All sales final.;AmSo Lite. Tastes great, feels great!;"
 	product_ads = "Crunchos! You can't even taste the difference!;ChocoLoco's finest, just for you."
 	icon_state = "snack-generic"
