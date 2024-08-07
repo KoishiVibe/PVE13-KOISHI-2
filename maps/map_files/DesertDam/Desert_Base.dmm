@@ -111,6 +111,11 @@
 /obj/structure/machinery/landinglight/ds2/delayone{
 	dir = 4
 	},
+/obj/structure/barricade/sandbags{
+	dir = 8;
+	icon_state = "sandbag_0";
+	pixel_y = 2
+	},
 /turf/open/asphalt/cement_sunbleached{
 	icon_state = "cement_sunbleached9"
 	},
@@ -580,6 +585,10 @@
 /area/desert_dam/exterior/valley/valley_labs)
 "abS" = (
 /obj/structure/machinery/landinglight/ds2,
+/obj/structure/barricade/sandbags{
+	dir = 1;
+	icon_state = "sandbag_0"
+	},
 /turf/open/asphalt/cement_sunbleached{
 	icon_state = "cement_sunbleached12"
 	},
@@ -956,6 +965,10 @@
 /area/desert_dam/exterior/valley/valley_labs)
 "adf" = (
 /obj/structure/machinery/landinglight/ds2/delayone,
+/obj/structure/barricade/sandbags{
+	dir = 1;
+	icon_state = "sandbag_0"
+	},
 /turf/open/asphalt/cement_sunbleached{
 	icon_state = "cement_sunbleached12"
 	},
@@ -3633,11 +3646,16 @@
 	},
 /area/desert_dam/interior/lab_northeast/east_lab_excavation)
 "alh" = (
-/obj/effect/decal/sand_overlay/sand1{
-	dir = 1
+/obj/structure/machinery/landinglight/ds2/delaythree{
+	dir = 8
+	},
+/obj/structure/barricade/sandbags{
+	dir = 4;
+	icon_state = "sandbag_0";
+	pixel_y = 2
 	},
 /turf/open/asphalt/cement_sunbleached{
-	icon_state = "cement_sunbleached12"
+	icon_state = "cement_sunbleached3"
 	},
 /area/desert_dam/exterior/landing_pad_two)
 "ali" = (
@@ -12114,9 +12132,6 @@
 	},
 /area/desert_dam/interior/caves/east_caves)
 "aKY" = (
-/obj/effect/decal/sand_overlay/sand1{
-	dir = 9
-	},
 /turf/open/asphalt/cement_sunbleached,
 /area/desert_dam/exterior/landing_pad_two)
 "aKZ" = (
@@ -12421,13 +12436,9 @@
 /turf/open/asphalt/cement_sunbleached,
 /area/desert_dam/exterior/valley/valley_crashsite)
 "aLK" = (
-/obj/effect/decal/sand_overlay/sand1{
-	dir = 1
-	},
-/turf/open/asphalt/cement_sunbleached{
-	icon_state = "cement_sunbleached1"
-	},
-/area/desert_dam/exterior/landing_pad_two)
+/obj/structure/desertdam/decals/road_edge,
+/turf/open/floor/plating,
+/area/desert_dam/exterior/valley/valley_cargo)
 "aLL" = (
 /obj/structure/machinery/portable_atmospherics/hydroponics,
 /turf/open/floor{
@@ -12748,16 +12759,21 @@
 	},
 /area/desert_dam/exterior/valley/valley_mining)
 "aMM" = (
-/obj/structure/flora/bush/desert{
-	icon_state = "tree_3"
+/obj/structure/machinery/landinglight/ds2/delaythree{
+	dir = 4
 	},
-/turf/open/desert/dirt,
-/area/desert_dam/exterior/valley/valley_cargo)
+/obj/structure/barricade/sandbags{
+	dir = 8;
+	icon_state = "sandbag_0";
+	pixel_y = 2
+	},
+/turf/open/asphalt/cement_sunbleached{
+	icon_state = "cement_sunbleached1"
+	},
+/area/desert_dam/exterior/landing_pad_two)
 "aMN" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/prison{
-	icon_state = "bright_clean2"
-	},
+/turf/open/floor/plating,
 /area/desert_dam/building/warehouse/warehouse)
 "aMO" = (
 /obj/structure/disposalpipe/segment{
@@ -12783,19 +12799,19 @@
 	},
 /area/desert_dam/building/warehouse/warehouse)
 "aMT" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "N"
+/obj/structure/machinery/firealarm{
+	dir = 4;
+	pixel_x = 21
 	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "W"
-	},
-/turf/open/floor/plating,
+/turf/open/floor/plating/bare_catwalk,
 /area/desert_dam/exterior/valley/valley_cargo)
 "aMU" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "N"
+/obj/structure/bed/chair{
+	dir = 4
 	},
-/turf/open/floor/plating,
+/turf/open/floor/prison{
+	icon_state = "bright_clean2"
+	},
 /area/desert_dam/exterior/valley/valley_cargo)
 "aMV" = (
 /obj/effect/decal/sand_overlay/sand1/corner1{
@@ -12867,11 +12883,8 @@
 	},
 /area/desert_dam/building/substation/northeast)
 "aNe" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "S"
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "N"
+/obj/structure/machinery/door/airlock/multi_tile/almayer/generic/solid{
+	name = "\improper Hangar Bay Door"
 	},
 /turf/open/floor/plating,
 /area/desert_dam/exterior/valley/valley_cargo)
@@ -12919,12 +12932,7 @@
 /turf/open/asphalt,
 /area/desert_dam/exterior/valley/valley_northwest)
 "aNo" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "N"
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "S"
-	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/prison{
 	icon_state = "bright_clean2"
 	},
@@ -12985,12 +12993,21 @@
 	},
 /area/desert_dam/building/substation/northeast)
 "aNx" = (
-/obj/effect/decal/sand_overlay/sand1,
-/obj/effect/decal/warning_stripes{
-	icon_state = "W"
+/obj/structure/machinery/landinglight/ds2{
+	dir = 1
 	},
-/turf/open/floor/plating,
-/area/desert_dam/exterior/valley/valley_cargo)
+/obj/structure/barricade/sandbags{
+	icon_state = "sandbag_0";
+	layer = 2.97;
+	pixel_y = -14
+	},
+/obj/structure/platform{
+	dir = 4
+	},
+/turf/open/asphalt/cement_sunbleached{
+	icon_state = "cement_sunbleached9"
+	},
+/area/desert_dam/exterior/landing_pad_two)
 "aNy" = (
 /turf/open/floor/prison{
 	dir = 10;
@@ -12998,8 +13015,9 @@
 	},
 /area/desert_dam/building/water_treatment_two/floodgate_control)
 "aNz" = (
-/obj/effect/decal/sand_overlay/sand1,
-/turf/open/floor/plating,
+/turf/open/floor/prison{
+	icon_state = "bright_clean2"
+	},
 /area/desert_dam/exterior/valley/valley_cargo)
 "aNB" = (
 /obj/structure/surface/rack,
@@ -13583,10 +13601,8 @@
 /turf/open/asphalt,
 /area/desert_dam/exterior/valley/valley_northwest)
 "aPK" = (
-/obj/structure/flora/bush/desert{
-	icon_state = "tree_2"
-	},
-/turf/open/desert/dirt,
+/obj/structure/foamed_metal,
+/turf/open/floor/plating,
 /area/desert_dam/exterior/valley/valley_cargo)
 "aPL" = (
 /obj/structure/machinery/shower{
@@ -33378,11 +33394,12 @@
 	},
 /area/desert_dam/building/security/deathrow)
 "cdf" = (
-/turf/open/floor/prison{
-	dir = 9;
-	icon_state = "darkbrown2"
+/obj/structure/machinery/door/poddoor/almayer/open{
+	dir = 4;
+	name = "\improper Storage Bay One Blast Door"
 	},
-/area/desert_dam/building/warehouse/warehouse)
+/turf/open/floor/plating,
+/area/desert_dam/exterior/valley/valley_cargo)
 "cdg" = (
 /turf/open/floor/prison{
 	icon_state = "darkred2"
@@ -35414,17 +35431,7 @@
 	},
 /area/desert_dam/exterior/telecomm/lz2_tcomms)
 "cks" = (
-/obj/effect/decal/sand_overlay/sand1{
-	dir = 8
-	},
-/obj/effect/decal/sand_overlay/sand1,
-/obj/effect/decal/sand_overlay/sand1{
-	dir = 4
-	},
-/obj/effect/decal/sand_overlay/sand1{
-	dir = 1
-	},
-/turf/open/floor/plating,
+/turf/open/floor/plating/bare_catwalk,
 /area/desert_dam/exterior/valley/valley_cargo)
 "ckt" = (
 /obj/effect/decal/warning_stripes{
@@ -36186,11 +36193,13 @@
 	},
 /area/desert_dam/exterior/valley/valley_civilian)
 "cmO" = (
-/turf/open/floor/prison{
-	dir = 8;
-	icon_state = "darkbrown2"
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal7"
 	},
-/area/desert_dam/building/warehouse/warehouse)
+/turf/open/floor/prison{
+	icon_state = "bright_clean2"
+	},
+/area/desert_dam/exterior/valley/valley_cargo)
 "cmQ" = (
 /obj/structure/platform{
 	dir = 1
@@ -36364,14 +36373,9 @@
 /turf/open/floor/carpet,
 /area/desert_dam/building/warehouse/breakroom)
 "cnA" = (
-/obj/structure/desertdam/decals/road_edge{
-	icon_state = "road_edge_decal2"
-	},
-/obj/effect/decal/sand_overlay/sand1/corner1{
-	dir = 4
-	},
-/turf/open/asphalt,
-/area/desert_dam/exterior/valley/valley_cargo)
+/obj/structure/platform_decoration,
+/turf/open/floor/plating,
+/area/desert_dam/exterior/landing_pad_two)
 "cnB" = (
 /obj/structure/platform{
 	dir = 8
@@ -36480,8 +36484,7 @@
 /area/desert_dam/exterior/valley/valley_civilian)
 "cnS" = (
 /turf/open/floor/prison{
-	dir = 8;
-	icon_state = "darkbrown2"
+	icon_state = "bright_clean2"
 	},
 /area/desert_dam/landing/console2)
 "cnT" = (
@@ -39941,11 +39944,13 @@
 	},
 /area/desert_dam/exterior/valley/bar_valley_dam)
 "czA" = (
-/turf/open/desert/dirt{
-	dir = 8;
-	icon_state = "desert_transition_corner1"
+/obj/structure/platform_decoration{
+	dir = 8
 	},
-/area/desert_dam/exterior/valley/valley_cargo)
+/turf/open/asphalt/cement_sunbleached{
+	icon_state = "cement_sunbleached12"
+	},
+/area/desert_dam/exterior/landing_pad_two)
 "czB" = (
 /obj/structure/platform,
 /obj/effect/blocker/toxic_water/Group_1,
@@ -41144,20 +41149,22 @@
 	},
 /area/desert_dam/building/mining/workshop_foyer)
 "cCY" = (
-/turf/open/desert/dirt,
+/turf/open/floor/plating,
 /area/desert_dam/exterior/rock)
 "cCZ" = (
 /obj/structure/machinery/landinglight/ds2/delaytwo{
 	dir = 4
+	},
+/obj/structure/barricade/sandbags{
+	dir = 8;
+	icon_state = "sandbag_0";
+	pixel_y = 2
 	},
 /turf/open/asphalt/cement_sunbleached{
 	icon_state = "cement_sunbleached9"
 	},
 /area/desert_dam/exterior/landing_pad_two)
 "cDb" = (
-/obj/effect/decal/sand_overlay/sand1{
-	dir = 1
-	},
 /turf/open/asphalt/cement_sunbleached{
 	icon_state = "cement_sunbleached4"
 	},
@@ -41385,6 +41392,10 @@
 /area/desert_dam/building/medical/east_wing_hallway)
 "cDK" = (
 /obj/structure/machinery/landinglight/ds2,
+/obj/structure/barricade/sandbags{
+	dir = 1;
+	icon_state = "sandbag_0"
+	},
 /turf/open/asphalt/cement_sunbleached{
 	icon_state = "cement_sunbleached14"
 	},
@@ -41393,12 +41404,21 @@
 /obj/structure/machinery/landinglight/ds2/delayone{
 	dir = 4
 	},
+/obj/structure/barricade/sandbags{
+	dir = 8;
+	icon_state = "sandbag_0";
+	pixel_y = 2
+	},
 /turf/open/asphalt/cement_sunbleached{
 	icon_state = "cement_sunbleached15"
 	},
 /area/desert_dam/exterior/landing_pad_two)
 "cDM" = (
 /obj/structure/machinery/landinglight/ds2/delaythree,
+/obj/structure/barricade/sandbags{
+	dir = 1;
+	icon_state = "sandbag_0"
+	},
 /turf/open/asphalt/cement_sunbleached{
 	icon_state = "cement_sunbleached12"
 	},
@@ -41443,6 +41463,10 @@
 /area/desert_dam/interior/dam_interior/CE_office)
 "cDV" = (
 /obj/structure/machinery/landinglight/ds2/delaytwo,
+/obj/structure/barricade/sandbags{
+	dir = 1;
+	icon_state = "sandbag_0"
+	},
 /turf/open/asphalt/cement_sunbleached{
 	icon_state = "cement_sunbleached15"
 	},
@@ -41783,6 +41807,11 @@
 "cFb" = (
 /obj/structure/machinery/landinglight/ds2{
 	dir = 8
+	},
+/obj/structure/barricade/sandbags{
+	dir = 4;
+	icon_state = "sandbag_0";
+	pixel_y = 2
 	},
 /turf/open/asphalt/cement_sunbleached{
 	icon_state = "cement_sunbleached2"
@@ -42472,14 +42501,17 @@
 	},
 /area/desert_dam/exterior/landing_pad_two)
 "cGR" = (
-/obj/structure/prop/dam/boulder/boulder3,
-/turf/open/desert/dirt{
-	dir = 5;
-	icon_state = "desert_transition_edge1"
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal7"
 	},
+/turf/open/floor/plating,
 /area/desert_dam/exterior/valley/valley_cargo)
 "cGS" = (
 /obj/structure/machinery/landinglight/ds2/delaytwo,
+/obj/structure/barricade/sandbags{
+	dir = 1;
+	icon_state = "sandbag_0"
+	},
 /turf/open/asphalt/cement_sunbleached{
 	icon_state = "cement_sunbleached12"
 	},
@@ -43418,6 +43450,19 @@
 /obj/structure/cargo_container/hd/right,
 /turf/open/floor/plating,
 /area/desert_dam/exterior/telecomm/lz2_containers)
+"cJW" = (
+/obj/structure/machinery/landinglight/ds2/delayone{
+	dir = 8
+	},
+/obj/structure/barricade/sandbags{
+	dir = 4;
+	icon_state = "sandbag_0";
+	pixel_y = 2
+	},
+/turf/open/asphalt/cement_sunbleached{
+	icon_state = "cement_sunbleached3"
+	},
+/area/desert_dam/exterior/landing_pad_two)
 "cJX" = (
 /obj/effect/decal/cleanable/liquid_fuel,
 /turf/open/floor/plating,
@@ -43839,6 +43884,14 @@
 /obj/structure/machinery/landinglight/ds2/delayone{
 	dir = 8
 	},
+/obj/structure/barricade/sandbags{
+	dir = 4;
+	icon_state = "sandbag_0";
+	pixel_y = 2
+	},
+/obj/structure/platform{
+	layer = 3.1
+	},
 /turf/open/asphalt/cement_sunbleached{
 	icon_state = "cement_sunbleached14"
 	},
@@ -44049,6 +44102,11 @@
 /obj/structure/machinery/landinglight/ds2/delaytwo{
 	dir = 1
 	},
+/obj/structure/barricade/sandbags{
+	icon_state = "sandbag_0";
+	layer = 2.97;
+	pixel_y = -14
+	},
 /turf/open/asphalt/cement_sunbleached{
 	icon_state = "cement_sunbleached2"
 	},
@@ -44078,6 +44136,11 @@
 "cML" = (
 /obj/structure/machinery/landinglight/ds2/delaythree{
 	dir = 1
+	},
+/obj/structure/barricade/sandbags{
+	icon_state = "sandbag_0";
+	layer = 2.97;
+	pixel_y = -14
 	},
 /turf/open/asphalt/cement_sunbleached{
 	icon_state = "cement_sunbleached4"
@@ -44210,6 +44273,11 @@
 /obj/structure/machinery/landinglight/ds2{
 	dir = 1
 	},
+/obj/structure/barricade/sandbags{
+	icon_state = "sandbag_0";
+	layer = 2.97;
+	pixel_y = -14
+	},
 /turf/open/asphalt/cement_sunbleached{
 	icon_state = "cement_sunbleached9"
 	},
@@ -44260,7 +44328,7 @@
 /obj/structure/machinery/landinglight/ds2/delayone{
 	dir = 1
 	},
-/turf/open/asphalt,
+/turf/open/floor/plating,
 /area/desert_dam/exterior/landing_pad_two)
 "cNi" = (
 /obj/structure/desertdam/decals/road_stop{
@@ -44270,7 +44338,7 @@
 /obj/structure/machinery/landinglight/ds2/delaytwo{
 	dir = 1
 	},
-/turf/open/asphalt,
+/turf/open/floor/plating,
 /area/desert_dam/exterior/landing_pad_two)
 "cNj" = (
 /obj/structure/disposalpipe/segment{
@@ -44334,7 +44402,7 @@
 /obj/structure/machinery/landinglight/ds2/delaythree{
 	dir = 1
 	},
-/turf/open/asphalt,
+/turf/open/floor/plating,
 /area/desert_dam/exterior/landing_pad_two)
 "cNy" = (
 /obj/effect/landmark/yautja_teleport,
@@ -45020,7 +45088,7 @@
 /obj/structure/machinery/landinglight/ds2{
 	dir = 1
 	},
-/turf/open/asphalt,
+/turf/open/floor/plating,
 /area/desert_dam/exterior/landing_pad_two)
 "cPJ" = (
 /obj/structure/surface/rack,
@@ -45127,7 +45195,7 @@
 /obj/structure/machinery/landinglight/ds2/delayone{
 	dir = 1
 	},
-/turf/open/asphalt,
+/turf/open/floor/plating,
 /area/desert_dam/exterior/landing_pad_two)
 "cPX" = (
 /obj/effect/decal/cleanable/dirt,
@@ -45169,9 +45237,7 @@
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal5"
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/asphalt,
+/turf/open/floor/plating,
 /area/desert_dam/exterior/valley/valley_cargo)
 "cQe" = (
 /obj/structure/bed/chair/wood/normal{
@@ -45222,13 +45288,13 @@
 	},
 /area/desert_dam/exterior/valley/valley_cargo)
 "cQn" = (
-/obj/effect/decal/sand_overlay/sand1{
-	dir = 4
+/obj/structure/barricade/sandbags{
+	dir = 4;
+	icon_state = "sandbag_0";
+	pixel_y = 2
 	},
-/turf/open/asphalt/cement_sunbleached{
-	icon_state = "cement_sunbleached14"
-	},
-/area/desert_dam/exterior/landing_pad_two)
+/turf/open/floor/plating,
+/area/desert_dam/building/warehouse/warehouse)
 "cQo" = (
 /turf/open/floor/prison{
 	dir = 4;
@@ -46501,10 +46567,7 @@
 "cVa" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/liquid_fuel,
-/turf/open/floor/prison{
-	dir = 1;
-	icon_state = "cell_stripe"
-	},
+/turf/open/floor/plating,
 /area/desert_dam/building/warehouse/warehouse)
 "cVh" = (
 /obj/structure/pipes/vents/pump{
@@ -46988,11 +47051,8 @@
 /turf/open/floor/plating,
 /area/desert_dam/building/hydroponics/hydroponics_storage)
 "cXA" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "E"
-	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/asphalt,
+/turf/open/floor/plating,
 /area/desert_dam/exterior/valley/valley_cargo)
 "cXD" = (
 /turf/open/floor/prison{
@@ -47174,15 +47234,10 @@
 /area/desert_dam/building/dorms/hallway_northwing)
 "cYH" = (
 /obj/effect/decal/warning_stripes{
-	icon_state = "N"
-	},
-/obj/effect/decal/warning_stripes{
 	icon_state = "E"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/prison{
-	icon_state = "bright_clean2"
-	},
+/turf/open/floor/plating,
 /area/desert_dam/building/warehouse/warehouse)
 "cYI" = (
 /obj/effect/decal/cleanable/dirt,
@@ -47533,11 +47588,18 @@
 /turf/open/asphalt,
 /area/desert_dam/exterior/valley/valley_civilian)
 "daw" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "W"
+/obj/structure/machinery/landinglight/ds2{
+	dir = 8
 	},
-/turf/open/floor/plating,
-/area/desert_dam/exterior/valley/valley_cargo)
+/obj/structure/barricade/sandbags{
+	dir = 4;
+	icon_state = "sandbag_0";
+	pixel_y = 2
+	},
+/turf/open/asphalt/cement_sunbleached{
+	icon_state = "cement_sunbleached3"
+	},
+/area/desert_dam/exterior/landing_pad_two)
 "dax" = (
 /obj/structure/pipes/standard/simple/hidden/green{
 	dir = 4
@@ -48604,19 +48666,15 @@
 	},
 /area/desert_dam/building/warehouse/loading)
 "deU" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "W"
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "S"
-	},
+/obj/structure/foamed_metal,
+/obj/structure/foamed_metal,
 /turf/open/floor/plating,
 /area/desert_dam/exterior/valley/valley_cargo)
 "deV" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "S"
+/obj/effect/decal/cleanable/dirt,
+/turf/closed/wall/hangar{
+	name = "reinforced metal wall"
 	},
-/turf/open/floor/plating,
 /area/desert_dam/exterior/valley/valley_cargo)
 "deW" = (
 /obj/effect/decal/warning_stripes{
@@ -48634,9 +48692,7 @@
 	icon_state = "S"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/prison{
-	icon_state = "bright_clean2"
-	},
+/turf/open/floor/plating,
 /area/desert_dam/building/warehouse/warehouse)
 "deY" = (
 /obj/effect/decal/cleanable/dirt,
@@ -49070,9 +49126,14 @@
 /turf/open/asphalt,
 /area/desert_dam/exterior/river/riverside_south)
 "dgG" = (
-/obj/structure/prop/dam/large_boulder/boulder2,
-/turf/open/desert/dirt,
-/area/desert_dam/exterior/valley/valley_cargo)
+/obj/structure/machinery/door_control{
+	id = "dam_shutter_hangar";
+	name = "Hangar Shutters"
+	},
+/turf/closed/wall/hangar{
+	name = "reinforced metal wall"
+	},
+/area/desert_dam/building/warehouse/warehouse)
 "dgH" = (
 /obj/structure/disposalpipe/segment{
 	dir = 1;
@@ -49405,11 +49466,11 @@
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal2"
 	},
-/turf/open/asphalt,
+/turf/open/floor/plating,
 /area/desert_dam/exterior/landing_pad_two)
 "djl" = (
 /obj/structure/desertdam/decals/road_edge,
-/turf/open/asphalt,
+/turf/open/floor/plating,
 /area/desert_dam/exterior/landing_pad_two)
 "djr" = (
 /turf/open/floor/prison{
@@ -50287,6 +50348,14 @@
 	icon_state = "bright_clean"
 	},
 /area/desert_dam/building/water_treatment_one/control_room)
+"dre" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/turf/open/asphalt/cement_sunbleached{
+	icon_state = "cement_sunbleached13"
+	},
+/area/desert_dam/exterior/landing_pad_two)
 "drg" = (
 /obj/structure/largecrate/random/barrel/white,
 /turf/open/asphalt{
@@ -50974,8 +51043,14 @@
 	},
 /area/desert_dam/building/dorms/restroom)
 "dws" = (
-/turf/open/asphalt,
-/area/desert_dam/exterior/landing_pad_two)
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal2"
+	},
+/obj/effect/decal/sand_overlay/sand1{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/desert_dam/exterior/valley/valley_cargo)
 "dwy" = (
 /obj/structure/machinery/computer/turbine_computer,
 /turf/open/floor/prison,
@@ -59244,6 +59319,19 @@
 "eyL" = (
 /turf/open/gm/empty,
 /area/shuttle/trijent_shuttle/engi)
+"eyN" = (
+/obj/structure/machinery/landinglight/ds2/delayone{
+	dir = 4
+	},
+/obj/structure/barricade/sandbags{
+	dir = 8;
+	icon_state = "sandbag_0";
+	pixel_y = 2
+	},
+/turf/open/asphalt/cement_sunbleached{
+	icon_state = "cement_sunbleached1"
+	},
+/area/desert_dam/exterior/landing_pad_two)
 "ezd" = (
 /obj/structure/surface/rack,
 /turf/open/floor/prison{
@@ -59278,8 +59366,9 @@
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal2"
 	},
-/obj/effect/decal/sand_overlay/sand1/corner1,
-/turf/open/asphalt,
+/turf/closed/wall/hangar{
+	name = "reinforced metal wall"
+	},
 /area/desert_dam/exterior/valley/valley_cargo)
 "eCK" = (
 /obj/effect/decal/cleanable/dirt,
@@ -59395,12 +59484,30 @@
 	},
 /turf/open/asphalt,
 /area/desert_dam/exterior/valley/valley_hydro)
+"fac" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N"
+	},
+/turf/open/floor/plating,
+/area/desert_dam/building/warehouse/warehouse)
 "faE" = (
 /obj/structure/flora/grass/tallgrass/desert/corner{
 	dir = 1
 	},
 /turf/open/desert/dirt,
 /area/desert_dam/exterior/valley/bar_valley_dam)
+"faU" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N"
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/item/device/radio/intercom,
+/turf/closed/wall/hangar{
+	name = "reinforced metal wall"
+	},
+/area/desert_dam/building/warehouse/warehouse)
 "fbK" = (
 /obj/effect/landmark/structure_spawner/setup/distress/xeno_weed_node,
 /turf/open/floor/plating,
@@ -59683,9 +59790,15 @@
 	},
 /area/desert_dam/exterior/valley/valley_crashsite)
 "fSc" = (
-/obj/structure/flora/grass/desert/lightgrass_12,
-/turf/open/desert/dirt,
-/area/desert_dam/exterior/valley/valley_cargo)
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/structure/cargo_container/lockmart/right{
+	layer = 3.1;
+	pixel_y = 5
+	},
+/turf/open/floor/plating,
+/area/desert_dam/building/warehouse/warehouse)
 "fTk" = (
 /obj/structure/sink/kitchen,
 /obj/structure/surface/table/reinforced,
@@ -59704,6 +59817,12 @@
 	icon_state = "cement_sunbleached4"
 	},
 /area/desert_dam/exterior/valley/valley_hydro)
+"fWU" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E"
+	},
+/turf/open/floor/plating,
+/area/desert_dam/building/warehouse/warehouse)
 "fYS" = (
 /obj/structure/largecrate/random,
 /obj/effect/decal/cleanable/dirt,
@@ -59782,6 +59901,19 @@
 	icon_state = "darkyellow2"
 	},
 /area/desert_dam/interior/lab_northeast/east_lab_workshop)
+"gjZ" = (
+/obj/structure/machinery/landinglight/ds2/delaytwo{
+	dir = 4
+	},
+/obj/structure/barricade/sandbags{
+	dir = 8;
+	icon_state = "sandbag_0";
+	pixel_y = 2
+	},
+/turf/open/asphalt/cement_sunbleached{
+	icon_state = "cement_sunbleached1"
+	},
+/area/desert_dam/exterior/landing_pad_two)
 "gls" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark/structure_spawner/setup/distress/xeno_weed_node,
@@ -60083,6 +60215,14 @@
 	icon_state = "dark2"
 	},
 /area/desert_dam/building/substation/northwest)
+"gVd" = (
+/obj/structure/platform_decoration{
+	dir = 4
+	},
+/turf/open/asphalt/cement_sunbleached{
+	icon_state = "cement_sunbleached15"
+	},
+/area/desert_dam/exterior/landing_pad_two)
 "gVm" = (
 /obj/structure/flora/grass/tallgrass/desert/corner{
 	dir = 8
@@ -60127,6 +60267,14 @@
 	icon_state = "cement_sunbleached2"
 	},
 /area/desert_dam/exterior/telecomm/lz2_storage)
+"hcD" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/turf/open/asphalt/cement_sunbleached{
+	icon_state = "cement_sunbleached18"
+	},
+/area/desert_dam/exterior/landing_pad_two)
 "hcP" = (
 /obj/effect/decal/sand_overlay/sand1/corner1{
 	dir = 1
@@ -60135,6 +60283,12 @@
 	icon_state = "tile"
 	},
 /area/desert_dam/exterior/valley/south_valley_dam)
+"hcZ" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal8"
+	},
+/turf/open/floor/plating,
+/area/desert_dam/exterior/valley/valley_cargo)
 "heR" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor{
@@ -60205,6 +60359,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/sandstone/runed,
 /area/desert_dam/interior/caves/temple)
+"hqb" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal12"
+	},
+/turf/open/floor/plating,
+/area/desert_dam/exterior/valley/valley_cargo)
 "hqp" = (
 /turf/open/asphalt/cement_sunbleached{
 	icon_state = "cement_sunbleached4"
@@ -60389,6 +60549,16 @@
 /obj/structure/blocker/forcefield/multitile_vehicles,
 /turf/closed/wall/r_wall/chigusa,
 /area/desert_dam/interior/lab_northeast/east_lab_west_hallway)
+"hVI" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/structure/cargo_container/lockmart/left{
+	layer = 3.1;
+	pixel_y = 5
+	},
+/turf/open/floor/plating,
+/area/desert_dam/building/warehouse/warehouse)
 "ibg" = (
 /obj/structure/machinery/light{
 	dir = 4
@@ -61065,6 +61235,12 @@
 	},
 /turf/open/desert/dirt,
 /area/desert_dam/exterior/valley/valley_telecoms)
+"kzX" = (
+/obj/structure/machinery/floodlight/landing,
+/turf/open/floor/prison{
+	icon_state = "bright_clean2"
+	},
+/area/desert_dam/exterior/landing_pad_two)
 "kAJ" = (
 /obj/structure/surface/table/reinforced/prison{
 	color = "#6b675e"
@@ -61169,6 +61345,10 @@
 	icon_state = "tile"
 	},
 /area/desert_dam/exterior/valley/valley_hydro)
+"kOC" = (
+/obj/structure/machinery/colony_floodlight,
+/turf/open/floor/plating,
+/area/desert_dam/exterior/valley/valley_cargo)
 "kOR" = (
 /obj/structure/surface/table/reinforced/prison{
 	color = "#6b675e"
@@ -61321,6 +61501,11 @@
 	icon_state = "bright_clean"
 	},
 /area/desert_dam/interior/dam_interior/smes_main)
+"lne" = (
+/turf/open/asphalt/cement_sunbleached{
+	icon_state = "cement_sunbleached3"
+	},
+/area/desert_dam/exterior/landing_pad_two)
 "lnG" = (
 /obj/effect/decal/sand_overlay/sand1/corner1,
 /turf/open/asphalt{
@@ -61422,10 +61607,7 @@
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal4"
 	},
-/obj/effect/decal/sand_overlay/sand1/corner1{
-	dir = 1
-	},
-/turf/open/asphalt,
+/turf/open/floor/plating,
 /area/desert_dam/exterior/valley/valley_cargo)
 "lJM" = (
 /obj/effect/decal/sand_overlay/sand1{
@@ -61941,6 +62123,14 @@
 /obj/structure/flora/grass/tallgrass/desert,
 /turf/open/desert/dirt,
 /area/desert_dam/exterior/valley/valley_northwest)
+"nzO" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal2"
+	},
+/turf/open/floor/prison{
+	icon_state = "bright_clean2"
+	},
+/area/desert_dam/exterior/valley/valley_cargo)
 "nAm" = (
 /obj/structure/desertdam/decals/road_edge,
 /turf/open/asphalt,
@@ -61993,6 +62183,14 @@
 	icon_state = "floor_marked"
 	},
 /area/desert_dam/building/cafeteria/loading)
+"nNj" = (
+/obj/structure/machinery/cm_vending/sorted/tech/tool_storage{
+	req_one_access = list()
+	},
+/turf/open/floor/prison{
+	icon_state = "bright_clean2"
+	},
+/area/desert_dam/exterior/valley/valley_cargo)
 "nRL" = (
 /obj/structure/closet/secure_closet/scientist,
 /turf/open/floor{
@@ -62029,6 +62227,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/asphalt,
 /area/desert_dam/exterior/valley/valley_medical)
+"nUw" = (
+/obj/structure/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/prison{
+	icon_state = "bright_clean2"
+	},
+/area/desert_dam/building/warehouse/warehouse)
 "nWZ" = (
 /obj/structure/closet/secure_closet/security,
 /obj/item/clothing/suit/armor/vest/security,
@@ -62199,6 +62405,11 @@
 "ozu" = (
 /turf/open/asphalt,
 /area/desert_dam/exterior/valley/south_valley_dam)
+"ozw" = (
+/turf/open/floor/prison{
+	icon_state = "bright_clean2"
+	},
+/area/desert_dam/exterior/rock)
 "oAM" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal2"
@@ -62430,7 +62641,7 @@
 /obj/effect/decal/sand_overlay/sand1/corner1{
 	dir = 1
 	},
-/turf/open/asphalt,
+/turf/open/floor/plating,
 /area/desert_dam/exterior/valley/valley_cargo)
 "puM" = (
 /obj/structure/machinery/light{
@@ -62612,6 +62823,20 @@
 	icon_state = "cement_sunbleached3"
 	},
 /area/desert_dam/exterior/valley/valley_civilian)
+"pPx" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/structure/cargo_container/lockmart/mid{
+	layer = 3.1;
+	pixel_y = 5
+	},
+/turf/open/floor/plating,
+/area/desert_dam/building/warehouse/warehouse)
+"pPI" = (
+/obj/structure/surface/table/almayer,
+/turf/open/floor/plating,
+/area/desert_dam/exterior/valley/valley_cargo)
 "pSM" = (
 /obj/effect/landmark/nightmare{
 	insert_tag = "purple-new-bridge"
@@ -62838,6 +63063,14 @@
 /obj/structure/flora/grass/tallgrass/desert/corner,
 /turf/open/desert/dirt,
 /area/desert_dam/exterior/valley/valley_hydro)
+"qHD" = (
+/obj/structure/machinery/cm_vending/sorted/tech/electronics_storage{
+	req_one_access = list()
+	},
+/turf/open/floor/prison{
+	icon_state = "bright_clean2"
+	},
+/area/desert_dam/building/warehouse/warehouse)
 "qHF" = (
 /obj/structure/flora/grass/desert/lightgrass_10,
 /turf/open/desert/dirt,
@@ -63052,6 +63285,13 @@
 /obj/effect/decal/cleanable/liquid_fuel,
 /turf/open/asphalt/cement_sunbleached,
 /area/desert_dam/exterior/valley/valley_hydro)
+"rqh" = (
+/obj/structure/desertdam/decals/road_edge,
+/obj/effect/decal/sand_overlay/sand1{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/desert_dam/exterior/valley/valley_cargo)
 "rqk" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/vomit,
@@ -63204,6 +63444,19 @@
 	icon_state = "warning"
 	},
 /area/desert_dam/interior/lab_northeast/east_lab_west_entrance)
+"rNB" = (
+/obj/structure/machinery/landinglight/ds2/delaytwo{
+	dir = 8
+	},
+/obj/structure/barricade/sandbags{
+	dir = 4;
+	icon_state = "sandbag_0";
+	pixel_y = 2
+	},
+/turf/open/asphalt/cement_sunbleached{
+	icon_state = "cement_sunbleached3"
+	},
+/area/desert_dam/exterior/landing_pad_two)
 "rPh" = (
 /obj/structure/surface/table,
 /obj/item/device/autopsy_scanner,
@@ -63351,6 +63604,10 @@
 	icon_state = "desert_transition_corner1"
 	},
 /area/desert_dam/exterior/valley/bar_valley_dam)
+"sjD" = (
+/obj/structure/machinery/light,
+/turf/open/floor/plating/bare_catwalk,
+/area/desert_dam/exterior/valley/valley_cargo)
 "skB" = (
 /turf/open/desert/rock,
 /area/desert_dam/exterior/valley/valley_hydro)
@@ -63472,6 +63729,27 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/asphalt,
 /area/desert_dam/exterior/valley/valley_medical)
+"sGB" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N"
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/structure/prop/dam/crane{
+	bound_height = 32;
+	climbable = 1;
+	layer = 3.5;
+	pixel_y = -23
+	},
+/turf/open/floor/plating,
+/area/desert_dam/building/warehouse/warehouse)
+"sGO" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal9"
+	},
+/turf/open/floor/plating,
+/area/desert_dam/exterior/valley/valley_cargo)
 "sHk" = (
 /obj/structure/prop/dam/boulder/boulder3,
 /turf/open/desert/dirt,
@@ -63537,14 +63815,16 @@
 	},
 /area/desert_dam/exterior/telecomm/lz2_storage)
 "sNX" = (
-/obj/structure/desertdam/decals/road_edge{
-	icon_state = "road_edge_decal11"
+/obj/effect/decal/warning_stripes{
+	icon_state = "N"
 	},
-/obj/effect/decal/sand_overlay/sand1{
-	dir = 6
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
 	},
-/turf/open/asphalt,
-/area/desert_dam/exterior/valley/valley_cargo)
+/turf/open/floor/prison{
+	icon_state = "bright_clean2"
+	},
+/area/desert_dam/building/warehouse/warehouse)
 "sPS" = (
 /turf/open/desert/dirt{
 	dir = 4;
@@ -63595,6 +63875,19 @@
 /obj/structure/closet/secure_closet/personal,
 /turf/open/floor/wood,
 /area/desert_dam/building/warehouse/breakroom)
+"sXG" = (
+/obj/structure/machinery/landinglight/ds2{
+	dir = 4
+	},
+/obj/structure/barricade/sandbags{
+	dir = 8;
+	icon_state = "sandbag_0";
+	pixel_y = 2
+	},
+/turf/open/asphalt/cement_sunbleached{
+	icon_state = "cement_sunbleached1"
+	},
+/area/desert_dam/exterior/landing_pad_two)
 "sXM" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal7"
@@ -63689,11 +63982,12 @@
 /turf/open/desert/dirt,
 /area/desert_dam/exterior/valley/valley_hydro)
 "tlh" = (
-/obj/effect/decal/sand_overlay/sand1,
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal3"
 	},
-/turf/open/asphalt,
+/turf/open/floor/prison{
+	icon_state = "bright_clean2"
+	},
 /area/desert_dam/exterior/valley/valley_cargo)
 "tni" = (
 /obj/effect/decal/sand_overlay/sand1,
@@ -64014,6 +64308,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/asphalt,
 /area/desert_dam/exterior/valley/valley_labs)
+"uuq" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal3"
+	},
+/turf/open/floor/plating,
+/area/desert_dam/exterior/valley/valley_cargo)
 "uvf" = (
 /turf/open/desert/dirt,
 /area/desert_dam/exterior/telecomm/lz1_xenoflora)
@@ -64677,6 +64977,12 @@
 	},
 /turf/open/asphalt,
 /area/desert_dam/exterior/valley/valley_telecoms)
+"wDn" = (
+/obj/structure/machinery/light,
+/turf/open/floor/prison{
+	icon_state = "bright_clean2"
+	},
+/area/desert_dam/exterior/valley/valley_cargo)
 "wFv" = (
 /obj/structure/surface/table/reinforced,
 /turf/open/floor/prison{
@@ -64749,6 +65055,11 @@
 "wRg" = (
 /obj/structure/machinery/landinglight/ds2/delayone{
 	dir = 8
+	},
+/obj/structure/barricade/sandbags{
+	dir = 4;
+	icon_state = "sandbag_0";
+	pixel_y = 2
 	},
 /turf/open/asphalt/cement_sunbleached{
 	icon_state = "cement_sunbleached2"
@@ -65035,6 +65346,14 @@
 	icon_state = "tile"
 	},
 /area/desert_dam/exterior/valley/valley_medical)
+"xAj" = (
+/obj/structure/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/prison{
+	icon_state = "bright_clean2"
+	},
+/area/desert_dam/exterior/valley/valley_cargo)
 "xBw" = (
 /obj/structure/closet/secure_closet/personal,
 /turf/open/floor/interior/wood,
@@ -65213,6 +65532,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/asphalt,
 /area/desert_dam/exterior/valley/valley_civilian)
+"ygA" = (
+/obj/structure/platform_decoration{
+	dir = 1
+	},
+/turf/open/asphalt/cement_sunbleached{
+	icon_state = "cement_sunbleached1"
+	},
+/area/desert_dam/exterior/landing_pad_two)
 "yii" = (
 /turf/closed/wall/r_wall/bunker,
 /area/desert_dam/exterior/rock)
@@ -65249,10 +65576,10 @@
 /turf/open/asphalt/cement,
 /area/desert_dam/interior/dam_interior/south_tunnel)
 "ylS" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "E"
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal2"
 	},
-/turf/open/asphalt,
+/turf/open/floor/plating,
 /area/desert_dam/exterior/valley/valley_cargo)
 "ylT" = (
 /obj/structure/machinery/light{
@@ -67356,7 +67683,7 @@ dTs
 dTs
 dTs
 dTs
-cuH
+aPK
 dTs
 dTs
 dTs
@@ -67364,7 +67691,7 @@ dTs
 dTs
 dTs
 dTs
-cuH
+aPK
 dTs
 dTs
 dTs
@@ -67588,18 +67915,18 @@ dTs
 dTs
 dTs
 dTs
-csA
-crq
-csA
-crq
+aPK
+aPK
+aPK
+aPK
 dTs
 dTs
 dTs
-cwB
-cwB
-crq
-csA
-crq
+aPK
+aPK
+aPK
+aPK
+aPK
 dTs
 dTs
 dTs
@@ -67815,27 +68142,27 @@ dTs
 dTs
 dTs
 dTs
-csA
-cwB
-crq
-dTs
-dTs
-csA
-cwB
-csD
-crr
-csD
-crr
-cwB
-cwB
-csD
-doE
-doE
-crr
-csD
-crr
-crq
-cuH
+daU
+daU
+daU
+cCY
+cCY
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
 dTs
 dTs
 dTs
@@ -68038,39 +68365,39 @@ cBV
 cxV
 dTs
 dTs
-dTs
-dTs
-dTs
-dTs
-csA
-cwB
-crq
-dTs
-dTs
-csA
-cwB
-csD
-doE
-cxV
-csB
-crr
-csD
-doE
-doE
-doE
-aMM
-doE
-doE
-doE
-doE
-doE
-doE
-doE
-doE
-doE
-cGR
-cwB
-crq
+cCY
+cCY
+cCY
+cCY
+daU
+daU
+daU
+cCY
+cCY
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+aPK
 dTs
 dTs
 dTs
@@ -68272,39 +68599,39 @@ cfd
 crr
 dTs
 dTs
-dTs
-dTs
-cuH
-csA
-csD
-doE
-crr
-cwB
-crq
-csB
-doE
-doE
-doE
-cGR
-csD
-doE
-doE
-doE
-doE
-doE
-doE
-doE
-doE
-doE
-doE
-doE
-doE
-doE
-doE
-doE
-doE
-doE
-cxV
+cCY
+cCY
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+aPK
 dTs
 dTs
 dTs
@@ -68506,40 +68833,40 @@ cYY
 cUf
 cxV
 dTs
-dTs
-cwB
-cwB
-csD
-doE
-doE
-doE
-doE
-crr
-csD
-doE
-doE
-doE
-doE
-doE
-doE
-doE
-doE
-doE
-doE
-doE
-doE
-doE
-doE
-doE
-doE
-cuL
-crw
-crw
-cuz
-doE
-doE
-crr
-crq
+cCY
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+sGO
+aLK
+aLK
+hqb
+daU
+daU
+aPK
+aPK
 dTs
 dTs
 dTs
@@ -68740,7 +69067,7 @@ cCO
 ctK
 dTs
 dTs
-cwz
+daU
 aKY
 cMq
 cGu
@@ -68759,22 +69086,22 @@ aLy
 cGu
 cGu
 cGu
-cGu
-cGu
-cGu
-cGu
-cGu
-cMq
-cQn
+lne
+lne
+lne
+lne
+lne
+cES
+cRE
 lIK
-crx
-crx
-tlh
-doE
-doE
-dgG
-cxV
-cuH
+daU
+daU
+uuq
+daU
+daU
+aPK
+aPK
+aPK
 dTs
 dTs
 acu
@@ -68974,16 +69301,16 @@ cCU
 cAa
 dTs
 dTs
-csD
-alh
+daU
+cBS
 cMC
 aav
-cFI
-cFS
-cGG
-cFc
-cFI
-cFS
+gjZ
+aMM
+sXG
+eyN
+gjZ
+aMM
 cGG
 cFc
 cFI
@@ -68991,23 +69318,23 @@ cFS
 cLe
 cEZ
 cCZ
-cFS
-cGG
-cFc
-cFI
-cFS
-cGG
+aMM
+sXG
+eyN
+gjZ
+aMM
+sXG
 cDL
 cMC
 cgh
-cUl
-cvJ
-crz
-tlh
-doE
-doE
-doE
-cxV
+lIK
+daU
+daU
+uuq
+daU
+daU
+aPK
+aPK
 dTs
 dTs
 dTs
@@ -69208,7 +69535,7 @@ cfd
 doE
 crr
 dTs
-dTs
+cCY
 cDb
 cDK
 cDY
@@ -69234,15 +69561,15 @@ cDY
 cDY
 cMD
 cBS
-cUl
-crx
-crx
-tlh
-doE
-doE
-doE
-crr
-crq
+lIK
+daU
+daU
+uuq
+daU
+daU
+aPK
+aPK
+aPK
 dTs
 dTs
 acu
@@ -69442,7 +69769,7 @@ cfd
 doE
 doE
 dTs
-dTs
+cCY
 cDb
 cDM
 cDY
@@ -69468,16 +69795,16 @@ cDY
 cDY
 cML
 cBS
-cUl
-crx
-crx
-tlh
-doE
-cuO
-doE
-doE
-cxV
-cuH
+lIK
+daU
+daU
+uuq
+daU
+kOC
+aPK
+aPK
+aPK
+aPK
 dTs
 acu
 "}
@@ -69676,7 +70003,7 @@ cGH
 cBV
 cSR
 dTs
-dTs
+cCY
 cDb
 cGS
 cDY
@@ -69702,15 +70029,15 @@ cDY
 cDY
 cNb
 cRB
-cUl
-cvJ
-crz
-tlh
-doE
-doE
-doE
-doE
-cxV
+lIK
+daU
+daU
+uuq
+daU
+daU
+aPK
+aPK
+aPK
 dTs
 dTs
 acu
@@ -69909,8 +70236,8 @@ cTG
 cTG
 cji
 ckp
-crr
-dTs
+daU
+cCY
 cDb
 adf
 cDY
@@ -69936,14 +70263,14 @@ cDY
 cDY
 cNh
 djl
-daD
-crx
-crx
-tlh
-doE
-doE
-csE
-cxU
+cGR
+daU
+daU
+uuq
+daU
+daU
+aPK
+aPK
 dTs
 dTs
 dTs
@@ -70143,7 +70470,7 @@ cRM
 cRM
 cRM
 dFn
-doE
+daU
 cCY
 cDb
 abS
@@ -70169,16 +70496,16 @@ cDY
 cDY
 cDY
 cNi
-dws
-crx
-crx
-crx
-tlh
-crv
-drL
-drO
-crr
-crq
+cDY
+daU
+daU
+daU
+uuq
+daU
+daU
+aPK
+aPK
+aPK
 dTs
 dTs
 acu
@@ -70377,8 +70704,8 @@ crx
 crx
 crx
 dFo
-doE
-doE
+daU
+daU
 cDb
 cDM
 cDY
@@ -70403,16 +70730,16 @@ cDY
 cDY
 cDY
 cNx
-dws
-crx
-cvJ
-crz
-tlh
-fSc
-dsE
-drT
-cru
-cxV
+cDY
+daU
+daU
+daU
+uuq
+daU
+daU
+aPK
+aPK
+aPK
 dTs
 dTs
 acu
@@ -70611,8 +70938,8 @@ crx
 crx
 crx
 dFo
-doE
-doE
+daU
+daU
 cDb
 cGS
 cDY
@@ -70637,16 +70964,16 @@ cDY
 cDY
 cDY
 cPI
-dws
-crx
-crx
-crx
-tlh
-drL
-uTo
-drN
-doE
-crr
+cDY
+daU
+daU
+daU
+uuq
+daU
+daU
+aPK
+aPK
+aPK
 dTs
 dTs
 acu
@@ -70845,8 +71172,8 @@ crx
 crx
 crx
 dFo
-cOj
-doE
+daU
+daU
 cDb
 adf
 cDY
@@ -70872,16 +71199,16 @@ cDY
 cDY
 cPW
 djk
-cUk
-crx
-crx
-tlh
-duc
-drN
-cAd
-doE
-cxU
-czA
+hcZ
+daU
+daU
+daU
+daU
+daU
+aPK
+deU
+aPK
+aPK
 dTs
 acu
 "}
@@ -71079,8 +71406,8 @@ crx
 crx
 crx
 dFo
-doE
-doE
+daU
+daU
 cDb
 abS
 cDY
@@ -71106,14 +71433,14 @@ cDY
 cDY
 cMD
 cRE
-cUl
-cvJ
-crz
-tlh
-csE
-cxT
-doE
-doE
+lIK
+daU
+daU
+daU
+daU
+daU
+aPK
+deU
 dTs
 dTs
 dTs
@@ -71313,8 +71640,8 @@ crx
 crx
 crx
 dFo
-doE
-doE
+daU
+daU
 cDb
 cDM
 cDY
@@ -71340,15 +71667,15 @@ cDY
 cDY
 cML
 cBS
-cUl
-crx
-crx
-tlh
-cru
-csE
-doE
-doE
-cxV
+lIK
+daU
+daU
+uuq
+daU
+daU
+aPK
+deU
+aPK
 dTs
 dTs
 acu
@@ -71547,8 +71874,8 @@ crx
 crx
 crx
 dFo
-doE
-cDc
+daU
+daU
 cDb
 cDV
 cDY
@@ -71571,18 +71898,18 @@ cDY
 cDY
 cDY
 cDY
-cDY
-cNb
-cBS
-cUl
-crx
-crx
-tlh
-drL
-drO
-doE
-doE
-cxV
+cnA
+aNx
+czA
+lIK
+daU
+daU
+uuq
+daU
+daU
+aPK
+deU
+aPK
 dTs
 dTs
 acu
@@ -71781,17 +72108,17 @@ crx
 crx
 crx
 dFo
-doE
-doE
-alh
+daU
+daU
+cBS
 cMC
 wRg
-cGQ
-cFe
-cFP
-cGa
-cGQ
-cFe
+daw
+alh
+rNB
+cJW
+daw
+alh
 cFP
 cGa
 cGQ
@@ -71799,24 +72126,24 @@ cFe
 cHn
 vpn
 cFb
-cFe
-cFP
-cGa
-cGQ
-cFe
-cFP
+alh
+rNB
+cJW
+daw
+alh
+rNB
 cLL
-cMC
-cgh
-cUl
-cvJ
-crz
-tlh
-dsE
-drT
-cru
-doE
-cxV
+kzX
+hcD
+lIK
+daU
+daU
+uuq
+daU
+daU
+aPK
+deU
+aPK
 dTs
 dTs
 acu
@@ -72015,9 +72342,8 @@ crx
 crx
 crx
 dFo
-doE
-doE
-aLK
+daU
+daU
 cDX
 cDX
 cDX
@@ -72040,16 +72366,17 @@ cDX
 cDX
 cDX
 cDX
-cES
-cRB
-cUl
-crx
-crx
-tlh
-duc
-drN
-csE
-cxU
+ygA
+dre
+gVd
+lIK
+daU
+daU
+uuq
+daU
+daU
+aPK
+deU
 dTs
 dTs
 dTs
@@ -72249,41 +72576,41 @@ crx
 crx
 crx
 cEa
-crw
-crw
+rqh
+rqh
 poM
-cRM
-cRM
-cRM
-cRM
-cRM
-cRM
-cRM
-cRM
-cRM
-cRM
-cRM
-cRM
-cRM
-cRM
-cRM
-cRM
-cRM
-cRM
-cRM
-cRM
-cRM
-cRM
-cRM
-cRM
-daD
-crx
-crx
+aLK
+aLK
+aLK
+aLK
+aLK
+aLK
+aLK
+aLK
+aLK
+aLK
+aLK
+aLK
+aLK
+aLK
+aLK
+aLK
+aLK
+aLK
+aLK
+aLK
+aLK
+aLK
+aLK
+aLK
+cmO
+aNz
+aNz
 tlh
-csE
-cAd
-doE
-cxV
+daU
+daU
+aPK
+aPK
 dTs
 dTs
 dTs
@@ -72483,41 +72810,41 @@ crx
 crx
 crx
 crx
-crx
-crx
-ylS
-crx
-crx
-ylS
-crx
-crx
-ylS
-dvo
-dvo
-ylS
-crx
-crx
-ylS
-dvo
-dvo
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
 cXA
-crx
-crx
-ylS
-crx
-crx
-ylS
-crx
-crx
-ylS
-crx
-cvJ
-crz
+cXA
+daU
+daU
+daU
+daU
+cXA
+cXA
+deV
+cdf
+cdf
+cdf
+cKp
+cKp
+cdf
+cdf
+cdf
+cKp
+aNz
+aNz
+aNz
 tlh
-doE
-cuO
+daU
+daU
 aPK
-cxV
+aPK
 dTs
 dTs
 dTs
@@ -72717,41 +73044,41 @@ crx
 crx
 crx
 crx
-crx
-crx
-cvG
-crx
-crx
-cvG
-crx
-crx
-cvG
-crx
-dvo
-cKL
-dvo
-dvo
-cKL
-dvo
-crx
-cvG
-crx
-crx
-cvG
-crx
-crx
-cvG
-crx
-crx
-cvG
-crx
-crx
-crx
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+daU
+cXA
+cXA
+daU
+daU
+daU
+cXA
+daU
+cKp
+aNz
+aNz
+aNz
+pPI
+pPI
+cks
+cks
+cks
+cKp
+aNz
+aNz
+aNz
 tlh
-csE
-doE
-doE
-cxV
+daU
+daU
+aPK
+aPK
 dTs
 dTs
 dTs
@@ -72951,40 +73278,40 @@ cuJ
 cuJ
 cuJ
 cuJ
-cuJ
-cuJ
-cuJ
-cnA
-cMJ
-cMJ
-cMJ
-cMJ
-cMJ
-cMJ
-cUk
-crx
-dvo
+dws
+daU
+daU
+ylS
+ylS
+ylS
+nzO
+nzO
+nzO
+nzO
+hcZ
+daU
+daU
 cQc
-cMJ
-cMJ
-cMJ
-cMJ
-cMJ
-cMJ
-cMJ
-cMJ
-cMJ
-cMJ
+ylS
+ylS
+ylS
 eCk
-cuJ
-cuJ
-cuJ
-cuJ
-cuJ
-sNX
-doE
-doE
-doE
+aNz
+aNz
+aNz
+aNz
+aNz
+cks
+cks
+sjD
+eCk
+aNz
+aNz
+aNz
+aNz
+daU
+daU
+aPK
 dTs
 dTs
 dTs
@@ -73186,38 +73513,38 @@ doE
 doE
 doE
 cxU
-dTs
-dTs
-aMI
-aMI
-aMI
-aMI
-aMI
-aMI
-cHo
+ebs
+ozw
+aNK
+aNK
+aNK
+aNK
+aNK
+aNK
+aNK
 cLG
 cLG
 cLI
-cLG
-cUY
-cVH
-cVH
 aMI
 aMI
-daw
-deU
-cQm
-cQm
+aMI
+aMI
+bvA
+nUw
+aNz
+aNz
+aNz
+aNz
 aMT
-aNx
 cks
-doE
-doE
-doE
-doE
-doE
-doE
-doE
+cks
+cKp
+aNz
+aNz
+aNz
+aNz
+daU
+daU
 dTs
 dTs
 dTs
@@ -73420,38 +73747,38 @@ doE
 doE
 cxU
 dTs
-dTs
-dTs
-aMI
-cdf
-cmO
+ebs
+ozw
+aNK
+aNK
+aNK
 cnS
-cmO
-aMI
-cHo
+aNK
+aNK
+aNK
 cLQ
 cLG
 cLI
-cLH
-cUY
-cVH
-cVH
-cXD
 aMI
-daU
-deV
-cQm
-cQm
-aMU
+aMI
+aMI
+aMI
+dgG
+aNK
 aNz
-doE
-doE
-doE
-doE
-doE
-doE
-dTs
-doE
+aNz
+aNz
+wDn
+cKp
+cKp
+cKp
+cKp
+aNz
+aNz
+aNz
+aNz
+cCY
+daU
 dTs
 dTs
 dTs
@@ -73654,38 +73981,38 @@ doE
 doE
 cxV
 dTs
-dTs
-dTs
-aMI
-cpf
-cmS
-cmS
-cmS
-aMI
-cHo
+ebs
+ozw
+aNK
+aNK
+aNK
+aNK
+aNK
+aNK
+aNK
 cLQ
 cLI
 cLK
-cLO
-cUY
-cVH
-cVH
-cXD
 aMI
-daU
-deV
-cQm
-cQm
+aMI
+aMI
+aMI
+bvA
+aNK
+aNz
+aNz
+aNz
+aNz
 aNe
 aNz
-doE
-doE
-doE
-doE
-doE
-dTs
-dTs
-dTs
+aNz
+aNz
+aMU
+aNz
+aNz
+ozw
+cCY
+cCY
 dTs
 dTs
 dTs
@@ -73888,38 +74215,38 @@ aee
 aee
 aee
 dTs
-dTs
-dTs
-aMI
-cpf
-cmS
-cmS
-cmS
-aMI
-cHo
+ebs
+ozw
+aNK
+aNK
+aNK
+aNK
+aNK
+aNK
+aNK
 cLQ
 cLI
 cLI
-cLO
-cUZ
-cVH
-cVH
-cXD
 aMI
-daU
-deV
-cQm
-cQm
-aNe
+aMI
+aMI
+aMI
+bvA
+qHD
+nNj
 aNz
-doE
-doE
-doE
-doE
-dTs
-dTs
-dTs
-dTs
+xAj
+aNz
+daU
+aNz
+aNz
+aNz
+aNz
+aNz
+ozw
+ozw
+cCY
+cCY
 dTs
 dTs
 dTs
@@ -74122,38 +74449,38 @@ doE
 dTs
 aee
 dTs
-dTs
-dTs
-aMI
-aMI
-aMI
-aMI
-aMI
-aMI
-cHo
+ebs
+ozw
+aNK
+aNK
+aNK
+aNK
+aNK
+aNK
+aNK
 cLQ
 cLI
 cLK
-cLO
+aMN
 cVa
-cVH
-cVH
-cXD
 aMI
 aMI
-ddL
-aMI
-aMI
-ddL
-aMI
-aMI
-doE
-doE
-dTs
-dTs
-dTs
-dTs
-dTs
+bvA
+bvA
+bvA
+bvA
+bvA
+bvA
+faU
+aNK
+aNK
+aNz
+aNz
+ozw
+ozw
+cCY
+cCY
+cCY
 dTs
 dTs
 dTs
@@ -74356,38 +74683,38 @@ doE
 dTs
 dTs
 dTs
-dTs
-dTs
-dTs
-dTs
+ebs
+ebs
+ebs
+ebs
 bvA
 cpf
 cmS
 cmS
-cHo
+aNK
 cLQ
 cLI
 cLI
-cLO
-cUZ
-cVI
-cVH
-cXD
-cYC
-aNK
-ddL
-deW
 aMN
-aNo
+aMN
+aMN
+cQn
+aMI
+aMI
 aNK
-bvA
-dTs
-dTs
-dTs
-dTs
-dTs
-dTs
-dTs
+fac
+hVI
+aNo
+sNX
+aNK
+aMI
+cCY
+cCY
+cCY
+cCY
+cCY
+cCY
+cCY
 dTs
 dTs
 dTs
@@ -74598,30 +74925,30 @@ bvA
 cpf
 cmS
 cmS
-cHo
+aNK
 cLQ
 cLI
 cLI
-cLO
-cUY
-cVI
-cVH
-cXD
-cYC
-aNK
-ddL
-deW
 aMN
+aMI
+aMN
+aMI
+aMI
+aMI
+aMI
+aMI
+pPx
 aNo
+sNX
 aNK
-bvA
-dTs
-dTs
-dTs
-dTs
-dTs
-dTs
-dTs
+aMI
+cCY
+cCY
+cCY
+cCY
+cCY
+cCY
+cCY
 dTs
 dTs
 dTs
@@ -74836,26 +75163,26 @@ cHo
 cLQ
 cLI
 cLG
-cLH
-cUY
-cVI
-cVH
-cXD
-cYC
-aNK
-ddL
-deW
+aMI
+aMI
 aMN
+aMI
+aMI
+aMI
+aMI
+aMI
+fSc
 aNo
+sGB
 aNK
-bvA
-dTs
-dTs
-dTs
-dTs
-dTs
-dTs
-dTs
+aMI
+cCY
+cCY
+cCY
+cCY
+cCY
+cCY
+cCY
 dTs
 dTs
 dTs
@@ -75076,20 +75403,20 @@ cVI
 cVH
 cXD
 cYH
-dbh
-dbh
+fWU
+fWU
 deX
 aMS
 aMS
 dbh
-bvA
-dTs
-dTs
-dTs
-dTs
-dTs
-dTs
-dTs
+aMI
+cCY
+cCY
+cCY
+cCY
+cCY
+cCY
+cCY
 dTs
 dTs
 dTs
@@ -75316,14 +75643,14 @@ deY
 dfA
 cXK
 cXD
-bvA
-dTs
-dTs
-dTs
-dTs
-dTs
-dTs
-dTs
+aMI
+cCY
+cCY
+cCY
+cCY
+cCY
+cCY
+cCY
 dTs
 dTs
 dTs
@@ -75549,15 +75876,15 @@ cXK
 deZ
 cXK
 cXK
-cXN
-bvA
-dTs
-dTs
-dTs
-dTs
-dTs
-dTs
-dTs
+cXD
+aMI
+cCY
+cCY
+cCY
+cCY
+cCY
+cCY
+cCY
 dTs
 dTs
 dTs
@@ -75784,14 +76111,14 @@ cYL
 cph
 cXK
 cXD
-bvA
-dTs
-dTs
-dTs
-dTs
-dTs
-dTs
-dTs
+aMI
+cCY
+cCY
+cCY
+cCY
+cCY
+cCY
+cCY
 dTs
 dTs
 dTs
@@ -76018,14 +76345,14 @@ dfa
 dfz
 cXK
 cXD
-bvA
-dTs
-dTs
-dTs
-dTs
-dTs
-dTs
-dTs
+aMI
+cCY
+cCY
+cCY
+cCY
+cCY
+cCY
+cCY
 dTs
 dTs
 dTs
@@ -76252,14 +76579,14 @@ deW
 dfz
 cXK
 cXD
-bvA
-dTs
-dTs
-dTs
-dTs
-dTs
-dTs
-dTs
+aMI
+cCY
+cCY
+cCY
+cCY
+cCY
+cCY
+cCY
 dTs
 dTs
 dTs
@@ -76486,14 +76813,14 @@ deW
 cpf
 cXK
 cXD
-bvA
-dTs
-dTs
-dTs
-dTs
-dTs
-dTs
-dTs
+aMI
+cCY
+cCY
+cCY
+cCY
+cCY
+cCY
+cCY
 dTs
 dTs
 dTs
@@ -76720,14 +77047,14 @@ deW
 cpf
 cXK
 cXD
-bvA
-dTs
-dTs
-dTs
-dTs
-dTs
-dTs
-dTs
+aMI
+cCY
+cCY
+cCY
+cCY
+cCY
+cCY
+cCY
 dTs
 dTs
 dTs
@@ -76954,14 +77281,14 @@ aMI
 aMI
 cXK
 aMI
-bvA
-dTs
-dTs
-dTs
-dTs
-dTs
-dTs
-dTs
+aMI
+cCY
+cCY
+cCY
+cCY
+cCY
+cCY
+cCY
 dTs
 dTs
 dTs
@@ -77188,14 +77515,14 @@ dfb
 dcc
 dfH
 cVU
-cZB
-dTs
-dTs
-dTs
-dTs
-dTs
-dTs
-dTs
+dbI
+cCY
+cCY
+cCY
+cCY
+cCY
+cCY
+cCY
 dTs
 dTs
 dTs
@@ -77422,14 +77749,14 @@ dfb
 dcc
 dfH
 cVU
-cZB
-cZB
-cZB
-cZB
-cZB
-dTs
-dTs
-dTs
+dbI
+dbI
+dbI
+dbI
+dbI
+cCY
+cCY
+cCY
 dTs
 dTs
 dTs
