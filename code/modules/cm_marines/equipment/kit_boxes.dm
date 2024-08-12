@@ -20,6 +20,16 @@
 	else
 		icon_state = "kit_case_e"
 
+/obj/item/storage/box/spec/rocket
+	name = "M5 RPG case"
+	desc = "Contains M5 RPG, rockets, and hearing protection."
+	kit_overlay = "demo"
+	w_class = SIZE_HUGE
+	storage_slots = 14
+	slowdown = 1
+	can_hold = list()
+	foldable = null
+
 /obj/item/storage/box/spec/demolitionist
 	name = "\improper Demolitionist equipment case"
 	desc = "A large case containing a heavy-caliber anti-tank M5 RPG rocket launcher, M3-T light armor, five 84mm rockets and additional pieces of equipment.\nDrag this sprite onto yourself to open it up! NOTE: You cannot put items back inside this case."

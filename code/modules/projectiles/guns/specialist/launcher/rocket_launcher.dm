@@ -4,7 +4,7 @@
 
 /obj/item/weapon/gun/launcher/rocket
 	name = "\improper M5 RPG"
-	desc = "The M5 RPG is the primary anti-armor weapon of the USCM. Used to take out light-tanks and enemy structures, the M5 RPG is a dangerous weapon with a variety of combat uses."
+	desc = "Lightweight high velocity rocket launcher, 60mm. Useful against light armor and hardened structures, or personnel."
 	icon = 'icons/obj/items/weapons/guns/guns_by_faction/uscm.dmi'
 	icon_state = "m5"
 	item_state = "m5"
@@ -27,7 +27,7 @@
 	var/datum/effect_system/smoke_spread/smoke
 
 	flags_item = TWOHANDED|NO_CRYO_STORE
-	var/skill_locked = TRUE
+	var/skill_locked = FALSE
 
 /obj/item/weapon/gun/launcher/rocket/Initialize(mapload, spawn_empty)
 	. = ..()
@@ -58,15 +58,12 @@
 		. += "It's not loaded."
 		return
 	if(current_mag.current_rounds > 0)
-		. += "It has an 84mm [ammo.name] loaded."
+		. += "It has an 60mm [ammo.name] loaded."
 
 
 /obj/item/weapon/gun/launcher/rocket/able_to_fire(mob/living/user)
 	. = ..()
 	if (. && istype(user)) //Let's check all that other stuff first.
-		if(skill_locked && !skillcheck(user, SKILL_SPEC_WEAPONS, SKILL_SPEC_ALL) && user.skills.get_skill_level(SKILL_SPEC_WEAPONS) != SKILL_SPEC_ROCKET)
-			to_chat(user, SPAN_WARNING("You don't seem to know how to use \the [src]..."))
-			return 0
 		if(user.faction == FACTION_MARINE && explosive_antigrief_check(src, user))
 			to_chat(user, SPAN_WARNING("\The [name]'s safe-area accident inhibitor prevents you from firing!"))
 			msg_admin_niche("[key_name(user)] attempted to fire \a [name] in [get_area(src)] [ADMIN_JMP(loc)]")
@@ -181,9 +178,7 @@
 	if(!HAS_TRAIT(user, TRAIT_EAR_PROTECTION) && ishuman(user))
 		var/mob/living/carbon/human/huser = user
 		to_chat(user, SPAN_WARNING("Augh!! \The [src]'s launch blast resonates extremely loudly in your ears! You probably should have worn some sort of ear protection..."))
-		huser.apply_effect(6, STUTTER)
 		huser.emote("pain")
-		huser.SetEarDeafness(max(user.ear_deaf,10))
 
 	var/backblast_loc = get_turf(get_step(user.loc, turn(user.dir, 180)))
 	smoke.set_up(1, 0, backblast_loc, turn(user.dir, 180))
@@ -191,17 +186,16 @@
 	playsound(src, 'sound/weapons/gun_rocketlauncher.ogg', 100, TRUE, 10)
 	for(var/mob/living/carbon/C in backblast_loc)
 		if(C.body_position == STANDING_UP && !HAS_TRAIT(C, TRAIT_EAR_PROTECTION)) //Have to be standing up to get the fun stuff
-			C.apply_damage(15, BRUTE) //The shockwave hurts, quite a bit. It can knock unarmored targets unconscious in real life
-			C.apply_effect(4, STUN) //For good measure
-			C.apply_effect(6, STUTTER)
+			C.apply_armoured_damage(30, ARMOR_BOMB, BRUTE) //The shockwave hurts, quite a bit. It can knock unarmored targets unconscious in real life
+			C.apply_effect(2, STUN) //For good measure
 			C.emote("pain")
 
 //-------------------------------------------------------
 //M5 RPG'S MEAN FUCKING COUSIN
 
 /obj/item/weapon/gun/launcher/rocket/m57a4
-	name = "\improper M57-A4 'Lightning Bolt' quad thermobaric launcher"
-	desc = "The M57-A4 'Lightning Bolt' is possibly the most destructive man-portable weapon ever made. It is a 4-barreled missile launcher capable of burst-firing 4 thermobaric missiles. Enough said."
+	name = "\improper M52 SLAM"
+	desc = "The M52 Shoulder Launched Anti armor Munition is a Latin American solution to the problem of increasing target hardness. The four shot burst of rockets overwhelms close protection networks and batters through armor."
 	icon = 'icons/obj/items/weapons/guns/guns_by_faction/event.dmi'
 	icon_state = "m57a4"
 	item_state = "m57a4"
@@ -249,7 +243,7 @@
 
 /obj/item/weapon/gun/launcher/rocket/anti_tank/disposable //single shot and disposable
 	name = "\improper M83A2 SADAR"
-	desc = "The M83A2 SADAR is a lightweight one-shot anti-armor weapon capable of engaging enemy vehicles at ranges up to 1,000m. Fully disposable, the rocket's launcher is discarded after firing. When stowed (unique-action), the SADAR system consists of a watertight carbon-fiber composite blast tube, inside of which is an aluminum launch tube containing the missile. The weapon is fired by pushing a charge button on the trigger grip.  It is sighted and fired from the shoulder."
+	desc = "The Shoulder launched Active homing Disposable Anti tank Rocket is the standard issue antitank weapon of the USCMC. Infrared homing provides ranges of up to 1km. Due to the nature of it, the lightweight launcher cannot be reloaded."
 	var/fired = FALSE
 
 /obj/item/weapon/gun/launcher/rocket/anti_tank/disposable/get_examine_text(mob/user)
@@ -292,7 +286,7 @@
 //folded version of the sadar
 /obj/item/prop/folded_anti_tank_sadar
 	name = "\improper M83 SADAR (folded)"
-	desc = "An M83 SADAR Anti-Tank RPG, compacted for easier storage. Can be unfolded with the Z key."
+	desc = "An M83 SADAR, folded. That's all."
 	icon = 'icons/obj/items/weapons/guns/guns_by_faction/uscm.dmi'
 	icon_state = "m83a2_folded"
 	w_class = SIZE_MEDIUM
@@ -363,7 +357,6 @@
 	playsound(src, 'sound/weapons/gun_rocketlauncher.ogg', 100, TRUE, 10)
 	for(var/mob/living/carbon/C in backblast_loc)
 		if(C.body_position == STANDING_UP && !HAS_TRAIT(C, TRAIT_EAR_PROTECTION)) //Have to be standing up to get the fun stuff
-			C.apply_damage(15, BRUTE) //The shockwave hurts, quite a bit. It can knock unarmored targets unconscious in real life
-			C.apply_effect(4, STUN) //For good measure
-			C.apply_effect(6, STUTTER)
+			C.apply_armoured_damage(30, ARMOR_BOMB, BRUTE) //The shockwave hurts, quite a bit. It can knock unarmored targets unconscious in real life
+			C.apply_effect(2, STUN) //For good measure
 			C.emote("pain")
