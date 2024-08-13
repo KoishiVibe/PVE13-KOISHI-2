@@ -347,6 +347,12 @@
 	icon_state = "m44rc"
 	item_state = "m44rc"
 
+/obj/item/weapon/gun/revolver/m44/custom_tactical
+	name = "\improper M44 modified combat revolver"
+	desc = "A personally owned M44 revolver that was immediately and poorly customized for 'performance.' Extensive, low quality modifications. Are you happy with what you've done?"
+	icon_state = "m44rt"
+	icon_state = "m44rt"
+
 //----------------------------------------------
 // Blade Runner Blasters.
 /obj/item/weapon/gun/revolver/m44/custom/pkd_special
