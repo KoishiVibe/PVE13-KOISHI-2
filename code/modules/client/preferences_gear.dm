@@ -36,6 +36,12 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 //================================================
 */
 
+/*
+//================================================
+				Eyewear
+//================================================
+*/
+
 /datum/gear/eyewear
 	category = "Eyewear"
 	slot = WEAR_EYES
@@ -47,6 +53,10 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 /datum/gear/eyewear/eyepatch
 	display_name = "Eyepatch"
 	path = /obj/item/clothing/glasses/eyepatch
+
+/datum/gear/eyewear/eyepatch/green
+	display_name = "Green Eyepatch"
+	path = /obj/item/clothing/glasses/eyepatch/green
 
 /datum/gear/eyewear/eyepatch/green
 	display_name = "Green Eyepatch"
@@ -79,10 +89,13 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 
 /datum/gear/eyewear/bimex_shades
 	display_name = "BiMex Polarized Shades"
+	display_name = "BiMex Polarized Shades"
 	path = /obj/item/clothing/glasses/sunglasses/big
+	allowed_origins = USCM_ORIGINS
 	allowed_origins = USCM_ORIGINS
 
 /datum/gear/eyewear/bimex_shades_orange
+	display_name = "BiMex Tactical Shades"
 	display_name = "BiMex Tactical Shades"
 	path = /obj/item/clothing/glasses/sunglasses/big/orange
 	allowed_origins = USCM_ORIGINS
@@ -173,6 +186,7 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	path = /obj/item/clothing/mask/gas
 	cost = 1
 	allowed_origins = USCM_ORIGINS
+	allowed_origins = USCM_ORIGINS
 
 /datum/gear/mask/scarf_black
 	display_name = "Scarf, black"
@@ -251,6 +265,12 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 //================================================
 */
 
+/*
+//================================================
+				Headwear
+//================================================
+*/
+
 /datum/gear/headwear
 	category = "Headwear"
 	cost = 3
@@ -261,6 +281,7 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	path = /obj/item/clothing/head/santa
 	cost = 1
 	allowed_origins = USCM_ORIGINS
+	allowed_origins = USCM_ORIGINS
 
 /datum/gear/headwear/uscm/santa_hat/special_conditions()
 	return is_month(12) && (is_day(21) || is_day(22) || is_day(23) || is_day(24) || is_day(25) || is_day(26))
@@ -269,6 +290,7 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	display_name = "santa hat, green"
 	path = /obj/item/clothing/head/santa/green
 	cost = 1
+	allowed_origins = USCM_ORIGINS
 	allowed_origins = USCM_ORIGINS
 
 /datum/gear/headwear/uscm/santa_hat_green/special_conditions()
@@ -482,6 +504,7 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	display_name = "Flair, USCM"
 	path = /obj/item/prop/helmetgarb/flair_uscm
 	allowed_origins = USCM_ORIGINS
+	allowed_origins = USCM_ORIGINS
 
 /datum/gear/helmet_garb/gunoil
 	display_name = "Gun oil"
@@ -656,9 +679,11 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	path = /obj/item/clothing/accessory/paint/sg
 
 /datum/gear/paint/paint_skull
+/datum/gear/paint/paint_skull
 	display_name = "M3 Pattern Skull Paint"
 	path = /obj/item/clothing/accessory/paint
 
+/datum/gear/paint/paint_heart
 /datum/gear/paint/paint_heart
 	display_name = "M3 Pattern Heart Paint"
 	path = /obj/item/clothing/accessory/paint/heart
@@ -802,6 +827,12 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 //================================================
 */
 
+/*
+//================================================
+				Recreational
+//================================================
+*/
+
 /datum/gear/toy
 	category = "Recreational"
 
@@ -811,6 +842,7 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 
 /datum/gear/toy/mags
 	cost = 1
+	allowed_origins = USCM_ORIGINS
 
 /datum/gear/toy/mags/magazine_dirty
 	display_name = "Magazine"
@@ -846,6 +878,7 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 
 /datum/gear/toy/card
 	cost = 1
+	allowed_origins = USCM_ORIGINS
 	allowed_origins = USCM_ORIGINS
 
 /datum/gear/toy/card/ace_of_spades
@@ -975,6 +1008,11 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 				Plushies
 //================================================
 */
+/*
+//================================================
+				Plushies
+//================================================
+*/
 
 /datum/gear/plush
 	category = "Plushies"
@@ -1068,6 +1106,12 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 //================================================
 */
 
+/*
+//================================================
+				Weapons
+//================================================
+*/
+
 /datum/gear/weapon
 	category = "Weapons"
 
@@ -1113,20 +1157,25 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	display_name = "Hummingbird Pistol"
 	path = /obj/item/storage/box/loadout/CLF_loadout
 	cost = 4
+	cost = 4
 
 /datum/gear/weapon/t73
 	display_name = "Type 73 Pistol"
 	path = /obj/item/storage/box/loadout/T73_loadout
+	cost = 4
 	cost = 4
 
 /datum/gear/weapon/zhnk72
 	display_name = "ZHNK-72 Revolver"
 	path = /obj/item/storage/box/loadout/ZHNK72_loadout
 	cost = 4
+	cost = 4
 
 /datum/gear/weapon/m4a3_custom
 	display_name = "Custom M4A3 Pistol"
 	path = /obj/item/storage/box/loadout/M4A3_custom_loadout
+	cost = 4
+	allowed_origins = USCM_ORIGINS
 	cost = 4
 	allowed_origins = USCM_ORIGINS
 
@@ -1135,10 +1184,13 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	path = /obj/item/storage/box/loadout/M1911_loadout
 	cost = 4
 	allowed_origins = USCM_ORIGINS
+	cost = 4
+	allowed_origins = USCM_ORIGINS
 
 /datum/gear/weapon/m44
 	display_name = "M44 Revolver"
 	path = /obj/item/storage/box/loadout/M44_loadout
+	cost = 4
 	cost = 4
 
 /datum/gear/weapon/m44_custom_revolver
@@ -1146,10 +1198,13 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	path = /obj/item/storage/box/loadout/M44_custom_loadout
 	cost = 4
 	allowed_origins = USCM_ORIGINS
+	cost = 4
+	allowed_origins = USCM_ORIGINS
 
 /datum/gear/weapon/hg45_civilian
 	display_name = "HG 45 'Aguila' Pistol"
 	path = /obj/item/storage/box/loadout/HG45_civilian_loadout
+	cost = 4
 	cost = 4
 
 /datum/gear/weapon/hg45_marine
@@ -1157,15 +1212,19 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	path = /obj/item/storage/box/loadout/HG45_marine_loadout
 	cost = 4
 	allowed_origins = USCM_ORIGINS
+	cost = 4
+	allowed_origins = USCM_ORIGINS
 
 /datum/gear/weapon/hg44
 	display_name = "HG 44 'Automag' Pistol"
 	path = /obj/item/storage/box/loadout/HG44_loadout
 	cost = 4
+	cost = 4
 
 /datum/gear/weapon/spearhead
 	display_name = "Spearhead Armoury Revolver"
 	path = /obj/item/storage/box/loadout/Spearhead_loadout
+	cost = 4
 	cost = 4
 
 /datum/gear/weapon/spearhead_custom
@@ -1192,6 +1251,13 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 /datum/gear/weapon/m2100_machete
 	display_name = "M2100 Machete"
 	path = /obj/item/storage/large_holster/machete/arnold/weak
+	cost = 4
+
+/*
+//================================================
+				Canned Drinks
+//================================================
+*/
 	cost = 4
 
 /*
@@ -1252,6 +1318,7 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 /datum/gear/drink/alcohol
 	cost = 3 //Illegal in military.
 	allowed_origins = USCM_ORIGINS // UPP stricter on enforcement, I figure
+	allowed_origins = USCM_ORIGINS // UPP stricter on enforcement, I figure
 
 /datum/gear/drink/alcohol/ale
 	display_name = "Weyland-Yutani IPA Ale"
@@ -1268,6 +1335,12 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 /datum/gear/drink/alcohol/loko
 	display_name = "Thirteen Loko"
 	path = /obj/item/reagent_container/food/drinks/cans/thirteenloko
+
+/*
+//================================================
+				Flasks
+//================================================
+*/
 
 /*
 //================================================
@@ -1302,6 +1375,7 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	display_name = "USCM flask"
 	path = /obj/item/reagent_container/food/drinks/flask/marine
 	allowed_origins = USCM_ORIGINS
+	allowed_origins = USCM_ORIGINS
 
 /datum/gear/flask/vacuum
 	display_name = "Vacuum flask"
@@ -1310,6 +1384,13 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 /datum/gear/flask/wy
 	display_name = "WY flask"
 	path = /obj/item/reagent_container/food/drinks/flask/weylandyutani
+	allowed_origins = USCM_ORIGINS
+
+/*
+//================================================
+				Sweet Foods
+//================================================
+*/
 	allowed_origins = USCM_ORIGINS
 
 /*
@@ -1360,6 +1441,12 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 //================================================
 */
 
+/*
+//================================================
+				Packaged Foods
+//================================================
+*/
+
 /datum/gear/snack_packaged
 	category = "Food (packaged)"
 
@@ -1397,6 +1484,12 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 //================================================
 */
 
+/*
+//================================================
+				Healthy Foods
+//================================================
+*/
+
 /datum/gear/snack_grown
 	category = "Food (healthy)"
 
@@ -1427,6 +1520,12 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 /datum/gear/snack_grown/potato
 	display_name = "Potato"
 	path = /obj/item/reagent_container/food/snacks/grown/potato
+
+/*
+//================================================
+				Smoking
+//================================================
+*/
 
 /*
 //================================================
@@ -1489,6 +1588,10 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 /datum/gear/smoking/pack_exec
 	display_name = "Pack Of Executive Selects"
 	path = /obj/item/storage/fancy/cigarettes/blackpack
+
+/datum/gear/smoking/pack_exec
+	display_name = "Pack Of Executive Selects"
+	path = /obj/item/storage/fancy/cigarettes/blackpack
 	cost = 4
 
 /datum/gear/smoking/weed_joint
@@ -1517,6 +1620,7 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	display_name = "Lighter, golden zippo"
 	path = /obj/item/tool/lighter/zippo/gold
 	cost = 3
+	cost = 3
 
 /datum/gear/smoking/electronic_cigarette
 	display_name = "Electronic cigarette"
@@ -1532,10 +1636,20 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 				Miscellaneous
 //================================================
 */
+	cost = 3
+
+/*
+//================================================
+				Miscellaneous
+//================================================
+*/
 
 /datum/gear/misc
 	category = "Miscellaneous"
 
+/datum/gear/misc/pdt_kit
+	display_name = "PDT/L kit"
+	path = /obj/item/storage/box/pdt_kit
 /datum/gear/misc/pdt_kit
 	display_name = "PDT/L kit"
 	path = /obj/item/storage/box/pdt_kit
@@ -1549,8 +1663,19 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 /datum/gear/misc/watch/bishop
 	display_name = "Seiko 7A28-6000 wristwatch"
 	path = /obj/item/storage/box/watch_box/bishop
+/datum/gear/misc/watch
+	display_name = "Seiko Pulsemeter wristwatch"
+	path = /obj/item/storage/box/watch_box
+	cost = 1
+
+/datum/gear/misc/watch/bishop
+	display_name = "Seiko 7A28-6000 wristwatch"
+	path = /obj/item/storage/box/watch_box/bishop
 	cost = 2
 
+/datum/gear/misc/watch/ripley
+	display_name = "Seiko 7A28-7000 wristwatch"
+	path = /obj/item/storage/box/watch_box/ripley
 /datum/gear/misc/watch/ripley
 	display_name = "Seiko 7A28-7000 wristwatch"
 	path = /obj/item/storage/box/watch_box/ripley
@@ -1559,8 +1684,14 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 /datum/gear/misc/watch/burke
 	display_name = "Seiko H556-5050 wristwatch"
 	path = /obj/item/storage/box/watch_box/burke
+/datum/gear/misc/watch/burke
+	display_name = "Seiko H556-5050 wristwatch"
+	path = /obj/item/storage/box/watch_box/burke
 	cost = 2
 
+/datum/gear/misc/watch/dallas
+	display_name = "Samani E-125 wristwatch"
+	path = /obj/item/storage/box/watch_box/dallas
 /datum/gear/misc/watch/dallas
 	display_name = "Samani E-125 wristwatch"
 	path = /obj/item/storage/box/watch_box/dallas
