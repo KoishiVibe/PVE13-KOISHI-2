@@ -116,7 +116,7 @@
 	damage = 20
 	damage_var_low = PROJECTILE_VARIANCE_TIER_8
 	damage_var_high = PROJECTILE_VARIANCE_TIER_8
-	penetration = ARMOR_PENETRATION_TIER_1
+	penetration = ARMOR_PENETRATION_TIER_2
 	scatter = SCATTER_AMOUNT_TIER_7//nice and tight.
 
 /datum/ammo/bullet/shotgun/flechette_spread/sharp_rifle_shrapnel
@@ -136,10 +136,10 @@
 	max_range = 9
 	damage = 35//spreading the damage out to prevent the weird cliff of can kill this, cant kill that.
 	//removes the random variance. Again, probably not a good thing to have.
-	penetration = -ARMOR_PENETRATION_TIER_4//Potentially the most sad thing you can encounter.
+	penetration = -ARMOR_PENETRATION_TIER_2//Potentially the most sad thing you can encounter.
 	bonus_projectiles_amount = EXTRA_PROJECTILES_TIER_8
 	shell_speed = AMMO_SPEED_TIER_2
-	damage_armor_punch = 1// you'll always deal a little damage. With bots magdumping, it'll do like 45 damage assuming an M120 or similar.
+	damage_armor_punch = 1// you'll always deal a little damage. With bots magdumping, it'll do like 49 damage assuming an M120 or similar.
 	pen_armor_punch = 0
 	handful_state = "buckshot_shell"
 	multiple_handful_name = TRUE
@@ -205,7 +205,7 @@
 	accurate_range = 4
 	max_range = 6
 	damage = 35
-	penetration = -ARMOR_PENETRATION_TIER_4
+	penetration = -ARMOR_PENETRATION_TIER_2
 	shell_speed = AMMO_SPEED_TIER_2
 	scatter = SCATTER_AMOUNT_TIER_2//not too wide.
 	damage_armor_punch = 1//ditto.
@@ -267,7 +267,7 @@
 	accurate_range = 8
 	max_range = 10
 	damage = 35
-	penetration = -ARMOR_PENETRATION_TIER_3//still buckshot, but not as badly effected.
+	penetration = -ARMOR_PENETRATION_TIER_1//still buckshot, but not as badly effected.
 	shell_speed = AMMO_SPEED_TIER_2
 	damage_armor_punch = 2//you will always deal 22 damage to an enemy even if their armor defeats it.
 	pen_armor_punch = 0
