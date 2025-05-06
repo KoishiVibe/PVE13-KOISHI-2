@@ -15,8 +15,6 @@
 	max_range = 14
 	damage = 95
 	penetration = -ARMOR_PENETRATION_TIER_6
-	damage_var_low = PROJECTILE_VARIANCE_TIER_10
-	damage_var_high = PROJECTILE_VARIANCE_TIER_1
 	damage_armor_punch = 2
 	handful_state = "slug_shell"
 
@@ -131,8 +129,9 @@
 	multiple_handful_name = TRUE
 	bonus_projectiles_type = /datum/ammo/bullet/shotgun/spread
 
-	accuracy_var_low = PROJECTILE_VARIANCE_TIER_5
+	accuracy_var_low = PROJECTILE_VARIANCE_TIER_10//you should at least likely hit them once.
 	accuracy_var_high = PROJECTILE_VARIANCE_TIER_5
+	accuracy = HIT_ACCURACY_MULT_TIER_5
 	accurate_range = 7
 	max_range = 9
 	damage = 35//spreading the damage out to prevent the weird cliff of can kill this, cant kill that.
@@ -201,7 +200,7 @@
 	name = "additional buckshot"
 	icon_state = "buckshot"
 
-	accuracy_var_low = PROJECTILE_VARIANCE_TIER_6
+	accuracy_var_low = PROJECTILE_VARIANCE_TIER_8
 	accuracy_var_high = PROJECTILE_VARIANCE_TIER_6
 	accurate_range = 4
 	max_range = 6
@@ -264,11 +263,11 @@
 	handful_state = "heavy_buckshot"
 	multiple_handful_name = TRUE
 	bonus_projectiles_type = /datum/ammo/bullet/shotgun/heavy/buckshot/spread
-	bonus_projectiles_amount = EXTRA_PROJECTILES_TIER_12//this is where most of the damage comes from.
+	bonus_projectiles_amount = EXTRA_PROJECTILES_TIER_10//this is where most of the damage comes from.
 	accurate_range = 8
 	max_range = 10
 	damage = 35
-	penetration = -ARMOR_PENETRATION_TIER_4//still buckshot.
+	penetration = -ARMOR_PENETRATION_TIER_3//still buckshot, but not as badly effected.
 	shell_speed = AMMO_SPEED_TIER_2
 	damage_armor_punch = 0
 	pen_armor_punch = 0
@@ -360,6 +359,7 @@
 	damage = 120
 	penetration = -ARMOR_PENETRATION_TIER_6
 	damage_armor_punch = 2
+	var/vehicle_slowdown_time = 10 SECONDS//it doesn't make THAT much sense to like, stop a tank or something? but just not using this in that context is probably fine.
 
 /datum/ammo/bullet/shotgun/heavy/slug/on_hit_mob(mob/M,obj/projectile/P)
 	knockback(M, P, 5)
