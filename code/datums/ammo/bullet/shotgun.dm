@@ -44,7 +44,7 @@
 	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_IGNORE_RESIST
 	max_range = 12
 	shrapnel_chance = 0
-	damage = 20
+	damage = 10
 	stamina_damage = 45
 	accuracy = HIT_ACCURACY_TIER_3
 	shell_speed = AMMO_SPEED_TIER_3
@@ -139,7 +139,7 @@
 	penetration = -ARMOR_PENETRATION_TIER_4//Potentially the most sad thing you can encounter.
 	bonus_projectiles_amount = EXTRA_PROJECTILES_TIER_8
 	shell_speed = AMMO_SPEED_TIER_2
-	damage_armor_punch = 0
+	damage_armor_punch = 1// you'll always deal a little damage. With bots magdumping, it'll do like 45 damage assuming an M120 or similar.
 	pen_armor_punch = 0
 	handful_state = "buckshot_shell"
 	multiple_handful_name = TRUE
@@ -208,7 +208,7 @@
 	penetration = -ARMOR_PENETRATION_TIER_4
 	shell_speed = AMMO_SPEED_TIER_2
 	scatter = SCATTER_AMOUNT_TIER_2//not too wide.
-	damage_armor_punch = 0
+	damage_armor_punch = 1//ditto.
 	pen_armor_punch = 0
 
 /datum/ammo/bullet/shotgun/spread/masterkey
@@ -269,7 +269,7 @@
 	damage = 35
 	penetration = -ARMOR_PENETRATION_TIER_3//still buckshot, but not as badly effected.
 	shell_speed = AMMO_SPEED_TIER_2
-	damage_armor_punch = 0
+	damage_armor_punch = 2//you will always deal 22 damage to an enemy even if their armor defeats it.
 	pen_armor_punch = 0
 
 /datum/ammo/bullet/shotgun/heavy/buckshot/on_hit_mob(mob/M,obj/projectile/P)
@@ -358,7 +358,7 @@
 	max_range = 17
 	damage = 120
 	penetration = -ARMOR_PENETRATION_TIER_6
-	damage_armor_punch = 2
+	damage_armor_punch = 30//a little damage, even if armor defeats it entirely.
 	var/vehicle_slowdown_time = 10 SECONDS//it doesn't make THAT much sense to like, stop a tank or something? but just not using this in that context is probably fine.
 
 /datum/ammo/bullet/shotgun/heavy/slug/on_hit_mob(mob/M,obj/projectile/P)
