@@ -439,7 +439,7 @@
 	name = "9X-F flechette dart"
 	icon_state = "sonicharpoon_flechette"
 	embed_object = /obj/item/sharp/flechette
-	shrapnel_type = /datum/ammo/bullet/shotgun/flechette_spread/awesome
+	shrapnel_type = /datum/ammo/bullet/shotgun/flechette_spread/sharp_rifle_shrapnel
 
 /datum/ammo/rifle/sharp/flechette/on_hit_mob(mob/living/M, obj/projectile/P)
 	if(!M || M == P.firer) return

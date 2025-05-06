@@ -16,7 +16,7 @@ GLOBAL_LIST_INIT(shotgun_boxes_12g, list(
 
 /obj/item/ammo_magazine/shotgun
 	name = "box of shotgun slugs"
-	desc = "A box filled with heavy shotgun shells. A timeless classic. 12 Gauge."
+	desc = "A box of 25x shotgun slugs in 12 gauge. Serves as a middle ground between rifle ammunition and buckshot."
 	icon = 'icons/obj/items/weapons/guns/ammo_by_faction/uscm.dmi'
 	icon_state = "slugs"
 	item_state = "slugs"
@@ -40,7 +40,7 @@ GLOBAL_LIST_INIT(shotgun_boxes_12g, list(
 
 /obj/item/ammo_magazine/shotgun/incendiary
 	name = "box of incendiary slugs"
-	desc = "A box filled with self-detonating incendiary shotgun rounds. 12 Gauge."
+	desc = "A box of 25x incendiary shotgun slugs in 12 gauge. Reduces power, especially against hard targets, but contains a substantial incendiary filler."
 	icon_state = "incendiary"
 	item_state = "incendiary"
 	default_ammo = /datum/ammo/bullet/shotgun/incendiary
@@ -48,7 +48,7 @@ GLOBAL_LIST_INIT(shotgun_boxes_12g, list(
 
 /obj/item/ammo_magazine/shotgun/incendiarybuck
 	name = "box of incendiary buckshots"
-	desc = "A box filled with self-detonating buckshot incendiary shotgun rounds. 12 Gauge."
+	desc = "A box of 25x incendiary buckshot shells in 12 gauge. Somewhat pathetic power, but each pellet has an incendiary component."
 	icon_state = "incendiarybuck"
 	item_state = "incendiarybuck"
 	default_ammo = /datum/ammo/bullet/shotgun/buckshot/incendiary
@@ -56,7 +56,7 @@ GLOBAL_LIST_INIT(shotgun_boxes_12g, list(
 
 /obj/item/ammo_magazine/shotgun/buckshot
 	name = "box of buckshot shells"
-	desc = "A box filled with buckshot spread shotgun shells. 12 Gauge."
+	desc = "A box of 25x buckshot shells in 12 gauge. Effective in close ranges."
 	icon_state = "buckshot"
 	item_state = "buckshot"
 	default_ammo = /datum/ammo/bullet/shotgun/buckshot
@@ -64,7 +64,7 @@ GLOBAL_LIST_INIT(shotgun_boxes_12g, list(
 
 /obj/item/ammo_magazine/shotgun/flechette
 	name = "box of flechette shells"
-	desc = "A box filled with flechette shotgun shells. 12 Gauge."
+	desc = "A box of 25x fletchette shells in 12 gauge. Trades close quarters impact for moderate armor penetration. Not a replacement for rifles."
 	icon_state = "flechette"
 	item_state = "flechette"
 	default_ammo = /datum/ammo/bullet/shotgun/flechette
@@ -72,7 +72,7 @@ GLOBAL_LIST_INIT(shotgun_boxes_12g, list(
 
 /obj/item/ammo_magazine/shotgun/beanbag
 	name = "box of beanbag slugs"
-	desc = "A box filled with beanbag shotgun shells used for non-lethal crowd control. 12 Gauge."
+	desc = "A box of 25x beanbag slugs in 12 gauge. Useful for less-lethal riot control."
 	icon_state = "beanbag"
 	item_state = "beanbag"
 	default_ammo = /datum/ammo/bullet/shotgun/beanbag
@@ -80,7 +80,7 @@ GLOBAL_LIST_INIT(shotgun_boxes_12g, list(
 
 /obj/item/ammo_magazine/shotgun/light/breaching
 	name = "box of breaching shells"
-	desc = "A box filled with breaching shotgun shells. 16 Gauge."
+	desc = "A box of 30x breaching shot shells in 16 gauge. Optimized for anti-materiel over antipersonnel."
 	icon_state = "breaching"
 	item_state = "breaching"
 	max_rounds = 30 //6 handfuls of 6 shells, 12 rounds in a XM51 mag
@@ -92,13 +92,13 @@ GLOBAL_LIST_INIT(shotgun_boxes_12g, list(
 
 /obj/item/ammo_magazine/shotgun/buckshot/special
 	name = "box of buckshot shells, USCM special type"
-	desc = "A box filled with buckshot spread shotgun shells, USCM special type. 12 Gauge."
+	desc = "A box of 25x special-type buckshot shells in 12 gauge. Massive impact in close range."
 	icon_state = "special"
 	default_ammo = /datum/ammo/bullet/shotgun/buckshot/special
 
 /obj/item/ammo_magazine/shotgun/buckshot/heavy
 	name = "box of heavy buckshot shells"
-	desc = "A box filled with buckshot spread shotgun shells. 8 Gauge."
+	desc = "A box of 24x buckshot shells in 8 gauge. Effective in close ranges"
 	icon = 'icons/obj/items/weapons/guns/ammo_by_faction/upp.dmi'
 	icon_state = "heavy_buckshot"
 	default_ammo = /datum/ammo/bullet/shotgun/heavy/buckshot
@@ -108,7 +108,7 @@ GLOBAL_LIST_INIT(shotgun_boxes_12g, list(
 
 /obj/item/ammo_magazine/shotgun/slug/heavy
 	name = "box of heavy slug shells"
-	desc = "A box filled with slug shotgun shells. 8 Gauge."
+	desc = "A box of 24x shotgun slug shells in 8 gauge. Optimized for defeating vehicles, though effective against personnel."
 	icon = 'icons/obj/items/weapons/guns/ammo_by_faction/upp.dmi'
 	icon_state = "heavy_slug"
 	default_ammo = /datum/ammo/bullet/shotgun/heavy/slug
@@ -118,7 +118,7 @@ GLOBAL_LIST_INIT(shotgun_boxes_12g, list(
 
 /obj/item/ammo_magazine/shotgun/slug/dragonsbreath
 	name = "box of heavy dragonsbreath shells"
-	desc = "A box filled with slug shotgun shells. 8 Gauge."
+	desc = "A box of 24x incendiary buckshot shells in 8 gauge. Trades impact for incendiary components that ignite hit targets or materiel."
 	icon = 'icons/obj/items/weapons/guns/ammo_by_faction/upp.dmi'
 	icon_state = "heavy_dragon"
 	default_ammo = /datum/ammo/bullet/shotgun/heavy/buckshot/dragonsbreath
@@ -128,7 +128,7 @@ GLOBAL_LIST_INIT(shotgun_boxes_12g, list(
 
 /obj/item/ammo_magazine/shotgun/beanbag/heavy
 	name = "box of heavy beanbag shells"
-	desc = "A box filled with beanbag slug shotgun shells. 8 Gauge."
+	desc = "A box of 24x beanbag slugs in 8 gauge. Useful for less-lethal riot control."
 	icon = 'icons/obj/items/weapons/guns/ammo_by_faction/upp.dmi'
 	icon_state = "heavy_beanbag"
 	default_ammo = /datum/ammo/bullet/shotgun/heavy/beanbag

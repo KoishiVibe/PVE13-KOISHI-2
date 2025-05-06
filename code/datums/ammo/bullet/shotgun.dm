@@ -13,8 +13,8 @@
 
 	accurate_range = 7
 	max_range = 14
-	damage = 90
-	penetration = ARMOR_PENETRATION_TIER_6
+	damage = 95
+	penetration = -ARMOR_PENETRATION_TIER_6
 	damage_var_low = PROJECTILE_VARIANCE_TIER_10
 	damage_var_high = PROJECTILE_VARIANCE_TIER_1
 	damage_armor_punch = 2
@@ -62,13 +62,14 @@
 /datum/ammo/bullet/shotgun/incendiary
 	name = "incendiary slug"
 	handful_state = "incendiary_slug"
-	damage_type = BURN
+	//Just makes this more consistent. Burn armor is like, substantially lower and this shooooould mean that the bullet isn't magically made of fire.
+	//damage_type = BURN
 	flags_ammo_behavior = AMMO_BALLISTIC
 
 	accuracy = -HIT_ACCURACY_TIER_2
 	max_range = 12
 	damage = 55
-	penetration= ARMOR_PENETRATION_TIER_1
+	penetration= -ARMOR_PENETRATION_TIER_6//the slug shatters on impact with most armor, but it doesn't really matter given you'll be getting dealt unstoppable burn damage...
 	handful_state = "incendiary_slug"
 
 /datum/ammo/bullet/shotgun/incendiary/set_bullet_traits()
@@ -87,7 +88,7 @@
 /datum/ammo/bullet/shotgun/incendiary/on_hit_turf(turf/T,obj/projectile/P)
 	burst(get_turf(T),P,damage_type)
 
-
+//Sidegrade of buckshot. Gives up power for a little AP and much tighter spread.
 /datum/ammo/bullet/shotgun/flechette
 	name = "flechette shell"
 	icon_state = "flechette"
@@ -97,11 +98,10 @@
 	accuracy_var_low = PROJECTILE_VARIANCE_TIER_6
 	accuracy_var_high = PROJECTILE_VARIANCE_TIER_6
 	max_range = 12
-	damage = 30
-	damage_var_low = PROJECTILE_VARIANCE_TIER_8
-	damage_var_high = PROJECTILE_VARIANCE_TIER_8
-	penetration = ARMOR_PENETRATION_TIER_7
-	bonus_projectiles_amount = EXTRA_PROJECTILES_TIER_3
+	damage = 20
+	//removes damage variance. While arguably realistic, it's probably not good for gameplay.
+	penetration = ARMOR_PENETRATION_TIER_2//still lower pressure shotgun ammunition. but it'll get through soft vests pretty nicely.
+	bonus_projectiles_amount = EXTRA_PROJECTILES_TIER_6
 	handful_state = "flechette_shell"
 	multiple_handful_name = TRUE
 
@@ -115,13 +115,13 @@
 	accuracy_var_low = PROJECTILE_VARIANCE_TIER_6
 	accuracy_var_high = PROJECTILE_VARIANCE_TIER_6
 	max_range = 12
-	damage = 30
+	damage = 20
 	damage_var_low = PROJECTILE_VARIANCE_TIER_8
 	damage_var_high = PROJECTILE_VARIANCE_TIER_8
-	penetration = ARMOR_PENETRATION_TIER_7
-	scatter = SCATTER_AMOUNT_TIER_5
+	penetration = ARMOR_PENETRATION_TIER_1
+	scatter = SCATTER_AMOUNT_TIER_7//nice and tight.
 
-/datum/ammo/bullet/shotgun/flechette_spread/awesome
+/datum/ammo/bullet/shotgun/flechette_spread/sharp_rifle_shrapnel
 	damage = 60
 
 /datum/ammo/bullet/shotgun/buckshot
@@ -135,11 +135,10 @@
 	accuracy_var_high = PROJECTILE_VARIANCE_TIER_5
 	accurate_range = 7
 	max_range = 9
-	damage = 50
-	damage_var_low = PROJECTILE_VARIANCE_TIER_10
-	damage_var_high = PROJECTILE_VARIANCE_TIER_1
-	penetration = ARMOR_PENETRATION_TIER_1
-	bonus_projectiles_amount = EXTRA_PROJECTILES_TIER_7
+	damage = 35//spreading the damage out to prevent the weird cliff of can kill this, cant kill that.
+	//removes the random variance. Again, probably not a good thing to have.
+	penetration = -ARMOR_PENETRATION_TIER_4//Potentially the most sad thing you can encounter.
+	bonus_projectiles_amount = EXTRA_PROJECTILES_TIER_8
 	shell_speed = AMMO_SPEED_TIER_2
 	damage_armor_punch = 0
 	pen_armor_punch = 0
@@ -168,7 +167,8 @@
 	handful_state = "incen_buckshot"
 	handful_type = /obj/item/ammo_magazine/handful/shotgun/buckshot/incendiary
 	bonus_projectiles_type = /datum/ammo/bullet/shotgun/spread/incendiary
-	damage = 40
+	damage = 20
+	penetration = -ARMOR_PENETRATION_TIER_6
 	shell_speed = AMMO_SPEED_TIER_1
 
 /datum/ammo/bullet/shotgun/buckshot/incendiary/set_bullet_traits()
@@ -205,12 +205,10 @@
 	accuracy_var_high = PROJECTILE_VARIANCE_TIER_6
 	accurate_range = 4
 	max_range = 6
-	damage = 50
-	damage_var_low = PROJECTILE_VARIANCE_TIER_8
-	damage_var_high = PROJECTILE_VARIANCE_TIER_8
-	penetration = ARMOR_PENETRATION_TIER_1
+	damage = 35
+	penetration = -ARMOR_PENETRATION_TIER_4
 	shell_speed = AMMO_SPEED_TIER_2
-	scatter = SCATTER_AMOUNT_TIER_1
+	scatter = SCATTER_AMOUNT_TIER_2//not too wide.
 	damage_armor_punch = 0
 	pen_armor_punch = 0
 
@@ -266,11 +264,11 @@
 	handful_state = "heavy_buckshot"
 	multiple_handful_name = TRUE
 	bonus_projectiles_type = /datum/ammo/bullet/shotgun/heavy/buckshot/spread
-	bonus_projectiles_amount = EXTRA_PROJECTILES_TIER_8
+	bonus_projectiles_amount = EXTRA_PROJECTILES_TIER_12//this is where most of the damage comes from.
 	accurate_range = 8
 	max_range = 10
-	damage = 75
-	penetration = ARMOR_PENETRATION_TIER_2
+	damage = 35
+	penetration = -ARMOR_PENETRATION_TIER_4//still buckshot.
 	shell_speed = AMMO_SPEED_TIER_2
 	damage_armor_punch = 0
 	pen_armor_punch = 0
@@ -336,7 +334,7 @@
 	handful_state = "heavy_dragonsbreath"
 	multiple_handful_name = TRUE
 	damage_type = BURN
-	damage = 60
+	damage = 15
 	accurate_range = 4
 	max_range = 6
 	bonus_projectiles_type = /datum/ammo/bullet/shotgun/heavy/buckshot/dragonsbreath/spread
@@ -352,15 +350,15 @@
 	bonus_projectiles_amount = 0
 	shell_speed = AMMO_SPEED_TIER_4
 
-
+//large caliber, solid damage. Not effective against armor, but against an engine block? Vehicle stopping effect.
 /datum/ammo/bullet/shotgun/heavy/slug
 	name = "heavy shotgun slug"
 	handful_state = "heavy_slug"
 
 	accurate_range = 7
 	max_range = 17
-	damage = 120 //ouch.
-	penetration = ARMOR_PENETRATION_TIER_9
+	damage = 120
+	penetration = -ARMOR_PENETRATION_TIER_6
 	damage_armor_punch = 2
 
 /datum/ammo/bullet/shotgun/heavy/slug/on_hit_mob(mob/M,obj/projectile/P)
@@ -381,6 +379,17 @@
 			to_chat(living_mob, SPAN_HIGHDANGER("The impact knocks you off-balance!"))
 		living_mob.apply_stamina_damage(fired_projectile.ammo.damage, fired_projectile.def_zone, ARMOR_BULLET)
 
+/datum/ammo/bullet/shotgun/heavy/slug/on_hit_obj(obj/O,obj/projectile/P)
+	if(istype(O, /obj/vehicle/multitile))
+		var/obj/vehicle/multitile/mob = O
+		mob.next_move = world.time + vehicle_slowdown_time
+		playsound(mob, 'sound/effects/meteorimpact.ogg', 35)
+		mob.at_munition_interior_explosion_effect(cause_data = create_cause_data("8 gauge shotgun slug"))
+		mob.interior_crash_effect()
+		mob.ex_act(10, P.dir, P.weapon_cause_data, 10)//
+		return
+	burst(get_turf(P),P,damage_type, 1 , 5)
+
 /datum/ammo/bullet/shotgun/heavy/beanbag
 	name = "heavy beanbag slug"
 	icon_state = "beanbag"
@@ -390,7 +399,7 @@
 
 	max_range = 7
 	shrapnel_chance = 0
-	damage = 25
+	damage = 20
 	stamina_damage = 100
 	accuracy = HIT_ACCURACY_TIER_6
 	shell_speed = 3
@@ -412,11 +421,10 @@
 	accuracy_var_low = PROJECTILE_VARIANCE_TIER_3
 	accuracy_var_high = PROJECTILE_VARIANCE_TIER_3
 	max_range = 12
-	damage = 45
-	damage_var_low = PROJECTILE_VARIANCE_TIER_8
-	damage_var_high = PROJECTILE_VARIANCE_TIER_8
-	penetration = ARMOR_PENETRATION_TIER_10
-	bonus_projectiles_amount = EXTRA_PROJECTILES_TIER_2
+	damage = 25
+	//again, strips out damage variance.
+	penetration = ARMOR_PENETRATION_TIER_2
+	bonus_projectiles_amount = EXTRA_PROJECTILES_TIER_6
 
 /datum/ammo/bullet/shotgun/heavy/flechette_spread
 	name = "additional heavy flechette"
@@ -424,10 +432,10 @@
 	accuracy_var_low = PROJECTILE_VARIANCE_TIER_6
 	accuracy_var_high = PROJECTILE_VARIANCE_TIER_6
 	max_range = 12
-	damage = 45
+	damage = 25
 	damage_var_low = PROJECTILE_VARIANCE_TIER_8
 	damage_var_high = PROJECTILE_VARIANCE_TIER_8
-	penetration = ARMOR_PENETRATION_TIER_10
+	penetration = ARMOR_PENETRATION_TIER_2
 	scatter = SCATTER_AMOUNT_TIER_4
 
 /*
