@@ -2187,8 +2187,8 @@
 	can_hold = list(
 		/obj/item/weapon/gun/pistol/vp78,
 		/obj/item/ammo_magazine/pistol/vp78,
-		/obj/item/weapon/gun/pistol/vp70/l9a3
-		/obj/item/ammo_magazine/pistol/vp78/extended
+		/obj/item/weapon/gun/pistol/vp70/l9a3,
+		/obj/item/ammo_magazine/pistol/vp78/extended,
 	)
 	has_gamemode_skin = FALSE
 	holster_slots = list(
@@ -2199,4 +2199,4 @@
 /obj/item/storage/belt/gun/rmc_handgun/full/fill_preset_inventory()
 	handle_item_insertion(new /obj/item/weapon/gun/pistol/vp70/l9a3())
 	for(var/i in 1 to storage_slots - 1)
-		new /obj/item/ammo_magazine/pistol/vp78/extended(src)
+		new /obj/item/ammo_magazine/pistol/vp70/extended(src)
