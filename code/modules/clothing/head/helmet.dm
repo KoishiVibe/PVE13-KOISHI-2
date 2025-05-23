@@ -1876,8 +1876,8 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 //=ROYAL MARINES=\\
 
 /obj/item/clothing/head/helmet/marine/veteran/royal_marine
-	name = "\improper L5A2 ballistic helmet"
-	desc = "A High-cut ballistic helmet. Designed by Lindenthal-Ehrenfeld Militärindustrie it is intended to be used by Royal Marines Commando as part of the kestrel armour system."
+	name = "\improper Mk11E ballistic helmet"
+	desc = "The standard issue combat helmet of the Royal Marines Commando, designed and built in Weyland Yutani's Japanese facilities. It provides improved protection against ballistics and shrapnel."
 	icon_state = "rmc_helm1"
 	item_state = "rmc_helm1"
 	armor_melee = CLOTHING_ARMOR_MEDIUM
@@ -1888,7 +1888,7 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	armor_internaldamage = CLOTHING_ARMOR_LOW
 	min_cold_protection_temperature = ICE_PLANET_MIN_COLD_PROT
 	flags_inventory = BLOCKSHARPOBJ
-	flags_inv_hide = NO_FLAGS
+	flags_inv_hide = HIDETOPHAIR
 	flags_marine_helmet = NO_FLAGS
 	flags_atom = NO_NAME_OVERRIDE|NO_SNOW_TYPE
 

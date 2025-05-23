@@ -29,10 +29,10 @@
 /datum/faction/royal_marines_commando/get_antag_guns_snowflake_equipment()
 	return list(
 		list("PRIMARY FIREARMS", 0, null, null, null),
-		list("F903A1 Rifle", 20, /obj/item/weapon/gun/rifle/l46a3, null, VENDOR_ITEM_REGULAR),
+		list("L46A3 Rifle", 20, /obj/item/weapon/gun/rifle/l46a3, null, VENDOR_ITEM_REGULAR),
 
 		list("PRIMARY AMMUNITION", 0, null, null, null),
-		list("F903 Magazine (10x24mm)", 5, /obj/item/ammo_magazine/rifle/rmc_f90, null, VENDOR_ITEM_REGULAR),
+		list("L46A3 Magazine (10x24mm)", 5, /obj/item/ammo_magazine/rifle/l46a3, null, VENDOR_ITEM_REGULAR),
 
 		list("SIDEARMS", 0, null, null, null),
 		list("VP78 Pistol", 20, /obj/item/weapon/gun/pistol/vp78, null, VENDOR_ITEM_REGULAR),
@@ -64,10 +64,10 @@
 /datum/faction/royal_marines_commando/get_antag_guns_sorted_equipment()
 	return list(
 		list("PRIMARY FIREARMS", -1, null, null),
-		list("F903A1 Rifle", 20, /obj/item/weapon/gun/rifle/l46a3, null, VENDOR_ITEM_REGULAR),
+		list("L46A3 Rifle", 20, /obj/item/weapon/gun/rifle/l46a3, null, VENDOR_ITEM_REGULAR),
 
 		list("PRIMARY AMMUNITION", -1, null, null),
-		list("F903 Magazine (10x24mm)", 5, /obj/item/ammo_magazine/rifle/rmc_f90, null, VENDOR_ITEM_REGULAR),
+		list("L46A3 Magazine (10x24mm)", 5, /obj/item/ammo_magazine/rifle/l46a3, null, VENDOR_ITEM_REGULAR),
 
 		list("SIDEARMS", -1, null, null),
 		list("VP78 Pistol", 20, /obj/item/weapon/gun/pistol/vp78, null, VENDOR_ITEM_REGULAR),

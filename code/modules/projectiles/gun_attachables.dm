@@ -3179,13 +3179,13 @@ Defined in conflicts.dm of the #defines folder.
 	max_rounds = 1
 	has_breech = FALSE
 
-/obj/item/attachable/attached_gun/grenade/type71/Initialize()
+/obj/item/attachable/attached_gun/grenade/l7a4/Initialize()
 	. = ..()
 	grenade_pass_flags = NO_FLAGS
 
-/obj/item/attachable/attached_gun/grenade/type71/preloaded
+/obj/item/attachable/attached_gun/grenade/l7a4/preloaded
 
-/obj/item/attachable/attached_gun/grenade/type71/preloaded/New()
+/obj/item/attachable/attached_gun/grenade/l7a4/preloaded/New()
 	. = ..()
 	current_rounds = 1
 	loaded_grenades = list(new/obj/item/explosive/grenade/high_explosive/airburst/canister/slug(src))

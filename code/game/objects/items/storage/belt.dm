@@ -2171,31 +2171,27 @@
 //ROYAL MARINES COMMNADO
 
 /obj/item/storage/belt/marine/rmc
-	name = "\improper L70 pattern ammo load rig"
-	desc = "Good for carrying around extra ammo in the heat of the jungle. Made of special rot-resistant fabric."
+	name = "\improper 70 Pattern magazine webbing"
+	desc = "The 70 Pattern PLCS is lighter and more durable, while offering familiar positioning for pouches. This configuration holds five magazines."
 	icon_state = "rmc_ammo"
 	item_state = "rmc_ammo"
 	flags_atom = NO_NAME_OVERRIDE|NO_SNOW_TYPE
 	has_gamemode_skin = FALSE
 
-/obj/item/storage/belt/marine/rmc/rmc_f90_ammo/fill_preset_inventory()
+/obj/item/storage/belt/marine/rmc/full/fill_preset_inventory()
 	for(var/i in 1 to storage_slots)
-		new /obj/item/ammo_magazine/rifle/rmc_f90(src)
-
-/obj/item/storage/belt/marine/rmc/rmc_f90_ammo/marksman/fill_preset_inventory()
-	for(var/i in 1 to storage_slots)
-		new /obj/item/ammo_magazine/rifle/rmc_f90/marksman(src)
+		new /obj/item/ammo_magazine/rifle/l46a3(src)
 
 /obj/item/storage/belt/medical/rmc
-	name = "\improper L75 pattern medical storage rig"
-	desc = "The L75 is the standard load-bearing equipment of the RMC. It consists of a modular belt with various clips. This version is designed to transport medical supplies and pistol ammunition. \nRight click its sprite and click \"toggle belt mode\" to take pills out of bottles by simply clicking them."
+	name = "\improper 70 Pattern combat lifesaver webbing"
+	desc = "The 70 Pattern PLCS is lighter and more durable, while offering familiar positioning for pouches. This configuration holds handgun magazines and medical equipment for combat lifesavers."
 	icon_state = "rmc_medical"
 	item_state = "rmc_medical"
 	flags_atom = NO_NAME_OVERRIDE|NO_SNOW_TYPE
 
-/obj/item/storage/belt/gun/l905
-	name = "\improper L905 gunbelt"
-	desc = "Finely-tooled leather, a L905, and six magazines. More than enough for the standard RMC commando."
+/obj/item/storage/belt/gun/rmc_handgun
+	name = "\improper 68 Pattern handgun belt"
+	desc = "A pistol holster with multiple retention options and six magazines. The older buckle assembly might be tricky for those used to the 70 Pattern."
 	icon_state = "rmc_pistol"
 	item_state = "rmc_pistol"
 	flags_atom = NO_NAME_OVERRIDE|NO_SNOW_TYPE
@@ -2210,7 +2206,7 @@
 			"icon_x" = -1,
 			"icon_y" = -3))
 
-/obj/item/storage/belt/gun/l905/full/fill_preset_inventory()
+/obj/item/storage/belt/gun/rmc_handgun/full/fill_preset_inventory()
 	handle_item_insertion(new /obj/item/weapon/gun/pistol/vp78())
 	for(var/i in 1 to storage_slots - 1)
 		new /obj/item/ammo_magazine/pistol/vp78(src)
