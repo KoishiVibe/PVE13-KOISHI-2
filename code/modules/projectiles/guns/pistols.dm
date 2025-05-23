@@ -188,6 +188,19 @@
 	flashlight.Attach(src)
 	update_attachable(flashlight.slot)
 
+/obj/item/weapon/gun/pistol/vp70/l9a3
+	name = "\improper L9A3 service pistol"
+	desc = "Chosen based on lessons learned from the anemic L72 Advanced Close Battle Pistol. This VP70 modification provides capable close range self defense with a four round burst. Standard issue clips are 24 rounds. The trigger is somewhat heavier."
+	current_mag = /obj/item/ammo_magazine/pistol/vp70/extended
+
+/obj/item/weapon/gun/pistol/vp70/l9a3/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_10)
+	set_burst_amount(BURST_AMOUNT_TIER_4)
+	set_burst_delay(FIRE_DELAY_TIER_12)
+	scatter = SCATTER_AMOUNT_TIER_8
+	burst_scatter_mult = SCATTER_AMOUNT_TIER_9
+
 //-------------------------------------------------------
 
 /obj/item/weapon/gun/pistol/m1911

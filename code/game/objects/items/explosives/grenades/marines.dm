@@ -200,7 +200,7 @@
 	name = "\improper L2A4 kinetic grenade"
 	desc = "A unique weapon of the RMC, this grenade is a non-explosive 20mm projectile intended to decisively incapacitate personnel and disable light vehicles. It is exclusively compatible with the L7A4 USGL."
 	shrapnel_count = 1
-	shrapnel_type = shrapnel_type = /datum/ammo/bullet/shrapnel/slug
+	shrapnel_type = /datum/ammo/bullet/shrapnel/slug
 
 /*
 //================================================

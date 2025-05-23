@@ -96,9 +96,10 @@
 	gun_type = /obj/item/weapon/gun/pistol/vp70
 	ammo_band_color = AMMO_BAND_COLOR_AP
 
-/obj/item/ammo_magazine/pistol/vp70/extended // Unused
+/obj/item/ammo_magazine/pistol/vp70/extended // now has a home for the RMC.
 	name = "\improper vp70 extended magazine (9x19mm)"
 	icon_state = "vp70_mag_ex"
+	max_rounds = 24
 	default_ammo = /datum/ammo/bullet/pistol
 	caliber = "9x19mm"
 

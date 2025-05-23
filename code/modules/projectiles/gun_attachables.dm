@@ -3190,7 +3190,7 @@ Defined in conflicts.dm of the #defines folder.
 /obj/item/attachable/attached_gun/grenade/l7a4/preloaded/New()
 	. = ..()
 	current_rounds = 1
-	loaded_grenades = list(new/obj/item/explosive/grenade/high_explosive/airburst/canister/slug(src))
+	loaded_grenades = list(new/obj/item/explosive/grenade/high_explosive/airburst/canister/imperial(src))
 
 //UPP USGL
 /obj/item/attachable/attached_gun/grenade/type71
