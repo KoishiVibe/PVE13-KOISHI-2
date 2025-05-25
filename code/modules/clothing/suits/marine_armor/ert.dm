@@ -427,6 +427,7 @@
 	armor_bio = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_rad = CLOTHING_ARMOR_NONE
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUMHIGH
+	flags_armor_protection = BODY_FLAG_CHEST|BODY_FLAG_GROIN|BODY_FLAG_ARMS
 	storage_slots = 4
 	slowdown = SLOWDOWN_ARMOR_LIGHT
 	allowed = list(
@@ -467,10 +468,10 @@
 	armor_bio = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_rad = CLOTHING_ARMOR_NONE
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUMHIGH
-	flags_armor_protection = BODY_FLAG_CHEST|BODY_FLAG_GROIN|BODY_FLAG_ARMS
+	flags_armor_protection = BODY_FLAG_CHEST|BODY_FLAG_GROIN
 	flags_inventory = BLOCKSHARPOBJ|SMARTGUN_HARNESS
 
-/obj/item/clothing/suit/storage/marine/veteran/royal_marine/super //Special issue rig. Only for gamerunner spawn!
+/obj/item/clothing/suit/storage/marine/faction/royal_marine/super //Special issue rig. Only for gamerunner spawn!
 	name = "Mk21K Goshawk personal armor"
 	desc = "The Mk21K sports a refitted armor scheme for high-intensity moderate threat environments. Rather than battlefield use, it's designed primarily for the increasing amount of internal high-risk peacekeeping the RMC has seen, but occasionally sees alternate issue as company leaders see fit."
 	icon_state = "rmc_pointman"
