@@ -514,12 +514,12 @@
 /obj/item/ammo_magazine/rifle/l46a3
 	name = "\improper L46A3 magazine (8.1x22mm)"
 	desc = "A 8.1mm ammunition magazine for the L46A3 pulse rifle. Contains the L41A3 Improved Ball standard ammunition."
-	caliber = "10x24mm"
+	caliber = "8.1x22mm"
 	icon = 'icons/obj/items/weapons/guns/ammo_by_faction/twe_ammo.dmi'
 	icon_state = "l46a3"
 	item_state = "l46a3"
 	w_class = SIZE_MEDIUM
-	default_ammo = /datum/ammo/bullet/rifle
+	default_ammo = /datum/ammo/bullet/rifle/imperial
 	max_rounds = 125
 	gun_type = /obj/item/weapon/gun/rifle/l46a3
 	ammo_band_icon = "+l46a3_band"
