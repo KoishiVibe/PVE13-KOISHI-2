@@ -1667,9 +1667,9 @@
 	..()
 	var/obj/item/attachable/attached_gun/grenade/l7a4 = new(src)
 	l7a4.flags_attach_features &= ~ATTACH_REMOVABLE
-	l7a4.hidden = TRUE
+	l7a4.hidden = FALSE
 	l7a4.Attach(src)
-	update_attachable(l7a3.slot)
+	update_attachable()
 
 //-------------------------------------------------------
 //XM51, Breaching Scattergun

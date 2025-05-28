@@ -2193,7 +2193,7 @@
 		/obj/item/weapon/gun/pistol/vp78,
 		/obj/item/ammo_magazine/pistol/vp78,
 		/obj/item/weapon/gun/pistol/vp70/l9a3,
-		/obj/item/ammo_magazine/pistol/vp78/extended,
+		/obj/item/ammo_magazine/pistol/vp70/extended,
 	)
 	has_gamemode_skin = FALSE
 	holster_slots = list(
