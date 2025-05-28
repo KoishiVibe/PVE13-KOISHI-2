@@ -25,6 +25,13 @@
 		B.health -= rand(2, 5)
 		B.update_health(1)
 
+//RMC airburst grenade
+/datum/ammo/bullet/shrapnel/light_airburst
+	name = "light airburst shrapnel"
+	icon_state = "buckshot"
+	flags_ammo_behavior = AMMO_STOPPED_BY_COVER|AMMO_IGNORE_COVER|AMMO_PRONETARGET
+	penetration = -ARMOR_PENETRATION_TIER_1
+
 /datum/ammo/bullet/shrapnel/rubber
 	name = "rubber pellets"
 	icon_state = "rubber_pellets"
