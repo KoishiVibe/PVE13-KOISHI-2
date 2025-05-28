@@ -440,7 +440,7 @@
 			uniform.roll_suit_sleeves(new_human)
 	new_human.equip_to_slot_or_del(uniform, WEAR_BODY)
 	//jacket
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/royal_marine(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/faction/royal_marine(new_human), WEAR_JACKET)
 	//waist
 	if(prob(75))
 		new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/general_belt/rmc(new_human), WEAR_WAIST)
