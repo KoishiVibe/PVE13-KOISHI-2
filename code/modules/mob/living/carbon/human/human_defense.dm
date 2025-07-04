@@ -101,12 +101,11 @@ Contains most of the procs that are called when a mob is attacked by something
 				return TRUE
 
 		if(l_hand.IsShield() && istype(l_hand,/obj/item/weapon/shield)) // Activable shields
-			var/obj/item/weapon/shield/S = l_hand
+			var/obj/item/weapon/shield/Shieldvar = l_hand
 			var/shield_blocked_l = FALSE
-			if(S.shield_readied && prob(S.readied_block)) // User activated his shield before the attack. Lower if it blocks.
-				S.lower_shield(src)
+			if(Shieldvar.shield_readied && prob(Shieldvar.readied_block))
 				shield_blocked_l = TRUE
-			else if(prob(S.passive_block))
+			else if(prob(Shieldvar.passive_block))
 				shield_blocked_l = TRUE
 
 			if(shield_blocked_l)
@@ -126,12 +125,11 @@ Contains most of the procs that are called when a mob is attacked by something
 				return TRUE
 
 		if(r_hand.IsShield() && istype(r_hand,/obj/item/weapon/shield)) // Activable shields
-			var/obj/item/weapon/shield/S = r_hand
+			var/obj/item/weapon/shield/Shieldvar = r_hand
 			var/shield_blocked_r = FALSE
-			if(S.shield_readied && prob(S.readied_block)) // User activated his shield before the attack. Lower if it blocks.
+			if(Shieldvar.shield_readied && prob(Shieldvar.readied_block)) // User activated his shield before the attack. Lower if it blocks.
 				shield_blocked_r = TRUE
-				S.lower_shield(src)
-			else if(prob(S.passive_block))
+			else if(prob(Shieldvar.passive_block))
 				shield_blocked_r = TRUE
 
 			if(shield_blocked_r)
@@ -143,8 +141,8 @@ Contains most of the procs that are called when a mob is attacked by something
 			visible_message(SPAN_DANGER("<B>[src] blocks [attack_text] with the [r_hand.name]!</B>"), null, null, 5)
 			return TRUE
 
-	if(back && istype(back, /obj/item/weapon/shield/riot) && prob(20))
-		var/obj/item/weapon/shield/riot/shield = back
+	if(back && istype(back, /obj/item/weapon/shield) && prob(20))
+		var/obj/item/weapon/shield/backshield = back
 		if(shield.blocks_on_back)
 			visible_message(SPAN_DANGER("<B>The [back] on [src]'s back blocks [attack_text]!</B>"), null, null, 5)
 			return TRUE

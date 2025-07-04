@@ -976,11 +976,10 @@
 		apply_stamina_damage(P.ammo.stamina_damage, P.def_zone, ARMOR_ENERGY) // Stamina damage is energy
 
 	//Shields
-	if( !(ammo_flags & AMMO_ROCKET) ) //No, you can't block rockets.
-		if(prob(75) && check_shields(damage * 0.65, "[P]") ) // Lower chance to block bullets
-			P.ammo.on_shield_block(src)
-			bullet_ping(P)
-			return
+	if(prob(75) && check_shields(damage * 0.65, "[P]") ) // Lower chance to block bullets
+		P.ammo.on_shield_block(src)
+		bullet_ping(P)
+		return
 
 	var/obj/limb/organ = get_limb(check_zone(P.def_zone)) //Let's finally get what organ we actually hit.
 	if(!organ)

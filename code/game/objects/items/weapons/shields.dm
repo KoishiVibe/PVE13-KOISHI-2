@@ -5,6 +5,28 @@
 	var/readied_block = 30
 	var/readied_slowdown = SLOWDOWN_ARMOR_VERY_LIGHT // Walking around in a readied shield stance slows you! The armor defs are a useful existing reference point.
 	var/shield_readied = FALSE
+	var/shield_health = 150 //health of the shield
+	var/shield_threshold = 20 //after armor, how much damage will the shield absorb before it applies to the person?
+	var/target_damage_reduction_passive = list( //armor variables
+		armor_melee = CLOTHING_ARMOR_NONE,
+		armor_bullet = CLOTHING_ARMOR_NONE,
+		armor_laser = CLOTHING_ARMOR_NONE,
+		armor_energy = CLOTHING_ARMOR_NONE,
+		armor_bomb = CLOTHING_ARMOR_NONE,
+		armor_bio =  CLOTHING_ARMOR_NONE,
+		armor_rad = CLOTHING_ARMOR_NONE,
+		armor_internaldamage = CLOTHING_ARMOR_NONE,
+	)
+	var/target_damage_reduction_ready = list( //armor variables
+		armor_melee = CLOTHING_ARMOR_LOW,
+		armor_bullet = CLOTHING_ARMOR_LOW,
+		armor_laser = CLOTHING_ARMOR_LOW,
+		armor_energy = CLOTHING_ARMOR_LOW,
+		armor_bomb = CLOTHING_ARMOR_LOW,
+		armor_bio = CLOTHING_ARMOR_LOW,
+		armor_rad = CLOTHING_ARMOR_LOW,
+		armor_internaldamage = CLOTHING_ARMOR_LOW,
+	)
 
 // Toggling procs
 /obj/item/weapon/shield/proc/raise_shield(mob/user as mob) // Prepare for an attack. Slows you down slightly, but increases chance to block.
