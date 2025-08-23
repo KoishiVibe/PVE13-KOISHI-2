@@ -140,6 +140,22 @@
 	max_rounds = 6
 	gun_type = /obj/item/weapon/gun/revolver/m44/custom/webley
 
+/**
+ * Vanguard CMB Revolver
+*/
+
+/obj/item/ammo_magazine/revolver/vanguard
+	name = "Vanguard speedloader (.357 +P)"
+	desc = "An eight round speedloader of .357 +P ammunition. 180gr bimetallic copper-alloy lead-free JHP with increased powder. Causes violent expansion with strong stopping power."
+	default_ammo = /datum/ammo/bullet/revolver/small/jacketedhollow
+	max_rounds = 8
+
+/obj/item/ammo_magazine/revolver/vanguard/fullmetal
+	name = "Vanguard speedloader (.357 +P)"
+	desc = "An eight round speedloader of .357 +P ammunition. 120gr mild steel core lead-free FMJ with increased powder. High velocity and deeper penetration."
+	default_ammo = /datum/ammo/bullet/revolver/small/fullmetal
+	max_rounds = 8
+
 //INTERNAL MAGAZINES
 
 //---------------------------------------------------
@@ -164,6 +180,18 @@
 
 /obj/item/ammo_magazine/internal/revolver/m44/marksman
 	default_ammo = /datum/ammo/bullet/revolver/marksman //because the starting m44 custom revolver belt is full of marksman ammo, but your gun would have normal ammo loaded
+
+//-------------------------------------------------------
+//Vanguard Autorevolver internal mag
+/obj/item/ammo_magazine/internal/revolver/vanguard
+	default_ammo = /datum/ammo/bullet/revolver/small/jacketedhollow
+	caliber = ".357"
+	max_rounds = 8
+	current_rounds = 8
+	gun_type = /obj/item/weapon/gun/revolver/spearhead/vanguard
+
+/obj/item/ammo_magazine/internal/revolver/vanguard/unloaded
+	current_rounds = 0
 
 //-------------------------------------------------------
 //RUSSIAN REVOLVER //Based on the 7.62mm Russian revolvers.
