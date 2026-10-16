@@ -1,3 +1,5 @@
+//rxfm5 eva but not shit
+
 /obj/item/weapon/gun/energy/rxfm5_eva/pve
 	name = "RXF-M5 EVA pistol"
 	desc = "Produced by WY's Rexim subsidiary, the M5 is a reliable, solid state free electron laser weapon. Firing a 0.4kJ continuous beam, it offers decent power without perforating habitat or starship walls and any number of volatiles within."
